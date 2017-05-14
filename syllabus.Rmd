@@ -1,0 +1,18 @@
+---
+title: "Econ 2367.02: Current Economic Issues in the United States"
+author: "Instructor: Wei Yang Tham"
+date: "May 14, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Email: tham.5@osu.edu
+
+Office: Arps 369
+
+Office hours: Christmas 6am-7am
+
+## Course Objectives
