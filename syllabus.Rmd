@@ -2,7 +2,7 @@
 title: "Econ 2367.02: Current Economic Issues in the United States"
 author: "Instructor: Wei Yang Tham"
 date: "May 14, 2017"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -17,12 +17,36 @@ Office hours: Christmas 6am-7am
 
 ## Course Objectives
 
-1. Learn about important economic issues
+1. Learn about important economic issues. We will discuss the minimum wage, immigration, healthcare, urban economics?, economics of innovation
 2. Learn how to find and evaluate evidence about economic policy
 3. Develop writing skills 
 
 ## Assignments
 
-tbd
+- blog?
+- X essays
 
-## 
+## Schedule 
+
+### Review of principles of economics
+
+- No reading
+
+### Causality, evaluating research
+
+- [How to Give a Cool Appraisal to Hot Economics Studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
+- [Science isn't Broken](https://fivethirtyeight.com/features/science-isnt-broken)
+
+### Minimum wage
+
+- [Schmitt](http://cepr.net/documents/publications/min-wage-2013-02.pdf)
+- [Brown, Gilroy, Kohen](https://web.stanford.edu/class/econ101c/class2.pdf)
+- [Jeff Clemens](http://econweb.ucsd.edu/~j1clemens/pdfs/ClemensWitherMinimumWageGreatRecession.pdf)
+
+### Immigration
+
+
+
+
+
+
