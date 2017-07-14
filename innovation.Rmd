@@ -1,0 +1,21 @@
+---
+title: "innovation"
+author: "Tham, Wei Yang"
+date: "7/14/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Productivity growth is central to economic growth and improvements in living standards. Note that consistent economic growth has been a feature of human societies only relatively recently (show graph going back to industrial revolution). Innovation is an important channel for getting productivity growth - inventions, advances in knowledge. 
+
+## Science as a public good
+- Arrow?
+- Basic idea: 
+
+
+
+
+

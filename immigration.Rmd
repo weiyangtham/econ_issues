@@ -1,0 +1,25 @@
+---
+title: "immigration"
+author: "Tham, Wei Yang"
+date: "7/14/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Facts about US immigration
+
+## Questions of interest
+- Is immigration beneficial to immigrants?
+- Is immigration harmful to natives?
+
+## What economic theory predicts about immigration
+- 
+
+## Mariel Boatlift (Card)
+
+
+## Open Borders
+- John Kennan on doubling GDP
