@@ -13,7 +13,12 @@ Productivity growth is central to economic growth and improvements in living sta
 
 ## Science as a public good
 - Arrow?
-- Basic idea: 
+- Basic idea: new knowledge generates positive externalities. Other people can build on new knowledge that inventor/scientist may not come up with on their own. Individual inventors may not be able to bear risk. 
+- If left entirely to private sector, science would be under-produced
+- In the US, government support is a huge source of funding for basic science e.g. ~$30bn in biomedical research from NIH. 
+
+We will look at how the tools of modern empirical microeconomics, many of which we have seen used in earlier topics, have been applied to better understand the "knowledge production function". 
+
 
 
 
