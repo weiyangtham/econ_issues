@@ -1,0 +1,47 @@
+---
+title: "Evaluating Economic Research"
+author: "Tham, Wei Yang"
+date: "8/7/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+- Over the semester, we will often ask: What is the effect of X on Y?
+- Goal of this class: learn how to evaluate economic research even when you are not an expert
+
+## Reading
+
+- Smith suggests three strategies for evaluating evidence from economics research. What are they?
+
+## Example: effect of college education on earnings
+- Does going to college lead to higher earnings?
+- We can compare the average earnings of people who go to college with those who do not
+- What is the problem with this?
+
+## Correlation and causation
+
+![](spurious_corr.jpeg)  
+
+## Correlation and causation
+- People who go to college and those who don't are likely to differ in substantial ways that can influence their decision to attend college **and** their future earnings
+- If not accounted for, these differences can bias our results
+- The empirical economist's job is to (try to) eliminate this bias
+
+## Tools of the trade
+- Regression
+- Randomized Control Trials (RCTs)
+- Instrumental variables
+- Difference-in-differences
+- Regression Discontinuity
+
+## Caveat about tools
+- These tools are used in a substantial portion, but not all, of economics research
+
+## 
+
+
