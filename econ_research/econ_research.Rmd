@@ -5,8 +5,9 @@ date: "8/7/2017"
 output: ioslides_presentation
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 ## Overview
@@ -25,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Correlation and causation
 
-![](spurious_corr.jpeg)  
+![](spurious_corr.jpg){ width=10% }
 
 ## Correlation and causation
 - People who go to college and those who don't are likely to differ in substantial ways that can influence their decision to attend college **and** their future earnings
@@ -42,6 +43,37 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Caveat about tools
 - These tools are used in a substantial portion, but not all, of economics research
 
-## 
+## Regression
+- Statistical technique to "control for" things we can observe
+- Toy regression: 
+$$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$ 
+- In words: for two persons with the same family income, what is the return to attending college?
+
+## Regression
+- Not enough on its own
+- There are always things we cannot observe
+
+## The Gold Standard: Randomization
+- Commonly used terms: randomized control trials or RCTs, field experiments, lab experiments
+- 
+
+## Difference-in-differences
+```{r, echo = FALSE}
+dd = data_frame(
+  effect = c("+ Effect", "+ Effect", "No Effect", "No Effect", "No Effect", "No Effect"), 
+  treated = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE), 
+  y = c(2, 5, 2, 4, 0, 2), 
+  x = c(0, 1, 0, 1, 0, 1))
+
+ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() + 
+  scale_linetype_discrete(guide = FALSE) + 
+  econothemes::theme_nber()
+```
+
+
+
+
+
+
 
 
