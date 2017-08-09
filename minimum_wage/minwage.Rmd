@@ -1,0 +1,61 @@
+---
+title: "Minimum Wage Teaching Notes"
+author: "Tham, Wei Yang"
+date: "7/13/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "..")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Facts about the minimum wage
+```{r fed_minwage, echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(lubridate)
+library(magrittr)
+fed_minwage = read_csv("minimum_wage/fed_minwage.csv")
+cpi = read_csv("minimum_wage/cpi.csv")
+
+minwage = inner_join(fed_minwage, cpi, by = "DATE") %>% 
+  mutate(year = year(DATE)) %>% 
+  rename(wage = FEDMINNFRWG, cpi2010 = CPALTT01USA661S)
+
+minwage %<>% mutate(wage_real = wage/cpi2010)
+
+minwage %>% gather(k, minwage, wage, wage_real) %>% 
+  ggplot(aes(year, minwage, colour = k)) + 
+  geom_line() + 
+  labs(title = "in $2010")
+
+```
+
+- Federal minimum wage is $7.25 (since 2009)
+
+## What does economic theory predict about raising about the minimum wage?
+- Classical supply and demand predicts a disemployment effect (draw graph)
+- (Dynamic) monopsony is consistent with no disemployment effect (draw graph)
+
+## Empirical evidence
+- Theory can only get us so far. What can we learn from actual changes in the minimum wage?
+- (show meta-analysis graph)
+
+## Card and Krueger
+- asdf
+
+## Explaining zero effect
+- asdf
+
+## What empirical research can and cannot tell us
+- changing market conditions, institutions over time
+- "local" changes in minimum wage
+
+## More recent evidence 
+- Jeff Clemens Great Recession paper
+- Seattle 
+
+
+
+ 
+
