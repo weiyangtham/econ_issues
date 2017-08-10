@@ -6,14 +6,14 @@ output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE, message = FALSE, warning=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
 ## Overview
 
 - Over the semester, we will often ask: What is the effect of X on Y?
-- Goal of this class: learn how to evaluate economic research even when you are not an expert
+- Goal of this lecture: learn how to evaluate economic research even when you are not an expert
 
 ## Reading
 
@@ -25,8 +25,13 @@ library(tidyverse)
 - What is the problem with this?
 
 ## Correlation and causation
+```{r, out.width="800px", out.height="400px", fig.align='center'}
+knitr::include_graphics("spurious_corr.png")
+```
 
-![](spurious_corr.jpg){ width=10% }
+<!--
+![](spurious_corr.png){ width=70% }
+-->
 
 ## Correlation and causation
 - People who go to college and those who don't are likely to differ in substantial ways that can influence their decision to attend college **and** their future earnings
@@ -57,6 +62,17 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
 - Commonly used terms: randomized control trials or RCTs, field experiments, lab experiments
 - 
 
+## Can't always run experiments
+- Expensive
+- Unethical (e.g. effect of lead poisoning)
+
+## The next best thing: natural experiments
+- Also described as "quasi-random" assignment
+- Three main tools for studying natural experiments
+    - Difference-in-differences
+    - Instrumental Variables
+    - Regression Discontinuity
+
 ## Difference-in-differences
 ```{r, echo = FALSE}
 dd = data_frame(
@@ -70,6 +86,12 @@ ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() +
   econothemes::theme_nber()
 ```
 
+## Instrumental Variables
+- Idea: find something that affects college attendance but NOT earnings
+
+## Regression Discontinuity
+- Compare people who are on either side of an arbitrary cutoff 
+- Example: if the cutoff to get a scholarship is an SAT score of 1400, we can estimate the effect of getting a scholarship by comparing someone who got 1399 and someone who got 1401.  
 
 
 
