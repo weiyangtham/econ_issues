@@ -42,8 +42,8 @@ knitr::include_graphics("https://imgs.xkcd.com/comics/cell_phones.png")
 - Discussion: Suppose we found that students who bring their laptops to class have higher/lower grades than students who do not. What would be the problem with using this result to claim that laptops help/hurt learning?
 
 ## Dealing with bias
-- There are confounders/unobservables that we may not be able to observe in the data
-- Confounding can lead us to overstate the effect of laptops on learning (bias)
+- Confounders/unobservables are variables that we may not be able to observe in the data
+- Confounding can lead us to overstate the effect of laptops on learning if they are correlated with both laptop use **and** learning (bias)
 - The empirical economist's job is to (try to) eliminate this bias
 
 ## Tools of the trade
@@ -89,7 +89,12 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
     - Regression Discontinuity
     
 ## Instrumental Variables
-- Idea: find something that affects college attendance but NOT earnings
+- Sometimes known as "instruments"
+- Remember that confounders are a problem because they may be related to both laptop use **and** grades
+- An instrumental variable affects laptop use but not grades
+
+## Example of instrumental variable
+
 
 ## Difference-in-differences
 ```{r, echo = FALSE}
