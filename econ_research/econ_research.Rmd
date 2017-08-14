@@ -61,23 +61,35 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
 - In words: for two persons with the same family income, what is the return to attending college?
 
 ## Regression
-- Not enough on its own
-- There are always things we cannot observe
+- Not enough on its own; there are always things we cannot observe
 
 ## Randomization: The "gold standard"
+- Ensure that on average, laptop and "no laptop" students are the same
 - Common terms: randomized control trials or RCTs, field experiments, lab experiments
-- 
+
+## Example: lab experiment
+- Lab experiment: Researchers had students watch a lecture and randomly assigned them to to take notes with either a laptop or pen and paper. They found that students who used laptops performed worse
+
+# Example: field experiment
+- Researchers randomly assigned sections of a class to one of three conditions:
+    1. electronics allowed
+    2. electronics banned, and 
+    3. tablet computers allowed, but only if laid flat on desks
+- Students did worse if laptops/tablets were allowed
 
 ## Can't always run experiments
 - Expensive
 - Unethical (e.g. effect of lead poisoning)
 
 ## The next best thing: natural experiments
-- Also described as "quasi-random" assignment
+- Other terms: quasi-random assignment, quasi-experiments
 - Three main tools for studying natural experiments
-    - Difference-in-differences
     - Instrumental Variables
+    - Difference-in-differences
     - Regression Discontinuity
+    
+## Instrumental Variables
+- Idea: find something that affects college attendance but NOT earnings
 
 ## Difference-in-differences
 ```{r, echo = FALSE}
@@ -91,9 +103,6 @@ ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() +
   scale_linetype_discrete(guide = FALSE) + 
   econothemes::theme_nber()
 ```
-
-## Instrumental Variables
-- Idea: find something that affects college attendance but NOT earnings
 
 ## Regression Discontinuity
 - Compare people who are on either side of an arbitrary cutoff 
