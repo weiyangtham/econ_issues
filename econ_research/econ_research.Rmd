@@ -10,32 +10,40 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
-## Overview
-
-- Over the semester, we will often ask: What is the effect of X on Y?
-- Goal of this lecture: learn how to evaluate economic research even when you are not an expert
-
 ## Reading
 
-- Smith suggests three strategies for evaluating evidence from economics research. What are they?
+- Noah Smith suggests three strategies for evaluating evidence from economics research. What are they?
 
+<div class="notes">
+- Don't rely on a single paper
+- Look at the methods of the paper; are the assumptions realistic?
+- Meta-analyses
+
+</div>
+
+## Today's lecture
+
+- Over the semester, we will often ask: What is the effect of X on Y?
+- Goal of this lecture: learn how to evaluate economic research even when you are not an expert (Smith's second point)
+
+<!--
 ## Example: effect of college education on earnings
 - Does going to college lead to higher earnings?
 - We can compare the average earnings of people who go to college with those who do not
 - What is the problem with this?
-
-## Correlation and causation
-```{r, out.width="800px", out.height="400px", fig.align='center'}
-knitr::include_graphics("spurious_corr.png")
-```
-
-<!--
-![](spurious_corr.png){ width=70% }
 -->
 
-## Correlation and causation
-- People who go to college and those who don't are likely to differ in substantial ways that can influence their decision to attend college **and** their future earnings
-- If not accounted for, these differences can bias our results
+## "Cancer causes cell phones"
+```{r, fig.align='center'}
+knitr::include_graphics("https://imgs.xkcd.com/comics/cell_phones.png")
+```
+
+## Do laptops help or hurt learning in the classroom?
+- Discussion: Suppose we found that students who bring their laptops to class have higher/lower grades than students who do not. What would be the problem with using this result to claim that laptops help/hurt learning?
+
+## Dealing with bias
+- There are confounders/unobservables that we may not be able to observe in the data
+- Confounding can lead us to overstate the effect of laptops on learning (bias)
 - The empirical economist's job is to (try to) eliminate this bias
 
 ## Tools of the trade
@@ -45,11 +53,9 @@ knitr::include_graphics("spurious_corr.png")
 - Difference-in-differences
 - Regression Discontinuity
 
-## Caveat about tools
-- These tools are used in a substantial portion, but not all, of economics research
-
 ## Regression
-- Statistical technique to "control for" things we can observe
+- Statistical technique to "hold constant" things we can observe
+- Statistical version of **ceteris paribus**
 - Toy regression: 
 $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$ 
 - In words: for two persons with the same family income, what is the return to attending college?
@@ -58,8 +64,8 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
 - Not enough on its own
 - There are always things we cannot observe
 
-## The Gold Standard: Randomization
-- Commonly used terms: randomized control trials or RCTs, field experiments, lab experiments
+## Randomization: The "gold standard"
+- Common terms: randomized control trials or RCTs, field experiments, lab experiments
 - 
 
 ## Can't always run experiments
