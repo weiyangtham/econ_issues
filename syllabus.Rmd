@@ -1,32 +1,62 @@
 ---
-title: "Econ 2367.02: Current Economic Issues in the United States"
-author: "Instructor: Wei Yang Tham"
+title: 'Econ 2367.02: Current Economic Issues in the United States'
+subtitle: "WeFr 3:55PM - 5:15PM"
+author: 'Instructor: Wei Yang Tham'
 date: "May 14, 2017"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Email: tham.5@osu.edu
+Email: tham.5\@osu.edu
 
 Office: Arps 369
 
-Office hours: Christmas 6am-7am
+Office hours: Tuesday 2-3pm; Wednesday 2:30-3:30pm
 
-## Course Objectives
+# Course Overview
 
-1. Learn about important economic issues. We will discuss the minimum wage, immigration, healthcare?, urban economics?, economics of innovation
-2. Learn how to find and evaluate evidence about economic policy
-3. Develop writing skills 
+This is a topics class covering various economic issues and their impact on the economy and citizens of the United States. The aim of the course is to help you understand how to analyze policy issues using economic ways of thinking. You will also be developing your writing and critical thinking skills and learning how to formulate evidence based arguments. 
 
-## Assignments
+**There is no textbook for this class.**
 
-- blog?
-- X essays
+## Course objectives
 
-## Schedule 
+#### GE –Social Science Organizations and Polities 
+Students understand the systematic study of human behavior and cognition; the structure of human societies, cultures, and institutions; and the processes by which individuals, groups, and societies interact, communicate, and use human, natural, and economic resources. 
+
+#### GE – Writing and Communication Level 2 
+
+Students are skilled in written communication and expression, reading, critical thinking, oral expression, and visual expression.
+
+# Grading
+
+Assignment | Weight
+---------- | ------
+Quizzes    | 10%
+Short essays | 20%
+Research papers | 40%
+Presentation | 20%
+Participation | 10% 
+
+### Quizzes
+Six times during the semester I will administer an in class quiz over the assigned readings that day. They are designed to incentivize reading, so they will be unannounced.  I will drop your lowest quiz grade.  Each quiz will be administered at the start of class.  Because I drop the lowest quiz, no make-ups will be administered.
+
+### Short essays
+Twice during the semester you will submit a 1 page (not including works cited) analytical essay of an issue discussed (or to be discussed) in class. The topic can NOT relate to your midterm or final paper, and must cite at least two papers/articles not discussed in class. 
+
+### Research papers
+You will be submitting more detailed research papers between 3 and 4 pages in length NOT INCLUDING WORKS CITED.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others
+
+### Presentation
+You will be presenting the findings from your final paper to the class. Presentations will last 10-15 minutes and you MUST respond to audience questions/criticisms. You will be allowed to bring up notes to reference in response to questions, but the main body of the presentation must be done without notes. You must also have slides for the presentation. 
+
+### Extra credit
+
 
 ### Review of principles of economics
 
@@ -52,8 +82,10 @@ Office hours: Christmas 6am-7am
 
 ### Innovation
 
-- 
+## Course schedule
+This is the planned order of topics. I may adjust the time devoted to each topic or the order of topics according to the needs and interests of the class. Changes will be announced in class. 
 
+**Insert course schedule here**
 
 
 
