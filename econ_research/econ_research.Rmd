@@ -53,6 +53,8 @@ knitr::include_graphics("https://imgs.xkcd.com/comics/cell_phones.png")
 - Difference-in-differences
 - Regression Discontinuity
 
+We will focus on the **intuition** of these methods
+
 ## Regression
 - Statistical technique to "hold constant" things we can observe
 - Statistical version of **ceteris paribus**
@@ -70,7 +72,9 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
 ## Example: lab experiment
 - Lab experiment: Researchers had students watch a lecture and randomly assigned them to to take notes with either a laptop or pen and paper. They found that students who used laptops performed worse
 
-# Example: field experiment
+# hmmmm
+
+## Example: field experiment
 - Researchers randomly assigned sections of a class to one of three conditions:
     1. electronics allowed
     2. electronics banned, and 
@@ -121,7 +125,7 @@ dd = data_frame(
 ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() + 
   scale_linetype_discrete(guide = FALSE) + scale_color_discrete(guide = FALSE) +
   scale_x_continuous(breaks = c(0, 1), labels = c("Before", "After")) +
-  econothemes::theme_nber() +
+  econothemes::theme_nber(base_size = 18) +
   annotate("text", x = 0.75, y = 5, label = "Laptop ban effective") + 
   annotate("text", x = 0.80, y = 3, label = "Laptop ban \n NOT effective") + 
   annotate("text", x = 0.80, y = 1, label = "Laptops optional")
@@ -130,7 +134,13 @@ ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() +
 
 ## Regression Discontinuity
 - Compare people who are on either side of an arbitrary cutoff 
-- Example: if the cutoff to get a scholarship is an SAT score of 1400, we can estimate the effect of getting a scholarship by comparing someone who got 1399 and someone who got 1401.  
+- Example: If the cutoff to get a scholarship is an SAT score of 1400, we can estimate the effect of getting a scholarship by comparing someone who got 1399 and someone who got 1401.  
+
+## Fuzzy RD
+- A school implements a policy that only students with a 3.5 GPA or higher **can** bring their laptop to class
+- "Fuzzy" because students who can bring a laptop may not take it
+
+## 
 
 
 
