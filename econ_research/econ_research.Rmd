@@ -91,22 +91,41 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
 ## Instrumental Variables
 - Sometimes known as "instruments"
 - Remember that confounders are a problem because they may be related to both laptop use **and** grades
-- An instrumental variable affects laptop use but not grades
+- An instrumental variable affects laptop use (the variable whose effect we're interested in) but not grades (the variable whose outcome we're interested in)
 
-## Example of instrumental variable
+<div class="notes">
+draw graphic to illustrate IV chain of effects
+</div>
 
+## Instrument for laptop use
+- Students in a class with a laptop-required policy are more likely to bring their laptop to a laptop-optional class on the same day
+- Assumption: being in a laptop-required class is unrelated to grades
+- Result: laptop use hurts grades
 
 ## Difference-in-differences
-```{r, echo = FALSE}
+- Compare two groups that are not identical, but whose differences are FIXED over time
+- Often used to estimate effects of a policy if it was implemented in one U.S. state but not another
+
+## Example (this is made up!):
+- Laptops are banned in the Econ 2001 session that runs on MoWeFr, and allowed in the Econ 2001 session that runs on TuTh
+- Imagine that grades between MWF and TTh are systematically different for some reason, say, the TTh instructor is consistently stricter 
+
+## Visualizing Difference-in-differences
+```{r, echo = FALSE, fig.align='center'}
 dd = data_frame(
   effect = c("+ Effect", "+ Effect", "No Effect", "No Effect", "No Effect", "No Effect"), 
   treated = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE), 
   y = c(2, 5, 2, 4, 0, 2), 
-  x = c(0, 1, 0, 1, 0, 1))
+  x = rep(c(0, 1), 3))
 
 ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() + 
-  scale_linetype_discrete(guide = FALSE) + 
-  econothemes::theme_nber()
+  scale_linetype_discrete(guide = FALSE) + scale_color_discrete(guide = FALSE) +
+  scale_x_continuous(breaks = c(0, 1), labels = c("Before", "After")) +
+  econothemes::theme_nber() +
+  annotate("text", x = 0.75, y = 5, label = "Laptop ban effective") + 
+  annotate("text", x = 0.80, y = 3, label = "Laptop ban \n NOT effective") + 
+  annotate("text", x = 0.80, y = 1, label = "Laptops optional")
+  
 ```
 
 ## Regression Discontinuity
