@@ -23,8 +23,8 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("state_minwage.png")
 ```
 
-## Real of minimum wage has been flat 
-```{r fed_minwage, echo = FALSE, message = FALSE, warning = FALSE}
+## Real value of minimum wage has been flat 
+```{r fed_minwage, echo = FALSE, message = FALSE, warning = FALSE, fig.align ='center'}
 library(tidyverse)
 library(lubridate)
 library(magrittr)
@@ -41,41 +41,56 @@ minwage %<>% mutate(wage_real = wage/cpi2010)
 minwage %>% gather(k, minwage, wage, wage_real) %>% 
   ggplot(aes(year, minwage, colour = k)) + 
   geom_line() + 
-  labs(title = "in $2010")
+  scale_colour_discrete(guide = FALSE) + 
+  annotate("text", x = 1987, y = 8.75, label = "Real Min Wage", size = 5) + 
+  annotate("text", x = 1999, y = 3.75, label = "Nominal Min Wage", size = 5) + 
+  theme_minimal(base_size = 18) + 
+  labs(title = "In 2010 Dollars")
 
 ```
 
 ## Economic theory and the minimum wage
-- What does classical supply and demand predict will be the effect of introducing a minimum wage in an economy that does not have a minimum wage?
-
-## Economic theory and the minimum wage
-What does standard supply and demand predict will be the effect of introducing a minimum wage in an economy that does not have a minimum wage?
+What does classical supply and demand predict will be the effect of introducing a minimum wage in an economy that does not have a minimum wage?
 
 - Standard supply and demand predicts that fewer workers will be employed after instituting a minimum wage
 
-## Experimental design
-- What would your ideal minimum wage experiment look like?
+<div class="notes">
+Draw graph 
+</div>
 
 ## Card and Krueger
 - In 1992, New Jersey raised its minimum wage from \$4.25 to \$5.05 per hour
 - Surveyed fast food restaurants in New Jersey and Eastern Pennsylvania before and after the minimum wage increase
-- No evidence of decrease in employment
+
+## Question
+- What was the research design of Card and Krueger? That is, did they use instrumental variables, regression discontinuity, or difference-in-differences?
+
+## Main result
+- No evidence of decrease in employment; in fact Card and Krueger find an increase in employment at restaurants affected by the minimum wage
 
 ## Evidence since Card and Krueger
 - Card and Krueger was a landmark paper, but it is only one result
-- Many studies since have concluded that the minimum wage has no effect, or a small effect that is too difficult to detect
 
 ## Other studies on the minimum wage
 ```{r, out.width="700px", fig.align='center'}
 knitr::include_graphics("meta_graph.png")
 ```
 
-## 
+## Explaining the zero effect on employment
+- Monopsony model
+- Channels of adjustment (Competitive model)
+- Institutional model
+
+## Monopsony
+- Monopsony model differs from classical model by allowing for "frictions"
+- Examples: searching for a job takes effort
+
+## Is the minimum wage good or bad?
 
 
-## More recent evidence 
-- Jeff Clemens Great Recession paper
-- Seattle 
+## Early evidence from Seattle
+- Seattle raised minimum wage from \$9.47 to \$11 per hour in 2015, and to \$13 per hour in 2016. 
+
 
 
 
