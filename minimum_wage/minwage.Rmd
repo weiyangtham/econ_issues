@@ -92,10 +92,12 @@ knitr::include_graphics("meta_graph.png")
 - Examples: Reduce health insurance, training, increase prices
 
 ## Institutional model
+- Firms adopt (costly) practices to increase productivity 
+- Efficiency wages - workers increase productivity in response to higher wages
+- Higher minimum wage increases purchasing power of low-wage workers, offsetting the increase in labor costs
 
-
-## Is the minimum wage good or bad?
-
+## Does zero employment effect mean we should implement minimum wage?
+- essay?
 
 ## Early evidence from Seattle
 - Seattle raised minimum wage from \$9.47 to \$11 per hour in 2015, and to \$13 per hour in 2016. 
