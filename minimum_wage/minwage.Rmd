@@ -82,8 +82,17 @@ knitr::include_graphics("meta_graph.png")
 - Institutional model
 
 ## Monopsony
-- Monopsony model differs from classical model by allowing for "frictions"
-- Examples: searching for a job takes effort
+- Monopsony model differs from classical model by allowing for "frictions" - it takes time, effort, resources for workers to find jobs, and for firms to fill vacancies
+- This results in firms being price-setters, not price-takers 
+- Firms have some market power and are able to pay workers below their marginal product
+
+## Competitive Model - Alternative channels of adjustment 
+- Classical model generally implies firms will reduce employment
+- Instead of reducing employment, firms could respond to minimum wage in other ways
+- Examples: Reduce health insurance, training, increase prices
+
+## Institutional model
+
 
 ## Is the minimum wage good or bad?
 
