@@ -6,10 +6,22 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Facts about US immigration
+# Facts about US immigration
+
+## Immigrants as Share of Total U.S. Population
+```{r}
+library(tidyverse)
+us_immig = read_csv("immigration/us_immigration_1850_2015.csv")
+
+ggplot(us_immig, aes(year, pct_immigrants)) + 
+  geom_line() + 
+  theme_minimal()
+
+```
+  
 
 ## Questions of interest
 - Is immigration beneficial to immigrants?
