@@ -50,6 +50,21 @@ knitr::include_graphics("birth_region.png")
 
 ## Research design
 - Card selects Atlanta, Houston, Los Angeles, and Tampa-St. Petersburg as control cities
+- His "algorithm" for selecting those cities: they had relatively large black and hispanic populations, and showed similar economic growth to Miami over late 70s and early 80s.  
+
+## Results
+- Card finds no evidence that the influx of Cuban immigrants had a negative effect on Miami workers
+
+## Challenges to Mariel Boatlift result
+- "Mariel Boatlift that did not happen" (Angrist and Krueger 1999)
+- "The Wage Impact of the Marielitos: A Reappraisal" Borjas 2015
+
+## Mariel Boatlift that did not happen
+- In the summer of 1994, a similar boatlift was due to happen but for an intervention by the Clinton administration that diverted the "immigrants" to Guantanamo Bay
+- Angrist and Krueger do a similar analysis and find that the "boat lift" raised the black unemployment rate in Miami
+
+## Reappraisal 
+- 
 
 ## Open Borders
 - John Kennan on doubling GDP
