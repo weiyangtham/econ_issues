@@ -31,9 +31,12 @@ knitr::include_graphics("birth_region.png")
 ## US immigrants by education
 - asdf
 
+<!--
 ## Country of origin
 
-<iframe id="pew22976" src="http://www.pewhispanic.org/interactives/largest-immigrant-population/iframe/" height="300" width="100%" scrolling="yes" frameborder="0"></iframe><script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewhispanic.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew22976')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
+
+<iframe id="pew22976" src="http://www.pewhispanic.org/interactives/largest-immigrant-population/iframe/" height="300" width="100%" scrolling="no" frameborder="0"></iframe><script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewhispanic.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew22976')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
+-->
 
 ## Questions of interest
 - Is immigration beneficial to immigrants?
@@ -79,7 +82,25 @@ knitr::include_graphics("borjas_card_samplesize.png")
 - Next paper by Clemens, Lewis, Postel goes into how firms respond when immigration policy is more restrictive
 
 ## Bracero exclusion: context
-- From 1942 to 1964, 
+- From 1942 to 1964, bilateral agreements facilitated the flow of temporary low-skill labor from Mexico to the U.S.
+- Post-WW 2, the program became almost entirely focused on agriculture and supplied half a million seasonal workers to U.S. farms each year 
+- The **bracero** program ended effective 1965, based on the argument that it hurt native workers economically
+
+## Research design
+- Compare states more dependent on **braceros** to states less dependent on **braceros**
+
+## No improvement in wages
+```{r, fig.align='center', out.height="500px"}
+knitr::include_graphics("braceros_did.png")
+```
+
+## Farms increased mechanization
+- One possible explanation is that farms adopted mechanization if the technology was available
+```{r, fig.align='center', out.height="500px"}
+knitr::include_graphics("bracero_mechanization.png")
+```
+
+
 
 ## Open Borders
 - John Kennan on doubling GDP
