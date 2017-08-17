@@ -1,0 +1,55 @@
+---
+title: "immigration"
+author: "Tham, Wei Yang"
+date: "7/14/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "..")
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+# Facts about US immigration
+
+## Immigrants as Share of Total U.S. Population
+```{r, fig.align='center'}
+library(tidyverse)
+us_immig = read_csv("immigration/us_immigration_1850_2015.csv")
+
+ggplot(us_immig, aes(year, pct_immigrants)) + 
+  geom_line() + 
+  theme_minimal(base_size = 18)
+
+```
+  
+## US immigrants by region of birth
+```{r, out.width="800px", out.height="500px", fig.align='center'}
+knitr::include_graphics("birth_region.png")
+```
+
+## US immigrants by education
+- asdf
+
+## Country of origin
+
+<iframe id="pew22976" src="http://www.pewhispanic.org/interactives/largest-immigrant-population/iframe/" height="300" width="100%" scrolling="yes" frameborder="0"></iframe><script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewhispanic.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew22976')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
+
+## Questions of interest
+- Is immigration beneficial to immigrants?
+- Is immigration harmful to natives? We will focus mainly on this
+
+## What does economic theory predict?
+- Depends on whether immigrant labor is substitute or complement to native labor
+- Will also depend on general equilibrium effects e.g. immigrants will also generate more demand for goods and services
+
+## Mariel Boatlift (Card)
+- Context: In 1980, the Cuban economy was in recession and many Cubans began to agitating to leave the country. Previously it was very difficult to leave the country
+- In April 1980, Fidel Castro opened the port of Mariel, so that anyone who wanted to leave could do so. 
+- From May to September 1980, 125 000 Cubans departed for Miami, FL, from Mariel. This led to a 7% increase in Miami's labor supply
+
+## Research design
+- Card selects Atlanta, Houston, Los Angeles, and Tampa-St. Petersburg as control cities
+
+## Open Borders
+- John Kennan on doubling GDP
