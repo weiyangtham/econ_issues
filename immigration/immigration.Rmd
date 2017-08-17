@@ -69,10 +69,17 @@ knitr::include_graphics("birth_region.png")
 - Example: Card includes female workers, but Borjas does not
 - Borjas contention is that female participation in the labor force was changing rapidly **and** differently across cities
 
-## Borjas Reappraisal: Sample size problem
+## Borjas Reappraisal: Sample size very small
 ```{r, fig.align='center', out.width="500px"}
 knitr::include_graphics("borjas_card_samplesize.png")
 ```
+
+## What Card doesn't tell us
+- Suppose Card's result from the Mariel boatlift paper is reliable. It doesn't really tell us why natives' labor market outcomes were not hurt
+- Next paper by Clemens, Lewis, Postel goes into how firms respond when immigration policy is more restrictive
+
+## Bracero exclusion: context
+- From 1942 to 1964, 
 
 ## Open Borders
 - John Kennan on doubling GDP
