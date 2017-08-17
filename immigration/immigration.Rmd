@@ -62,9 +62,17 @@ knitr::include_graphics("birth_region.png")
 ## Mariel Boatlift that did not happen
 - In the summer of 1994, a similar boatlift was due to happen but for an intervention by the Clinton administration that diverted the "immigrants" to Guantanamo Bay
 - Angrist and Krueger do a similar analysis and find that the "boat lift" raised the black unemployment rate in Miami
+- Lesson: natural experiments can be imperfect
 
-## Reappraisal 
-- 
+## Borjas Reappraisal 
+- Main (but not only!) contention centers around the question: Who are the Miami workers most likely to be affected by the influx of immigrants? I.e. what is the treatment group?
+- Example: Card includes female workers, but Borjas does not
+- Borjas contention is that female participation in the labor force was changing rapidly **and** differently across cities
+
+## Borjas Reappraisal: Sample size problem
+```{r, fig.align='center', out.width="500px"}
+knitr::include_graphics("borjas_card_samplesize.png")
+```
 
 ## Open Borders
 - John Kennan on doubling GDP
