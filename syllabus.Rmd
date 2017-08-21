@@ -2,7 +2,7 @@
 title: 'Econ 2367.02: Current Economic Issues in the United States'
 subtitle: "WeFr 3:55PM - 5:15PM"
 author: 'Instructor: Wei Yang Tham'
-date: "August 20, 2017"
+date: "Fall 2017"
 output:
   pdf_document: default
   html_document: default
@@ -22,16 +22,27 @@ Office hours: Tuesday 2-3pm; Wednesday 2:30-3:30pm
 
 This is a topics class covering various economic issues and their impact on the economy and citizens of the United States. The aim of the course is to help you understand how to analyze policy issues using economic ways of thinking. You will also be developing your writing and critical thinking skills and learning how to formulate evidence based arguments. 
 
-**There is no textbook for this class.**
+There is no textbook for this class. 
 
 # Course objectives
 
 ## GE – Social Science Organizations and Polities 
+
 Students understand the systematic study of human behavior and cognition; the structure of human societies, cultures, and institutions; and the processes by which individuals, groups, and societies interact, communicate, and use human, natural, and economic resources. 
+
+1. Students understand the theories and methods of social scientific inquiry as they apply to the study of organizations and polities. 
+
+2. Students understand the formation and durability of political, economic, and social organizing principles and their differences and similarities across contexts. 
+
+3.Students comprehend and assess the nature and values of organizations and polities and their importance in social problem solving and policy making.  
 
 ## GE – Writing and Communication Level 2 
 
 Students are skilled in written communication and expression, reading, critical thinking, oral expression, and visual expression.
+
+1. Through critical analysis, discussion, and writing, students demonstrate the ability to read carefully and express ideas effectively. 
+
+2.Students apply written, oral, and visual communication skills and conventions of academic discourse to the challenges of a specific discipline
 
 # Grading
 
@@ -47,10 +58,10 @@ Participation | 10%
 Six times during the semester I will administer an in class quiz over the assigned readings that day. They are designed to incentivize reading, so they will be unannounced.  I will drop your lowest quiz grade.  Each quiz will be administered at the start of class.  Because I drop the lowest quiz, no make-ups will be administered.
 
 ### Short essays
-Twice during the semester you will submit a 1 page *(not including works cited)* analytical essay of an issue discussed (or to be discussed) in class. The topic can NOT relate to your midterm or final paper, and must cite at least two papers/articles not discussed in class. 
+Twice during the semester you will submit a 1 page **(not including works cited)** analytical essay of an issue discussed (or to be discussed) in class. The topic can NOT relate to your midterm or final paper, and must cite at least two papers/articles not discussed in class. 
 
 ### Research papers
-You will be submitting more detailed research papers between 3 and 4 pages in length *not including works cited*.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others.    
+You will be submitting more detailed research papers between 3 and 4 pages in length **not including works cited**.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others.    
 
 #### Paper Formatting 
 All papers should be 1.5 spacing with 11 point Times New Roman font and 1-inch margins. Please include your name, paper title, and due date on a title page. All citations should follow Chicago author-date formatting rules (excluding the abstract), and an appropriate works cited page should ALWAYS be attached. You are, of course, encouraged to include any graphs or figures in your paper which you believe are helpful, but they do not count towards a page count, so please attach them at the end of the paper. Failure to follow these formatting instructions will result in the loss of 5 percent of the possible points for the assignment.
@@ -63,9 +74,11 @@ I do not accept late work. If you have a valid reason for needing an extension o
 
 ### Final Grades
 
+I round up fractional points *after* your final grade has been tallied i.e. a final score of 92.01 will get an A.
+
 Letter Grade | Score
 -------------| -----
-A | 93-100
+A | 93
 A-|90
 B+|87
 B|83
@@ -86,6 +99,25 @@ sched = read_csv("econ2367_schedule.csv") %>% select(Week, Date, Topics, Assignm
 sched %<>% replace_na(list(Assignments = ""))
 knitr::kable(sched)
 ```
+
+# Resources
+
+## Economics Learning Center
+The Department of Economics runs the Economics Learning Center (ELC), where advanced undergraduates provide free tutoring for students in Economics 2001, 2002, 4001, and 4002. Assistance with other 3000-level and 4000-level classes is frequently available. The ELC is located in 311 Arps Hall (1945 North High Street) and is typically open from 9AM-5PM Monday-Thursday and 9AM-3PM on Fridays, opening each semester on the second (full) week of the term. Note that the purpose of the tutoring center is not to provide answers to assignments, but to help students learn economics. As the student, you are ultimately responsible for all course work you submit. 
+
+## Ohio State writing center
+
+> The Writing Center offers free help with writing at any stage of the writing process for any member of the university community. During our sessions, consultants can work with you on anything from research papers to lab reports, from dissertations to résumés, from proposals to application materials. Appointments are available in-person at 4120 Smith Lab, as well as for online sessions. You may schedule an in-person or online appointment by visiting WCOnline or by calling 614-688-4291. Please note that the Writing Center also offers daily walk-in hours—no appointment necessary—in Thompson Library. You do not have to bring in a piece of writing in order to schedule a writing center appointment. Many students report that some of their most productive sessions entail simply talking through ideas.   Please check out our Services [(https://cstw.osu.edu/writing-center/writing-center-services)](https://cstw.osu.edu/writing-center/writing-center-services)  page for the types of consultations we provide. We also maintain a Writing Resources [(https://cstw.osu.edu/writing-resources)]() page with writing handouts and links to online resources.
+
+# Academic Misconduct
+
+Academic integrity is essential to maintaining an environment that fosters excellence in teaching, research, and other educational and scholarly activities. Thus, The Ohio State University and the Committee on Academic Misconduct (COAM) expect that all students have read and understand the University’s Code of Student Conduct, and that all students will complete all academic and scholarly assignments with fairness and honesty. Students must recognize that failure to follow the rules and guidelines established in the University’s Code of Student Conduct and this syllabus may constitute "Academic Misconduct."
+
+The Ohio State University’s Code of Student Conduct (Section 3335-23-04) defines academic misconduct as: "Any activity that tends to compromise the academic integrity of the University, or subvert the educational process." Examples of academic misconduct include (but are not limited to) plagiarism, collusion (unauthorized collaboration), copying the work of another student, and possession of unauthorized materials during an examination. Ignorance of the University’s Code of Student Conduct is never considered an "excuse" for academic misconduct, so I recommend that you review the Code of Student Conduct and, specifically, the sections dealing with academic misconduct.
+
+If I suspect that a student has committed academic misconduct in this course, I am obligated by University Rules to report my suspicions to the Committee on Academic Misconduct. If COAM determines that you have violated the University’s Code of Student Conduct (i.e., committed academic misconduct), the sanctions for the misconduct could include a failing grade in this course and suspension or dismissal from the University.
+
+If you have any questions about the above policy or what constitutes academic misconduct in this course, please contact me.
 
 # Student Life Disability Services
 
