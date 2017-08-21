@@ -2,14 +2,14 @@
 title: 'Econ 2367.02: Current Economic Issues in the United States'
 subtitle: "WeFr 3:55PM - 5:15PM"
 author: 'Instructor: Wei Yang Tham'
-date: "May 14, 2017"
+date: "August 20, 2017"
 output:
   pdf_document: default
   html_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 Email: tham.5\@osu.edu
@@ -24,12 +24,12 @@ This is a topics class covering various economic issues and their impact on the 
 
 **There is no textbook for this class.**
 
-## Course objectives
+# Course objectives
 
-#### GE –Social Science Organizations and Polities 
+## GE – Social Science Organizations and Polities 
 Students understand the systematic study of human behavior and cognition; the structure of human societies, cultures, and institutions; and the processes by which individuals, groups, and societies interact, communicate, and use human, natural, and economic resources. 
 
-#### GE – Writing and Communication Level 2 
+## GE – Writing and Communication Level 2 
 
 Students are skilled in written communication and expression, reading, critical thinking, oral expression, and visual expression.
 
@@ -50,43 +50,46 @@ Six times during the semester I will administer an in class quiz over the assign
 Twice during the semester you will submit a 1 page *(not including works cited)* analytical essay of an issue discussed (or to be discussed) in class. The topic can NOT relate to your midterm or final paper, and must cite at least two papers/articles not discussed in class. 
 
 ### Research papers
-You will be submitting more detailed research papers between 3 and 4 pages in length *not including works cited*.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others
+You will be submitting more detailed research papers between 3 and 4 pages in length *not including works cited*.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others.    
+
+#### Paper Formatting 
+All papers should be 1.5 spacing with 11 point Times New Roman font and 1-inch margins. Please include your name, paper title, and due date on a title page. All citations should follow Chicago author-date formatting rules (excluding the abstract), and an appropriate works cited page should ALWAYS be attached. You are, of course, encouraged to include any graphs or figures in your paper which you believe are helpful, but they do not count towards a page count, so please attach them at the end of the paper. Failure to follow these formatting instructions will result in the loss of 5 percent of the possible points for the assignment.
 
 ### Presentation
 You will be presenting the findings from your final paper to the class. Presentations will last 10-15 minutes and you MUST respond to audience questions/criticisms. You will be allowed to bring up notes to reference in response to questions, but the main body of the presentation must be done without notes. You must also have slides for the presentation. 
 
-### Extra credit
-Extra credit for turning in drafts???
+### Late Policy 
+I do not accept late work. If you have a valid reason for needing an extension on an assignment please contact me in advance. Extenuating circumstances will be dealt with on a case-by-case basis.
 
-### Review of principles of economics
+### Final Grades
 
-- No reading
+Letter Grade | Score
+-------------| -----
+A | 93-100
+A-|90
+B+|87
+B|83
+B-|80
+C+|77
+C|73
+C-|70
+D+|67
+D|60
 
-### Causality, evaluating research
-
-- [How to Give a Cool Appraisal to Hot Economics Studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
-- [Science isn't Broken](https://fivethirtyeight.com/features/science-isnt-broken)
-
-### Minimum wage
-
-- [Schmitt](http://cepr.net/documents/publications/min-wage-2013-02.pdf)
-- [Brown, Gilroy, Kohen](https://web.stanford.edu/class/econ101c/class2.pdf)
-- [Jeff Clemens](http://econweb.ucsd.edu/~j1clemens/pdfs/ClemensWitherMinimumWageGreatRecession.pdf)
-
-### Immigration
-
-- [NAS Report](https://www.nap.edu/read/23550/chapter/9#199)
-- Immigration effect on native wages
-- Immigration and innovation
-
-
-### Innovation
-
-## Course schedule
+# Course schedule
 This is the planned order of topics. I may adjust the time devoted to each topic or the order of topics according to the needs and interests of the class. Changes will be announced in class. 
 
-**Insert course schedule here**
+```{r}
+library(tidyverse)
+library(magrittr)
+sched = read_csv("econ2367_schedule.csv") %>% select(Week, Date, Topics, Assignments)
+sched %<>% replace_na(list(Assignments = ""))
+knitr::kable(sched)
+```
 
+# Student Life Disability Services
+
+The University strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on your disability (including mental health, chronic or temporary medical conditions), please let me know immediately so that we can privately discuss options. To establish reasonable accommodations, I may request that you register with Student Life Disability Services.  After registration, make arrangements with me as soon as possible to discuss your accommodations so that they may be implemented in a timely fashion. **SLDS contact information:** slds\@osu.edu; 614-292-3307; slds.osu.edu; 098 Baker Hall, 113 W. 12th Avenue.
 
 
 
