@@ -16,7 +16,7 @@ Email: tham.5\@osu.edu
 
 Office: Arps 369
 
-Office hours: Tuesday 2-3pm; Wednesday 2:30-3:30pm
+Office hours: Tuesday 2-3pm; Wednesday 2:30-3:30pm. Email me to set up an alternative time. 
 
 # Course Overview
 
@@ -34,7 +34,7 @@ Students understand the systematic study of human behavior and cognition; the st
 
 2. Students understand the formation and durability of political, economic, and social organizing principles and their differences and similarities across contexts. 
 
-3.Students comprehend and assess the nature and values of organizations and polities and their importance in social problem solving and policy making.  
+3. Students comprehend and assess the nature and values of organizations and polities and their importance in social problem solving and policy making.  
 
 ## GE – Writing and Communication Level 2 
 
@@ -42,7 +42,7 @@ Students are skilled in written communication and expression, reading, critical 
 
 1. Through critical analysis, discussion, and writing, students demonstrate the ability to read carefully and express ideas effectively. 
 
-2.Students apply written, oral, and visual communication skills and conventions of academic discourse to the challenges of a specific discipline
+2. Students apply written, oral, and visual communication skills and conventions of academic discourse to the challenges of a specific discipline
 
 # Grading
 
@@ -54,25 +54,32 @@ Research papers | 40%
 Presentation | 20%
 Participation | 10% 
 
-### Quizzes
+## Readings
+Readings will be announced at least one week ahead at the end of class. Readings on the reading list are subject to change as the course progresses. 
+
+## Participation
+
+Due to the nature of the course material, lectures will be discussion based. Students should come to class having carefully read the assigned materials and participate in the class discussion. If you exhibit a pattern of non-attendance and inattention during lectures and *especially* during student presentations your participation grade will suffer.
+
+## Quizzes
 Six times during the semester I will administer an in class quiz over the assigned readings that day. They are designed to incentivize reading, so they will be unannounced.  I will drop your lowest quiz grade.  Each quiz will be administered at the start of class.  Because I drop the lowest quiz, no make-ups will be administered.
 
-### Short essays
-Twice during the semester you will submit a 1 page **(not including works cited)** analytical essay of an issue discussed (or to be discussed) in class. The topic can NOT relate to your midterm or final paper, and must cite at least two papers/articles not discussed in class. 
+## Short essays
+Twice during the semester you will submit a 1-2 page **(not including works cited)** essay on an issue discussed (or to be discussed) in class. For each essay, you will be given prompts. You may choose the prompt you wish to respond to, but your position on the topic will be **randomly assigned**. Your job is to make the strongest possible case for your assigned position *regardless of your personal stance*, drawing on empirical evidence we have discussed in class as well as outside of class. 
 
-### Research papers
-You will be submitting more detailed research papers between 3 and 4 pages in length **not including works cited**.  It can be on any U.S. current economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered andinterpreted by you and others.    
+## Research papers
+You will be submitting more detailed research papers between 3 and 4 pages in length **not including works cited**.  It can be on any economic issue of your choosing. Your paper should have a strong thesis/hypothesis, which you will analyze and support by rigorous and cogent appeal to empirical evidence gathered and interpreted by you and others.   
 
-#### Paper Formatting 
+## Paper Formatting 
 All papers should be 1.5 spacing with 11 point Times New Roman font and 1-inch margins. Please include your name, paper title, and due date on a title page. All citations should follow Chicago author-date formatting rules (excluding the abstract), and an appropriate works cited page should ALWAYS be attached. You are, of course, encouraged to include any graphs or figures in your paper which you believe are helpful, but they do not count towards a page count, so please attach them at the end of the paper. Failure to follow these formatting instructions will result in the loss of 5 percent of the possible points for the assignment.
 
-### Presentation
-You will be presenting the findings from your final paper to the class. Presentations will last 10-15 minutes and you MUST respond to audience questions/criticisms. You will be allowed to bring up notes to reference in response to questions, but the main body of the presentation must be done without notes. You must also have slides for the presentation. 
+## Presentation
+You will be presenting the findings from your final paper to the class. Presentations will last 10-15 minutes and you MUST respond to audience questions/criticisms. You will be allowed to bring up notes to refer to in response to questions, but the main body of the presentation must be done without notes. You must also have slides for the presentation. 
 
-### Late Policy 
+## Late Policy 
 I do not accept late work. If you have a valid reason for needing an extension on an assignment please contact me in advance. Extenuating circumstances will be dealt with on a case-by-case basis.
 
-### Final Grades
+## Final Grades
 
 I round up fractional points *after* your final grade has been tallied i.e. a final score of 92.01 will get an A.
 
@@ -90,7 +97,8 @@ D+|67
 D|60
 
 # Course schedule
-This is the planned order of topics. I may adjust the time devoted to each topic or the order of topics according to the needs and interests of the class. Changes will be announced in class. 
+
+This is the tentative schedule of topics. Changes will be announced in class. 
 
 ```{r}
 library(tidyverse)
@@ -100,24 +108,22 @@ sched %<>% replace_na(list(Assignments = ""))
 knitr::kable(sched)
 ```
 
+# Laptop and electronics policy
+
+I recognize that laptop and tablets can have an important role to play in learning. To balance that against their potential to distract other students, I ask that you sit toward the back of the classroom if you are planning to use a laptop/tablet/other similar devices during class. This is not an attempt to penalize you, but to ensure that the classroom remains a conducive learning environment for all. 
+
 # Resources
 
 ## Economics Learning Center
 The Department of Economics runs the Economics Learning Center (ELC), where advanced undergraduates provide free tutoring for students in Economics 2001, 2002, 4001, and 4002. Assistance with other 3000-level and 4000-level classes is frequently available. The ELC is located in 311 Arps Hall (1945 North High Street) and is typically open from 9AM-5PM Monday-Thursday and 9AM-3PM on Fridays, opening each semester on the second (full) week of the term. Note that the purpose of the tutoring center is not to provide answers to assignments, but to help students learn economics. As the student, you are ultimately responsible for all course work you submit. 
 
-## Ohio State writing center
+## Ohio State Writing Center
 
 > The Writing Center offers free help with writing at any stage of the writing process for any member of the university community. During our sessions, consultants can work with you on anything from research papers to lab reports, from dissertations to résumés, from proposals to application materials. Appointments are available in-person at 4120 Smith Lab, as well as for online sessions. You may schedule an in-person or online appointment by visiting WCOnline or by calling 614-688-4291. Please note that the Writing Center also offers daily walk-in hours—no appointment necessary—in Thompson Library. You do not have to bring in a piece of writing in order to schedule a writing center appointment. Many students report that some of their most productive sessions entail simply talking through ideas.   Please check out our Services [(https://cstw.osu.edu/writing-center/writing-center-services)](https://cstw.osu.edu/writing-center/writing-center-services)  page for the types of consultations we provide. We also maintain a Writing Resources [(https://cstw.osu.edu/writing-resources)]() page with writing handouts and links to online resources.
 
 # Academic Misconduct
 
-Academic integrity is essential to maintaining an environment that fosters excellence in teaching, research, and other educational and scholarly activities. Thus, The Ohio State University and the Committee on Academic Misconduct (COAM) expect that all students have read and understand the University’s Code of Student Conduct, and that all students will complete all academic and scholarly assignments with fairness and honesty. Students must recognize that failure to follow the rules and guidelines established in the University’s Code of Student Conduct and this syllabus may constitute "Academic Misconduct."
-
-The Ohio State University’s Code of Student Conduct (Section 3335-23-04) defines academic misconduct as: "Any activity that tends to compromise the academic integrity of the University, or subvert the educational process." Examples of academic misconduct include (but are not limited to) plagiarism, collusion (unauthorized collaboration), copying the work of another student, and possession of unauthorized materials during an examination. Ignorance of the University’s Code of Student Conduct is never considered an "excuse" for academic misconduct, so I recommend that you review the Code of Student Conduct and, specifically, the sections dealing with academic misconduct.
-
-If I suspect that a student has committed academic misconduct in this course, I am obligated by University Rules to report my suspicions to the Committee on Academic Misconduct. If COAM determines that you have violated the University’s Code of Student Conduct (i.e., committed academic misconduct), the sanctions for the misconduct could include a failing grade in this course and suspension or dismissal from the University.
-
-If you have any questions about the above policy or what constitutes academic misconduct in this course, please contact me.
+It is the responsibility of the Committee on Academic Misconduct to investigate or establish procedures for the investigation of all reported cases of student academic misconduct. The term "academic misconduct" includes all forms of student academic misconduct wherever committed; illustrated by, but not limited to, cases of plagiarism and dishonest practices in connection with examinations. Instructors shall report all instances of alleged academic misconduct to the committee (Faculty Rule 3335-5-487). For additional information, see the Code of Student Conduct [http://studentlife.osu.edu/csc/](http://studentlife.osu.edu/csc/).
 
 # Student Life Disability Services
 
