@@ -1,0 +1,44 @@
+---
+title: "Econ 2367.02: Current Economic Issues"
+author: "Wei Yang Tham"
+date: "August 23, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Goals of this class
+- Learn about various economics issues affecting the United States
+- Learn to make a well-supported argument in writing
+
+## Some practical takeaways
+- Be able to read commentary on economic studies in the news and understand (in broad terms) their strengths and flaws
+- Know how to look up reliable research if you want to find out more about a topic
+
+## Positive v.s. normative economics
+- Positive: What is
+    + Facts; does smoking cause cancer?
+- Normative: What ought to be
+    + Should smoking be banned?
+    
+## Motivated reasoning
+- In this class, we will focus on what economics research says about *positive* questions, especially cause-and-effect
+- Beware motivated reasoning: often what we think *should be* influences what we consider to be "facts"; you can always find a paper to support your views
+
+## Guarding against motivated reasoning
+- [David Leonhardt: Consider changing your mind about an issue you find complicated](https://www.nytimes.com/2017/07/18/opinion/a-summer-project-to-nourish-your-political-soul.html)
+- Construct the best possible argument for the side you disagree with 
+
+## Readings
+- Friday, Aug 24: [Noah Smith's article on assessing econ research](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
+
+- Next week's readings on minimum wage: wait till after Friday's lesson
+    + [John Schmitt](http://cepr.net/documents/publications/min-wage-2013-02.pdf) (skim pages 1-5; read pp. 11-13 starting from "Adjustment Channels"), 
+    + [Jordan Weissmann, Jobless in Seattle](http://www.slate.com/articles/business/moneybox/2014/05/seattle_might_raise_its_minimum_wage_to_15_this_is_not_a_good_idea.html)
+    + [\*Luca and Luca, Survival of the Fittest: The Impact of the Minimum Wage on Firm Exit (sections I and II)](http://www.hbs.edu/faculty/Publication%20Files/MW_Exit_7a89f82f-b2fa-42f2-9a0e-f8a61e95b679.pdf)
+

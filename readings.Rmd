@@ -1,7 +1,7 @@
 ---
-title: "Reading List"
-author: "Tham, Wei Yang"
-date: "August 21, 2017"
+title: "Reading List for Econ 2367.02: Current Economic Issues in the U.S."
+author: ""
+date: "Fall 2017"
 output: pdf_document
 ---
 
@@ -9,19 +9,25 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is a preliminary list of readings. Readings may change as 
+This is a tentative list of readings that I will update as the course progresses. I will also add helpful articles to "old" topics (i.e. topics we have already discussed) so it will be helpful for you to refer to the list now and then, especially when you are looking for sources for your essay assignments. 
+
+\* = assigned reading for class
 
 ## Week 1
 
-Noah Smith, How to Give a Cool Appraisal to Hot Economics Studies, [https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
+[Noah Smith, How to Give a Cool Appraisal to Hot Economics Studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
 
 ## Week 2 (Minimum Wage)
 
-John Schmitt (pp. 13-15), [http://cepr.net/documents/publications/min-wage-2013-02.pdf](http://cepr.net/documents/publications/min-wage-2013-02.pdf)
+[\*John Schmitt (skim pages 1-5; read pp. 11-13 starting from "Adjustment Channels")](http://cepr.net/documents/publications/min-wage-2013-02.pdf)
 
 Catherine Rampell, 'Free lunches' like the $15 minimum wage may hurt the people they’re meant to help, [https://www.washingtonpost.com/opinions/free-lunches-like-the-15-minimum-wage-may-hurt-the-people-theyre-meant-to-help/2017/08/07/d55e8476-7bad-11e7-9d08-b79f191668ed_story.html](https://www.washingtonpost.com/opinions/free-lunches-like-the-15-minimum-wage-may-hurt-the-people-theyre-meant-to-help/2017/08/07/d55e8476-7bad-11e7-9d08-b79f191668ed_story.html)
 
-Jordan Weissmann, Jobless in Seattle,  [http://www.slate.com/articles/business/moneybox/2014/05/seattle_might_raise_its_minimum_wage_to_15_this_is_not_a_good_idea.html](http://www.slate.com/articles/business/moneybox/2014/05/seattle_might_raise_its_minimum_wage_to_15_this_is_not_a_good_idea.html)
+[\*Jordan Weissmann, Jobless in Seattle](http://www.slate.com/articles/business/moneybox/2014/05/seattle_might_raise_its_minimum_wage_to_15_this_is_not_a_good_idea.html)
+
+[\*Luca and Luca, Survival of the Fittest: The Impact of the Minimum Wage on Firm Exit (sections I and II)](http://www.hbs.edu/faculty/Publication%20Files/MW_Exit_7a89f82f-b2fa-42f2-9a0e-f8a61e95b679.pdf)
+
+[Lordan and Neumark, People Versus Machines: The Impact of Minimum Wages on Automatable Jobs](http://nber.org/papers/w23667)
 
 ## Week 3 (Immigration)
 
@@ -29,5 +35,10 @@ George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html
 
 Planet Money, If Economists Controlled the Borders, [http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders](http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders)
 
+<!--
 ## Week 4 ()
 
+## Week 12 (Matching)
+
+Econtalk, Alvin Roth on Matching Markets (listen up to 34:19 on kidney exchange) [http://www.econtalk.org/archives/2015/07/alvin_roth_on_m.html](http://www.econtalk.org/archives/2015/07/alvin_roth_on_m.html)
+-->
