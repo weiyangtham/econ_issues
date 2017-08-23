@@ -26,8 +26,15 @@ knitr::opts_chunk$set(echo = FALSE)
 - Normative: What ought to be
     + Should smoking be banned?
     
-## Motivated reasoning
+## Positive v.s. normative economics 
 - In this class, we will focus on what economics research says about *positive* questions, especially cause-and-effect
+- But at the end of the day, we want to use research to inform policy decisions i.e. make normative decisions
+
+## Motivated reasoning
+
+> It's only human natural - Kevin Malone, The Office
+
+## Motivated reasoning
 - Beware motivated reasoning: often what we think *should be* influences what we consider to be "facts"; you can always find a paper to support your views
 
 ## Guarding against motivated reasoning
