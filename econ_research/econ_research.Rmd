@@ -1,13 +1,20 @@
 ---
 title: "Evaluating Economic Research"
 author: "Tham, Wei Yang"
-date: "8/7/2017"
-output: ioslides_presentation
+date: "Aug 25, 2017"
+output:
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+header-includes: 
+- \usepackage{graphicx}
 ---
 
 ```{r setup, include=FALSE, message = FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+library(png)
 ```
 
 ## Reading
@@ -26,27 +33,47 @@ library(tidyverse)
 - Over the semester, we will often ask: What is the effect of X on Y?
 - Goal of this lecture: learn how to evaluate economic research even when you are not an expert (Smith's second point)
 
-<!--
-## Example: effect of college education on earnings
-- Does going to college lead to higher earnings?
-- We can compare the average earnings of people who go to college with those who do not
-- What is the problem with this?
--->
-
 ## "Cancer causes cell phones"
-```{r, fig.align='center'}
-knitr::include_graphics("https://imgs.xkcd.com/comics/cell_phones.png")
+```{r, fig.align='center', out.width="10cm"}
+knitr::include_graphics("cell_phones.png")
 ```
 
+## Spurious correlations fun
+- Also check out [Tyler Vigen's website](http://tylervigen.com/spurious-correlations)
+- This is why two y-axes on a graph should generally be avoided
+
 ## Do laptops help or hurt learning in the classroom?
-- Discussion: Suppose we found that students who bring their laptops to class have higher/lower grades than students who do not. What would be the problem with using this result to claim that laptops help/hurt learning?
+- Imagine you received the following data. What would be the problem with using this result to claim that laptops hurt learning?
+
+```{r}
+df = data_frame(`Laptop User` = c("Yes", "No"), `Average Grades` = c(60, 80))
+knitr::kable(df, align = 'c')
+```
+
+## Problems with only looking at correlations
+- Laptop users may be different from non-users
+- Example: laptop users may be prone to distraction *even without laptop*, BUT that is not known to us
+- If a student knows they will be distracted, they may bring a laptop so they have better entertainment options 
+
+## What we see
+
+## The "truth"
+```{r}
+df = data_frame(`Prone to Distraction` = c("Yes", "No"), `Laptop User` = c("Yes", "No"), `Average Grades` = c(60, 80))
+knitr::kable(df, align = 'c')
+```
+
+## The "truth"
+
+## Terminology
+-  that we cannot observe in the data and that could affect both the explanatory variable (using a laptop or not) and the outcome variable (grades)
 
 ## Dealing with bias
 - Confounders/unobservables are variables that we may not be able to observe in the data
 - Confounding can lead us to overstate the effect of laptops on learning if they are correlated with both laptop use **and** learning (bias)
 - The empirical economist's job is to (try to) eliminate this bias
 
-## Tools of the trade
+## "Furious Five" - strategies for dealing with bias
 - Regression
 - Randomized Control Trials (RCTs)
 - Instrumental variables
