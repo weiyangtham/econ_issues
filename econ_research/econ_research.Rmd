@@ -11,10 +11,9 @@ header-includes:
 - \usepackage{graphicx}
 ---
 
-```{r setup, include=FALSE, message = FALSE, warning=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, dev = 'pdf')
 library(tidyverse)
-library(png)
 ```
 
 ## Reading
@@ -29,13 +28,14 @@ library(png)
 </div>
 
 ## Today's lecture
-
-- Over the semester, we will often ask: What is the effect of X on Y?
-- Goal of this lecture: learn how to evaluate economic research even when you are not an expert (Smith's second point)
+- Over the semester, we will often ask: What is the effect of X on Y? 
+- Often, X is referred to as a **treatment** (like a drug) and we are interested in the **treatment effect** of X on Y
+- Much (but not all!) of empirical economics is concerned with accurately estimating the treatment effect (e.g. of a policy)
+- Goal of this lecture: understand the intuition and assumptions behind economic research using these methods even when you are not an expert (Smith's second point)
 
 ## "Cancer causes cell phones"
-```{r, fig.align='center', out.width="10cm"}
-knitr::include_graphics("cell_phones.png")
+```{r}
+knitr::include_graphics("cell_phones.pdf")
 ```
 
 ## Spurious correlations fun
@@ -43,7 +43,7 @@ knitr::include_graphics("cell_phones.png")
 - This is why two y-axes on a graph should generally be avoided
 
 ## Do laptops help or hurt learning in the classroom?
-- Imagine you received the following data. What would be the problem with using this result to claim that laptops hurt learning?
+- Imagine you received the following data. What would be the problem with using this result to claim that laptops hurt learning (in other words, the treatment effect of laptop usage on grades is negative)?
 
 ```{r}
 df = data_frame(`Laptop User` = c("Yes", "No"), `Average Grades` = c(60, 80))
@@ -53,9 +53,16 @@ knitr::kable(df, align = 'c')
 ## Problems with only looking at correlations
 - Laptop users may be different from non-users
 - Example: laptop users may be prone to distraction *even without laptop*, BUT that is not known to us
-- If a student knows they will be distracted, they may bring a laptop so they have better entertainment options 
+- If a student knows they will be distracted, they may bring a laptop so they have better entertainment options
+- Without a laptop, they may be equally distracted. That is, the laptop actually has *no effect* on learning
 
 ## What we see
+
+<!-- show wrong causal mechanism -->
+
+## The "truth"
+
+<!-- show true causal mechanism -->
 
 ## The "truth"
 ```{r}
@@ -63,15 +70,15 @@ df = data_frame(`Prone to Distraction` = c("Yes", "No"), `Laptop User` = c("Yes"
 knitr::kable(df, align = 'c')
 ```
 
-## The "truth"
-
 ## Terminology
--  that we cannot observe in the data and that could affect both the explanatory variable (using a laptop or not) and the outcome variable (grades)
+- A variable that we cannot observe in the data and that could affect both the explanatory variable (using a laptop or not) and the outcome variable (grades or learning) is known as a **confounder** or **unobservable**
+- We can also say that the `Laptop User` variable is **endogenous**; ideally we want it to be **exogenous**
+- Econ papers will often say something like this: "We deal with **endogeneity** by using **exogenous** variation from ..."
+- Confounders lead to **bias** in our estimates
+    + In our example, we overestimated how much laptops hurt grades
 
 ## Dealing with bias
-- Confounders/unobservables are variables that we may not be able to observe in the data
-- Confounding can lead us to overstate the effect of laptops on learning if they are correlated with both laptop use **and** learning (bias)
-- The empirical economist's job is to (try to) eliminate this bias
+- The empirical economist's job is to (try to) eliminate bias
 
 ## "Furious Five" - strategies for dealing with bias
 - Regression
@@ -86,20 +93,28 @@ We will focus on the **intuition** of these methods
 - Statistical technique to "hold constant" things we can observe
 - Statistical version of **ceteris paribus**
 - Toy regression: 
-$$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$ 
-- In words: for two persons with the same family income, what is the return to attending college?
+$$ Grades = \beta_1 * LaptopUser + \beta_2 * Distractability $$ 
+- In words: for two equally distracted persons, what is the effect of being a laptop user?
 
 ## Regression
 - Not enough on its own; there are always things we cannot observe
 
+## What is the ideal experiment?
+- Hint: you are allowed to give an unrealistic answer
+
+## What is the ideal experiment?
+- Compare the same person with a laptop and without a laptop *at the same time*
+- If having a laptop is the treatment, then not having the laptop is the **counterfactual**
+- This thought experiment motivates our next strategy: randomization
+
 ## Randomization: The "gold standard"
 - Ensure that on average, laptop and "no laptop" students are the same
-- Common terms: randomized control trials or RCTs, field experiments, lab experiments
+- Laptop users are in the **treatment** group, non-users are known as the **control group**
+- The **control group** serves as the **counterfactual**
+- Common terms for randomization: randomized control trials or RCTs, field experiments, lab experiments
 
 ## Example: lab experiment
 - Lab experiment: Researchers had students watch a lecture and randomly assigned them to to take notes with either a laptop or pen and paper. They found that students who used laptops performed worse
-
-# hmmmm
 
 ## Example: field experiment
 - Researchers randomly assigned sections of a class to one of three conditions:
@@ -120,28 +135,45 @@ $$ Earnings = \beta_1 * AttendedCollege + \beta_2 * FamilyIncome $$
     - Regression Discontinuity
     
 ## Instrumental Variables
-- Sometimes known as "instruments"
+- Sometimes known as "instruments" or "IV"
 - Remember that confounders are a problem because they may be related to both laptop use **and** grades
 - An instrumental variable affects laptop use (the variable whose effect we're interested in) but not grades (the variable whose outcome we're interested in)
 
-<div class="notes">
-draw graphic to illustrate IV chain of effects
-</div>
+## How instrumental variables work
+
+<!-- draw causal chain -->
+
+## What makes a good instrument
+- Must actually affect the explanatory variable (using a laptop)
+    + it must be a **strong instrument**
+- Must not be related to the outcome variable (cannot affect grades directly, except by affecting laptop use)
+    + it must satisfy the **exclusion restriction**
 
 ## Instrument for laptop use
-- Students in a class with a laptop-required policy are more likely to bring their laptop to a laptop-optional class on the same day
-- Assumption: being in a laptop-required class is unrelated to grades
+- Setting: some classes have a laptop-required policy and others have a laptop-optional policy
+- Being in a class with a laptop-required policy could be an instrument for using a laptop in laptop-optional class
+
+## What does it mean for the IV assumptions to be satisfied?
+- Strong instrument
+    + Students are more likely to bring their laptop to a laptop-optional class on the same day
+- Exclusion restriction
+    + being in a laptop-required class is unrelated to grades
 - Result: laptop use hurts grades
 
-## Difference-in-differences
+## Difference-in-differences (DD or DiD)
 - Compare two groups that are not identical, but whose differences are FIXED over time
 - Often used to estimate effects of a policy if it was implemented in one U.S. state but not another
 
 ## Example (this is made up!):
-- Laptops are banned in the Econ 2001 session that runs on MoWeFr, and allowed in the Econ 2001 session that runs on TuTh
-- Imagine that grades between MWF and TTh are systematically different for some reason, say, the TTh instructor is consistently stricter 
+- Laptops are banned in one Econ 2001 session and allowed in another
+- Imagine that grades between the two sessions are systematically different for some reason, say, one of the instructor is consistently stricter 
+- How and when can we reliably use the laptop-optional class as a control for the no-laptop class?
 
-## Visualizing Difference-in-differences
+## When is DiD valid?
+- Suppose the difference in grades between the no-laptop class and the laptop-optional class is 20 points before the ban was introduced
+- DiD works if **without a ban** the difference would still have been 20 points
+
+## When is DiD valid?
 ```{r, echo = FALSE, fig.align='center'}
 dd = data_frame(
   effect = c("+ Effect", "+ Effect", "No Effect", "No Effect", "No Effect", "No Effect"), 
@@ -149,25 +181,66 @@ dd = data_frame(
   y = c(2, 5, 2, 4, 0, 2), 
   x = rep(c(0, 1), 3))
 
-ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line() + 
+ggplot2::ggplot(dd, aes(x, y, linetype = effect, colour = treated)) + geom_line(size = 2) + 
   scale_linetype_discrete(guide = FALSE) + scale_color_discrete(guide = FALSE) +
+  scale_y_continuous(labels = c(0:5 * 20)) +
   scale_x_continuous(breaks = c(0, 1), labels = c("Before", "After")) +
-  econothemes::theme_nber(base_size = 18) +
-  annotate("text", x = 0.75, y = 5, label = "Laptop ban effective") + 
-  annotate("text", x = 0.80, y = 3, label = "Laptop ban \n NOT effective") + 
-  annotate("text", x = 0.80, y = 1, label = "Laptops optional")
+  theme_minimal(base_size = 24) +
+  annotate("text", x = 0.78, y = 5, label = "Laptop ban", size = 7) + 
+  annotate("text", x = 0.80, y = 3, label = "NO Laptop ban \n (counterfactual)", size = 7) + 
+  annotate("text", x = 0.80, y = 1, label = "Laptops optional", size = 7) +
+  annotate("segment", x = 1, y = 4, xend = 1, yend = 5, alpha = 0.5, linetype = 2) +
+  annotate("text", x = 1, y = 4.5, label = "Laptop \n effect", size = 6) +
+  labs(y = "Grades", x = "Time")
   
 ```
 
-## Regression Discontinuity
+## Regression Discontinuity (RD)
 - Compare people who are on either side of an arbitrary cutoff 
-- Example: If the cutoff to get a scholarship is an SAT score of 1400, we can estimate the effect of getting a scholarship by comparing someone who got 1399 and someone who got 1401.  
+- Example: If the cutoff to get a scholarship is a test score of 100, we can estimate the effect of getting a scholarship by comparing someone who got 99 and someone who got 101.
+
+## Example
+```{r}
+rd = data_frame(score = 0:200)
+rd = rd %>% mutate(wages = if_else(score < 100, score * 100, score * 100 + 8000), 
+                   wages = wages + rnorm(201, mean = 0, sd = 1000))
+ggplot(rd, aes(score, wages)) + 
+  geom_point(alpha = 0.5) + 
+  geom_vline(xintercept = 100, linetype = 2) +
+  annotate("text", x = 80, y = 28000, label = "Cutoff", size = 8) +
+  annotate("segment", x = 100, xend = 100, y = 10000, yend = 18500, size = 2, colour = "green") + 
+  annotate("text", x = 135, y = 14000, label = "Treatment Effect", size = 8, colour = "darkgreen") +
+  theme_minimal(base_size = 24)
+```
+
+
+## When is RD valid?
+- When there is no manipulation around the cutoff
+- Example (contrived): suppose now that you can get a regrade of the test for \$1000. Then students from high-income families may be more likely to ask for a regrade if they scored just below the threshold. 
+
+## When is RD valid? - No manipulation around threshold
+```{r, fig.align = 'center'}
+knitr::include_graphics("rd_nomanipulation.pdf")
+```
+
+## When is RD valid? - Manipulation around threshold
+
+```{r, fig.align = 'center'}
+knitr::include_graphics("rd_manipulation.pdf")
+```
+
 
 ## Fuzzy RD
 - A school implements a policy that only students with a 3.5 GPA or higher **can** bring their laptop to class
-- "Fuzzy" because students who can bring a laptop may not take it
+- "Fuzzy" because students who can bring a laptop are more likely to do so, but they will not necessarily opt to 
 
-## 
+## External Validity
+- A common concern in using quasi-experimental methods is their **external validity**
+- That is, what do they tell us about the "real world"?
+
+## Example
+- In the scholarship example for regression discontinuity, assume that the strategy was valid
+- Even then, why might the strategy not be valid? Hint: think about who is NOT in the treatment or control groups 
 
 
 
