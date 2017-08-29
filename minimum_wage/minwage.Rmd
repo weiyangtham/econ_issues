@@ -63,10 +63,14 @@ Draw graph
 - Surveyed fast food restaurants in New Jersey and Eastern Pennsylvania before and after the minimum wage increase
 
 ## Question
-- What was the research design of Card and Krueger? That is, did they use instrumental variables, regression discontinuity, or difference-in-differences?
+- What was the research design of Card and Krueger? Did they use instrumental variables, regression discontinuity, or difference-in-differences?
 
 ## Main result
 - No evidence of decrease in employment; in fact Card and Krueger find an increase in employment at restaurants affected by the minimum wage
+
+## Question
+- Recall our lecture on methods in empirical economics. What is the key assumption of the method Card and Krueger used? 
+- Can we verify this assumption with the data Card and Krueger collected?
 
 ## Evidence since Card and Krueger
 - Card and Krueger was a landmark paper, but it is only one result
@@ -76,15 +80,27 @@ Draw graph
 knitr::include_graphics("meta_graph.png")
 ```
 
+## Survey
+- Were you surprised by this graph?
+
+## Question
+- Schmitt discusses 3 different models for explaining the "zero effect" of the minimum wage. What are they?
+
 ## Explaining the zero effect on employment
 - Monopsony model
 - Channels of adjustment (Competitive model)
 - Institutional model
 
 ## Monopsony
+- What is a monopsony?
+- Hint: reverse of a monopoly
+
+## Dynamic Monopsony
 - Monopsony model differs from classical model by allowing for "frictions" - it takes time, effort, resources for workers to find jobs, and for firms to fill vacancies
 - This results in firms being price-setters, not price-takers 
 - Firms have some market power and are able to pay workers below their marginal product
+
+## Monopsony - blackboard
 
 ## Competitive Model - Alternative channels of adjustment 
 - Classical model generally implies firms will reduce employment
@@ -96,11 +112,11 @@ knitr::include_graphics("meta_graph.png")
 - Efficiency wages - workers increase productivity in response to higher wages
 - Higher minimum wage increases purchasing power of low-wage workers, offsetting the increase in labor costs
 
-## Does zero employment effect mean we should implement minimum wage?
-- essay?
-
 ## Early evidence from Seattle
 - Seattle raised minimum wage from \$9.47 to \$11 per hour in 2015, and to \$13 per hour in 2016. 
+
+## Group Discussion
+- Does zero employment effect mean we should implement minimum wage?
 
 
 
