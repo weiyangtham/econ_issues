@@ -24,7 +24,7 @@ library(magrittr)
 4. Difference-in-differences
 5. Regression Discontinuity
 
-- If you want to learn more, look up the book "Master 'Metrics" by Josh Angrist and Steve Pischke
+- If you want to learn more, look up the book "Mastering 'Metrics" by Josh Angrist and Steve Pischke
 
 ## Recap: Instrumental Variables
 - Suppose you are trying to study the effect of going to college on earnings. You can think of college as the "treatment". 
@@ -42,18 +42,19 @@ library(magrittr)
 - What is a common concern for any method we use?
     + External validity
 
+# Minimum Wage
+
+## Pair discussion
+
+- Find a partner 
+
+- Now answer the following question: Before doing the readings, what was your position on the minimum wage? What would make you change your position on the minimum wage?
+
 ## Background
-- Established in 1938 with the **Fair Labor Standards Act** at $0.25/hour
+- Established in 1938 with the Fair Labor Standards Act at $0.25/hour
 - Current federal minimum wage is \$7.25 (since 2009)
 - 22 states have higher minimum wage than federal; 5 states have no minimum wage
 - Seattle is increasing its minimum wage to \$15/hr, which would make it the highest in the U.S. 
-
-<!--
-## Minimum wage by state
-```{r, fig.align='default'}
-knitr::include_graphics("state_minwage.pdf")
-```
--->
 
 ## Minimum wage by state
 ```{r, fig.align='default'}
@@ -74,11 +75,11 @@ minwage %<>% mutate(wage_real = wage/cpi2010)
 
 minwage %>% gather(k, minwage, wage, wage_real) %>% 
   ggplot(aes(year, minwage, colour = k)) + 
-  geom_line() + 
+  geom_line(size = 2) + 
   scale_colour_discrete(guide = FALSE) + 
-  annotate("text", x = 1987, y = 8.75, label = "Real Min Wage", size = 5) + 
-  annotate("text", x = 1999, y = 3.75, label = "Nominal Min Wage", size = 5) + 
-  theme_minimal(base_size = 18) + 
+  annotate("text", x = 1987, y = 8.75, label = "Real Min Wage", size = 6) + 
+  annotate("text", x = 1999, y = 3.75, label = "Nominal Min Wage", size = 6) + 
+  theme_minimal(base_size = 22) + 
   labs(title = "In 2010 Dollars")
 
 ```
@@ -86,11 +87,7 @@ minwage %>% gather(k, minwage, wage, wage_real) %>%
 ## Economic theory and the minimum wage
 What does classical supply and demand predict will be the effect of introducing a minimum wage in an economy that does not have a minimum wage?
 
-- Standard supply and demand predicts that fewer workers will be employed after instituting a minimum wage
-
-<div class="notes">
-Draw graph 
-</div>
+- It predicts that fewer workers will be employed after instituting a minimum wage
 
 ## Card and Krueger
 - In 1992, New Jersey raised its minimum wage from \$4.25 to \$5.05 per hour
@@ -163,21 +160,45 @@ knitr::include_graphics("meta_graph.png")
 - Does the control group for Seattle seem reasonable to you?
 
 ## Seattle methodology
-```{r, fig.align='center'}
+```{r, fig.align='center', fig.height=10}
 knitr::include_graphics("seattle_synthweights.pdf")
 ```
 
 ## Key results
-- Zero employment effects in the restaurant industry, consistent with earlier studies
-- BUT hours worked fell by 9\% in the second phase, so total earnings fell by \$125 a month
+- Zero employment effects in the restaurant industry as a whole, consistent with earlier studies
+- BUT for low-wage jobs, hours worked fell by 9\% in the second phase, so total earnings fell by \$125 a month
 
 ## Challenges to the study
-- 
+- [Zipperer and Schmitt (2017)](http://www.epi.org/publication/the-high-road-seattle-labor-market-and-the-effects-of-the-minimum-wage-increase-data-limitations-and-methodological-problems-bias-new-analysis-of-seattles-minimum-wage-incr/)
+- Low-wage restaurant jobs decreased and total restaurant employment was unchanged, implying high-wage (>\$19/hour) restaurant jobs increased by about 20\%
+- Possible explanation: Seattle was undergoing a boom, jobs were shifting from low to higher wage
 
-## Group Discussion
-- Does zero employment effect mean we should implement minimum wage?
+## Different perspectives on the minimum wage
+- We've been focused on the employment effects of the minimum wage
+- Luca and Luca look at the impact of the minimum wage on restaurants in the San Francisco Bay Area
 
+## Methodology
+- Research design?
+    + Minimum wage researchers love their difference-in-differences!
+- Use changes in the minimum wage across multiple cities in the Bay Area
 
+## Results
+- \$1 increase in the minimum wage leads to a 4 to 10\% increase in the likelihood of exit 
+- \$1 increase in the minimum wage leads to 14\% increase in the likelihood of exit for the median 3.5-star restaurant but zero impact for five-star restaurants
+- Suggestive evidence that entry declines 4 to 6\%
+
+## Discussion
+- Is it "good" that low quality restaurants are exiting? What additional information would you need to make this determination? 
+
+## Group discussion
+- Form groups of 3-4 persons
+- Discuss the following question: Are you more or less confident about your views on the minimum wage? Have they changed in any way? Explain why.
+
+## Readings
+
+- [\*Report by the National Academy of Sciences on The Economic and Fiscal Consequences of Immigration; read the summary, which the hyperlink goes directly to](https://www.nap.edu/read/23550/chapter/2)
+
+- [\*Planet Money, If Economists Controlled the Borders](http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders)
 
 
  
