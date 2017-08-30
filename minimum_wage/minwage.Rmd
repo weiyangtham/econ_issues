@@ -1,36 +1,70 @@
 ---
 title: "Minimum Wage"
-author: "Tham, Wei Yang"
-date: "7/13/2017"
+author: "Wei Yang Tham"
+date: "August 29, 2017"
 output: 
-  ioslides_presentation:
-    css: custom.css
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir = "..")
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, dev = 'pdf')
+library(tidyverse)
+library(lubridate)
+library(magrittr)
 ```
+
+## Recap: "Furious Five"
+
+1. Regression
+2. Randomization
+3. Instrumental variables
+4. Difference-in-differences
+5. Regression Discontinuity
+
+- If you want to learn more, look up the book "Master 'Metrics" by Josh Angrist and Steve Pischke
+
+## Recap: Instrumental Variables
+- Suppose you are trying to study the effect of going to college on earnings. You can think of college as the "treatment". 
+- In this context, what would a good instrument do?
+
+## Recap: Difference-in-differences
+- What is the key assumption behind difference-in-differences? 
+    + This is known as the parallel trends assumption
+- What is one way we can check if this assumption is violated?
+
+## Recap: Regression Discontinuity
+- A regression discontinuity compares people just above and just below a threshold. What would invalidate this strategy?
+
+## Recap: all methods
+- What is a common concern for any method we use?
+    + External validity
 
 ## Background
 - Established in 1938 with the **Fair Labor Standards Act** at $0.25/hour
-- Current federal minimum wage is $7.25 (since 2009)
+- Current federal minimum wage is \$7.25 (since 2009)
 - 22 states have higher minimum wage than federal; 5 states have no minimum wage
-- Seattle is increasing its minimum wage to $15/hr, which would make it the highest in the U.S. 
+- Seattle is increasing its minimum wage to \$15/hr, which would make it the highest in the U.S. 
+
+<!--
+## Minimum wage by state
+```{r, fig.align='default'}
+knitr::include_graphics("state_minwage.pdf")
+```
+-->
 
 ## Minimum wage by state
-```{r, out.width="800px", out.height="500px", fig.align='center'}
+```{r, fig.align='default'}
 knitr::include_graphics("state_minwage.png")
 ```
 
 ## Real value of minimum wage has been flat 
 ```{r fed_minwage, echo = FALSE, message = FALSE, warning = FALSE, fig.align ='center'}
-library(tidyverse)
-library(lubridate)
-library(magrittr)
 
-fed_minwage = read_csv("minimum_wage/fed_minwage.csv")
-cpi = read_csv("minimum_wage/cpi.csv")
+fed_minwage = read_csv("fed_minwage.csv")
+cpi = read_csv("cpi.csv")
 
 minwage = inner_join(fed_minwage, cpi, by = "DATE") %>% 
   mutate(year = year(DATE)) %>% 
@@ -60,7 +94,7 @@ Draw graph
 
 ## Card and Krueger
 - In 1992, New Jersey raised its minimum wage from \$4.25 to \$5.05 per hour
-- Surveyed fast food restaurants in New Jersey and Eastern Pennsylvania before and after the minimum wage increase
+- Card and Krueger surveyed fast food restaurants in New Jersey and Eastern Pennsylvania before and after the minimum wage increase
 
 ## Question
 - What was the research design of Card and Krueger? Did they use instrumental variables, regression discontinuity, or difference-in-differences?
@@ -76,7 +110,7 @@ Draw graph
 - Card and Krueger was a landmark paper, but it is only one result
 
 ## Other studies on the minimum wage
-```{r, out.width="700px", fig.align='center'}
+```{r, fig.align='center'}
 knitr::include_graphics("meta_graph.png")
 ```
 
@@ -113,7 +147,32 @@ knitr::include_graphics("meta_graph.png")
 - Higher minimum wage increases purchasing power of low-wage workers, offsetting the increase in labor costs
 
 ## Early evidence from Seattle
-- Seattle raised minimum wage from \$9.47 to \$11 per hour in 2015, and to \$13 per hour in 2016. 
+- Seattle raised minimum wage from \$9.47 to \$11 per hour in 2015, and to \$13 per hour in 2016
+- Seattle commissioned a study on the effects of the minimum wage hike
+
+## What's unique about the Seattle study?
+- The data: Washington state collects data on both earnings *and* hours for individual workers
+- Previous studies have less detailed data; typical approach was to look at employment for restaurant industry. What might be wrong with this?
+
+## Seattle methodology
+- "Synthetic Control"
+- Essentially a difference-in-differences
+- The control group is a weighted combination of counties around Seattle
+
+## Question
+- Does the control group for Seattle seem reasonable to you?
+
+## Seattle methodology
+```{r, fig.align='center'}
+knitr::include_graphics("seattle_synthweights.pdf")
+```
+
+## Key results
+- Zero employment effects in the restaurant industry, consistent with earlier studies
+- BUT hours worked fell by 9\% in the second phase, so total earnings fell by \$125 a month
+
+## Challenges to the study
+- 
 
 ## Group Discussion
 - Does zero employment effect mean we should implement minimum wage?
