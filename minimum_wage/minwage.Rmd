@@ -4,7 +4,7 @@ author: "Wei Yang Tham"
 date: "August 29, 2017"
 output: 
   beamer_presentation:
-    incremental: false
+    incremental: true
     theme: "metropolis"
     colortheme: "crane"
 ---
@@ -192,11 +192,13 @@ knitr::include_graphics("seattle_synthweights.pdf")
 
 ## Group discussion
 - Form groups of 3-4 persons
-- Discuss the following question: Are you more or less confident about your views on the minimum wage? Have they changed in any way? Explain why.
+- Discuss the following question: In "Jobless in Seattle", Jordan Weissmann was fairly pessimistic about raising the minimum wage in Seattle, but concluded that it was worth a try. To what extent do you share his view? 
 
 ## Readings
 
-- [\*Report by the National Academy of Sciences on The Economic and Fiscal Consequences of Immigration; read the summary, which the hyperlink goes directly to](https://www.nap.edu/read/23550/chapter/2)
+- [\*Report by the National Academy of Sciences on The Economic and Fiscal Consequences of Immigration; read the "Summary" chapter, which the hyperlink goes directly to](https://www.nap.edu/read/23550/chapter/2)
+
+- [\*The Place Premium: Wage Differences for Identical Workers across the U.S. Border; read intro and conclusion](https://www.cgdev.org/sites/default/files/16352_file_CMP_place_premium_148.pdf)
 
 - [\*Planet Money, If Economists Controlled the Borders](http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders)
 

@@ -9,19 +9,24 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is a tentative list of readings that I will update as the course progresses. I will also add helpful articles to "old" topics (i.e. topics we have already discussed) so it will be helpful for you to refer to the list now and then, especially when you are looking for sources for your essay assignments. 
+This is a tentative list of readings that I will update as the course progresses. I will add articles to "old" topics (i.e. topics we have already discussed) so it will be helpful for you to refer to the list now and then, especially when you are looking for sources for your essay assignments. I have also included a section on sources of and about economics research. 
+
+## Helpful sources
+
+- The [National Bureau of Economic Research (NBER)](www.nber.org) is a great resource for the latest working papers in economics. The [NBER Digest](http://www.nber.org/digest/) provides non-technical summaries of papers. 
+- [Microeconomic Insights](http://microeconomicinsights.org/) provides summaries of the latest economics research
 
 \* = assigned reading for class
 
 ## Week 1
 
-[Noah Smith, How to Give a Cool Appraisal to Hot Economics Studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
+[\*Noah Smith, How to Give a Cool Appraisal to Hot Economics Studies](https://www.bloomberg.com/view/articles/2017-03-21/how-to-give-a-cool-appraisal-to-hot-economics-studies)
+
+[Dina Pomeranz, Impact evaluation methods in public economics](https://www.zora.uzh.ch/id/eprint/136558/1/Pomeranz_Impact-Evaluation-Methods-final.pdf)
 
 ## Week 2 (Minimum Wage)
 
 [\*John Schmitt (skim pages 1-5; read pp. 11-13 starting from "Adjustment Channels")](http://cepr.net/documents/publications/min-wage-2013-02.pdf)
-
-Catherine Rampell, 'Free lunches' like the $15 minimum wage may hurt the people they’re meant to help, [https://www.washingtonpost.com/opinions/free-lunches-like-the-15-minimum-wage-may-hurt-the-people-theyre-meant-to-help/2017/08/07/d55e8476-7bad-11e7-9d08-b79f191668ed_story.html](https://www.washingtonpost.com/opinions/free-lunches-like-the-15-minimum-wage-may-hurt-the-people-theyre-meant-to-help/2017/08/07/d55e8476-7bad-11e7-9d08-b79f191668ed_story.html)
 
 [\*Jordan Weissmann, Jobless in Seattle](http://www.slate.com/articles/business/moneybox/2014/05/seattle_might_raise_its_minimum_wage_to_15_this_is_not_a_good_idea.html)
 
@@ -29,11 +34,17 @@ Catherine Rampell, 'Free lunches' like the $15 minimum wage may hurt the people 
 
 [Lordan and Neumark, People Versus Machines: The Impact of Minimum Wages on Automatable Jobs](http://nber.org/papers/w23667)
 
+[Catherine Rampell, 'Free lunches' like the $15 minimum wage may hurt the people they’re meant to help](https://www.washingtonpost.com/opinions/free-lunches-like-the-15-minimum-wage-may-hurt-the-people-theyre-meant-to-help/2017/08/07/d55e8476-7bad-11e7-9d08-b79f191668ed_story.html)
+
 ## Week 3 (Immigration)
 
-George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html](http://www.econlib.org/library/Enc/Immigration.html)
+[\*Report by the National Academy of Sciences on The Economic and Fiscal Consequences of Immigration; read the "Summary" chapter, which the hyperlink goes directly to](https://www.nap.edu/read/23550/chapter/2)
 
-Planet Money, If Economists Controlled the Borders, [http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders](http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders)
+[\*Planet Money, If Economists Controlled the Borders](http://www.npr.org/blogs/money/2014/04/02/298383246/episode-436-if-economists-controlled-the-borders)
+
+[\*The Place Premium: Wage Differences for Identical Workers across the U.S. Border; read intro and conclusion](https://www.cgdev.org/sites/default/files/16352_file_CMP_place_premium_148.pdf)
+
+George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html](http://www.econlib.org/library/Enc/Immigration.html)
 
 <!--
 ## Week 4 ()
