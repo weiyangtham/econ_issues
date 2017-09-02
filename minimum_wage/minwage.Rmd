@@ -182,6 +182,13 @@ knitr::include_graphics("seattle_synthweights.pdf")
     + Minimum wage researchers love their difference-in-differences!
 - Use changes in the minimum wage across multiple cities in the Bay Area
 
+## Variation in minimum wage
+
+```{r, fig.align='center'}
+knitr::include_graphics("lucaluca_minwage.png")
+```
+
+
 ## Results
 - \$1 increase in the minimum wage leads to a 4 to 10\% increase in the likelihood of exit 
 - \$1 increase in the minimum wage leads to 14\% increase in the likelihood of exit for the median 3.5-star restaurant but zero impact for five-star restaurants

@@ -13,6 +13,7 @@ This is a tentative list of readings that I will update as the course progresses
 
 ## Helpful sources
 
+- [Journal of Economics Perspectives](https://www.aeaweb.org/journals/jep/about-jep) provides overviews of research topics and targeted at non-specialists
 - The [National Bureau of Economic Research (NBER)](www.nber.org) is a great resource for the latest working papers in economics. The [NBER Digest](http://www.nber.org/digest/) provides non-technical summaries of papers. 
 - [Microeconomic Insights](http://microeconomicinsights.org/) provides summaries of the latest economics research
 
