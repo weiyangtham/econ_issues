@@ -1,42 +1,44 @@
 ---
-title: "immigration"
-author: "Tham, Wei Yang"
-date: "7/14/2017"
-output: ioslides_presentation
+title: "Low-skilled Immigration"
+author: "Wei Yang Tham"
+date: "Sept 6, 2017"
+output: 
+  beamer_presentation:
+    incremental: true
+    theme: "metropolis"
+    colortheme: "crane"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir = "..")
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+# knitr::opts_knit$set(root.dir = "..")
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
 
-# Facts about US immigration
+## Survey
+
+
 
 ## Immigrants as Share of Total U.S. Population
-```{r, fig.align='center'}
+```{r, fig.align='default'}
 library(tidyverse)
-us_immig = read_csv("immigration/us_immigration_1850_2015.csv")
+us_immig = read_csv("us_immigration_1850_2015.csv")
 
 ggplot(us_immig, aes(year, pct_immigrants)) + 
-  geom_line() + 
-  theme_minimal(base_size = 18)
+  geom_line(size = 2) + 
+  labs(y = "Immigrants as percentage of total U.S. population") +
+  theme_minimal(base_size = 24)
 
 ```
   
-## US immigrants by region of birth
-```{r, out.width="800px", out.height="500px", fig.align='center'}
-knitr::include_graphics("birth_region.png")
+## Increase in share of Hispanics and Asians
+```{r, fig.align='center'}
+knitr::include_graphics("immigration_ethnicity.png")
 ```
 
-## US immigrants by education
-- asdf
-
-<!--
-## Country of origin
-
-
-<iframe id="pew22976" src="http://www.pewhispanic.org/interactives/largest-immigrant-population/iframe/" height="300" width="100%" scrolling="no" frameborder="0"></iframe><script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewhispanic.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew22976')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
--->
+## Educational attainment of immigrants has increased
+```{r, fig.align='center'}
+knitr::include_graphics("immigration_edu_attainment.png")
+```
 
 ## Questions of interest
 - Is immigration beneficial to immigrants?
@@ -56,24 +58,25 @@ knitr::include_graphics("birth_region.png")
 - His "algorithm" for selecting those cities: they had relatively large black and hispanic populations, and showed similar economic growth to Miami over late 70s and early 80s.  
 
 ## Results
-- Card finds no evidence that the influx of Cuban immigrants had a negative effect on Miami workers
+- Card finds no evidence that the influx of Cuban immigrants did not decrease wages or increase unemployment rates of low-skilled workers
 
 ## Challenges to Mariel Boatlift result
 - "Mariel Boatlift that did not happen" (Angrist and Krueger 1999)
-- "The Wage Impact of the Marielitos: A Reappraisal" Borjas 2015
+- "The Wage Impact of the Marielitos: A Reappraisal" (Borjas 2015)  
 
 ## Mariel Boatlift that did not happen
-- In the summer of 1994, a similar boatlift was due to happen but for an intervention by the Clinton administration that diverted the "immigrants" to Guantanamo Bay
+- In the summer of 1994, a similar boatlift was due to happen
+- But an intervention by the Clinton administration diverted the "immigrants" to Guantanamo Bay
 - Angrist and Krueger do a similar analysis and find that the "boat lift" raised the black unemployment rate in Miami
 - Lesson: natural experiments can be imperfect
 
 ## Borjas Reappraisal 
-- Main (but not only!) contention centers around the question: Who are the Miami workers most likely to be affected by the influx of immigrants? I.e. what is the treatment group?
+- Main contention centers around the question: Who are the Miami workers most likely to be affected by the influx of immigrants? I.e. what is the treatment group?
 - Example: Card includes female workers, but Borjas does not
 - Borjas contention is that female participation in the labor force was changing rapidly **and** differently across cities
 
 ## Borjas Reappraisal: Sample size very small
-```{r, fig.align='center', out.width="500px"}
+```{r, fig.align='center'}
 knitr::include_graphics("borjas_card_samplesize.png")
 ```
 
@@ -84,23 +87,50 @@ knitr::include_graphics("borjas_card_samplesize.png")
 ## Bracero exclusion: context
 - From 1942 to 1964, bilateral agreements facilitated the flow of temporary low-skill labor from Mexico to the U.S.
 - Post-WW 2, the program became almost entirely focused on agriculture and supplied half a million seasonal workers to U.S. farms each year 
-- The **bracero** program ended effective 1965, based on the argument that it hurt native workers economically
+- The *bracero* program ended effective 1965, based on the argument that it hurt native workers economically
 
 ## Research design
-- Compare states more dependent on **braceros** to states less dependent on **braceros**
+- Compare states more dependent on *braceros* to states less dependent on *braceros*
 
 ## No improvement in wages
-```{r, fig.align='center', out.height="500px"}
+```{r, fig.align='center'}
 knitr::include_graphics("braceros_did.png")
 ```
 
+## No improvement in wages
+- One possible explanation is that farms adopted mechanization (if the technology was available)
+
 ## Farms increased mechanization
-- One possible explanation is that farms adopted mechanization if the technology was available
-```{r, fig.align='center', out.height="500px"}
+
+```{r, fig.align='center'}
 knitr::include_graphics("bracero_mechanization.png")
 ```
 
+## The "Place Premium"
 
+- Policy discussion focuses mostly on natives - how about immigrants themselves?
+- The exact same worker would earn more in the U.S. than Haiti
+- How much more?
 
-## Open Borders
-- John Kennan on doubling GDP
+## Clemens, Montenegro, Pritchett (CMP)
+
+- First, CMP estimate the wage ratio between observably identical workers at home and abroad. Why might this overstate the wage premium?
+- Try to estimate how much this is overstated by
+
+## "True" wage premium
+
+```{r, fig.align='center'}
+knitr::include_graphics("placepremium.png")
+```
+
+## How much of this is due to policy restrictions on immigration?
+- CMP estimate wage ratios between places without policy restrictions on movement 
+- Historically, highest ratio found is 1.8; more recently about 1.5
+- Much lower than most of the wage ratios found in the previous figure
+- If you're want to learn more, this article provides a good overview on the topic [http://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.25.3.83](http://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.25.3.83)
+
+## Readings
+
+- Wednesday: [\*David Audretsch, IZA World of Labor, Knowledge Spillovers and Future Jobs](https://wol.iza.org/uploads/articles/218/pdfs/knowledge-spillovers-and-future-jobs.pdf)
+
+- Friday: [\*Chetty, Hendren, and Katz, Moving to Opportunity executive summary](http://www.equality-of-opportunity.org/assets/documents/mto_exec_summary.pdf)
