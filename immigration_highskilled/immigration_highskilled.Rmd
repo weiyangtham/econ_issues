@@ -2,7 +2,8 @@
 title: "High-skilled Immigration"
 author: "Tham, Wei Yang"
 date: "Sept 8, 2017"
-output: beamer_presentation:
+output: 
+  beamer_presentation:
     incremental: true
     theme: "metropolis"
     colortheme: "crane"
@@ -11,5 +12,75 @@ output: beamer_presentation:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
+
+## Today
+
+- We will focus on two papers about the effects of the H-1B visa
+
+## H1-B Visa 
+
+- Temporary immigration for skilled foreigners in "specialty occupations"
+- Workers are usually tied to a firm; the sponsoring firm is responsible for filing the application for the worker
+
+## H1-B cap
+
+- There is a cap on the number of *new issuances* every year
+- Cap started at 65 000 in the 1990s, then increased up to 195 000 after 1998 and 2000, then fell back to 65 000 after cap increase expired
+- H1-B opens on April 1 and the cap has been reached every year
+- There is usually excess demand for H1-B visas so a lottery is used to allocate visas on the day the limit is reached
+
+## H1-B cap
+
+```{r}
+knitr::include_graphics("h1b_cap.png")
+```
+
+
+## Mark Zuckerberg, Facebook CEO
+
+> Why do we offer so few H-1B visas for talented specialists that the supply runs out within days of becoming available each year, even though we know each of these jobs will create two or three more American jobs in return? 
+
+## H1-B Debate
+- Proponents like Zuckerberg argue that the H1-B allows firms to hire workers with unique skills that they otherwise would not be able to
+- Opponents argue that workers on H1-B are not really unique and displaces American workers
+
+## Immigrants in Science & Engineering
+- Immigrant scientists and engineers (SE) increased by 144 000 from 1995 to 2006, representing 30\% of the total increase in the SE labor force
+- Immigrants are important part of technology and innovation in US - does this mean more immigrants will increase innovation?
+
+## Kerr and Lincoln (2010)
+- Do immigrants cause more innovation?
+- If immigrants simply displace equally productive native workers, then total innovation is unchanged; this is also known as a "crowding-out" effect
+- If innovation from natives increases as well, then there is a "crowding-in" effect
+
+## Strategy
+- Compare cities that were more dependent on H1-B immigrants to those that were less dependent (similar to study on the *braceros* guest worker program)
+- Treatment is changes in number of H1-B holders due to fluctuations in H1-B cap
+- Look at patents as an outcome
+- Use inventor names to determine ethnicity e.g. last name "Gupta" is more likely to be Indian than Vietnamese
+
+<!--
+## Most dependent cities
+```{r, fig.align='center'}
+knitr::include_graphics("h1b_dependency.png")
+```
+-->
+
+## Results
+
+- 10\% growth in H1-B population increase Indian and Chinese invention by 6\%-12\% in the most dependent cities
+- 10\% growth in H1-B population increases English invention by 0\%-1\%
+  + No evidence of crowding-out, possibly some crowding-in but small, if any
+  
+## Reliability of results
+- Conduct similar analysis for Canadian cities; no effect in Canada
+- Why might we be concerned about comparing a city like San Francisco to cities that are less dependent on H1-B immigrants? Hint: think of the type of firms in San Francisco and their political influence
+    + Kerr and Lincoln check for this in various ways e.g. dropping those cities from the analysis
+
+## Kirk and Doran (2016)
+
+- Our first paper that uses randomization!
+- 
+  
 
 
