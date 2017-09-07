@@ -1,0 +1,15 @@
+---
+title: "High-skilled Immigration"
+author: "Tham, Wei Yang"
+date: "Sept 8, 2017"
+output: beamer_presentation:
+    incremental: true
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+
