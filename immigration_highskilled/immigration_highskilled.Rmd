@@ -17,19 +17,19 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 
 - We will focus on two papers about the effects of the H-1B visa
 
-## H1-B Visa 
+## H-1B Visa 
 
 - Temporary immigration for skilled foreigners in "specialty occupations"
 - Workers are usually tied to a firm; the sponsoring firm is responsible for filing the application for the worker
 
-## H1-B cap
+## H-1B cap
 
 - There is a cap on the number of *new issuances* every year
 - Cap started at 65 000 in the 1990s, then increased up to 195 000 after 1998 and 2000, then fell back to 65 000 after cap increase expired
-- H1-B opens on April 1 and the cap has been reached every year
-- There is usually excess demand for H1-B visas so a lottery is used to allocate visas on the day the limit is reached
+- H-1B opens on April 1 and the cap has been reached every year
+- There is usually excess demand for H-1B visas so a lottery is used to allocate visas on the day the limit is reached
 
-## H1-B cap
+## H-1B cap
 
 ```{r}
 knitr::include_graphics("h1b_cap.png")
@@ -40,9 +40,9 @@ knitr::include_graphics("h1b_cap.png")
 
 > Why do we offer so few H-1B visas for talented specialists that the supply runs out within days of becoming available each year, even though we know each of these jobs will create two or three more American jobs in return? 
 
-## H1-B Debate
-- Proponents like Zuckerberg argue that the H1-B allows firms to hire workers with unique skills that they otherwise would not be able to
-- Opponents argue that workers on H1-B are not really unique and displaces American workers
+## H-1B Debate
+- Proponents like Zuckerberg argue that the H-1B allows firms to hire workers with unique skills that they otherwise would not be able to, and therefore help the firm to grow and innovate
+- Opponents argue that workers on H-1B are not really unique and displaces American workers
 
 ## Immigrants in Science & Engineering
 - Immigrant scientists and engineers (SE) increased by 144 000 from 1995 to 2006, representing 30\% of the total increase in the SE labor force
@@ -54,8 +54,8 @@ knitr::include_graphics("h1b_cap.png")
 - If innovation from natives increases as well, then there is a "crowding-in" effect
 
 ## Strategy
-- Compare cities that were more dependent on H1-B immigrants to those that were less dependent (similar to study on the *braceros* guest worker program)
-- Treatment is changes in number of H1-B holders due to fluctuations in H1-B cap
+- Compare cities that were more dependent on H-1B immigrants to those that were less dependent (similar to study on the *braceros* guest worker program)
+- Treatment is changes in number of H-1B holders due to fluctuations in H-1B cap
 - Look at patents as an outcome
 - Use inventor names to determine ethnicity e.g. last name "Gupta" is more likely to be Indian than Vietnamese
 
@@ -68,19 +68,56 @@ knitr::include_graphics("h1b_dependency.png")
 
 ## Results
 
-- 10\% growth in H1-B population increase Indian and Chinese invention by 6\%-12\% in the most dependent cities
-- 10\% growth in H1-B population increases English invention by 0\%-1\%
-  + No evidence of crowding-out, possibly some crowding-in but small, if any
+- 10\% growth in H-1B population increase Indian and Chinese invention by 6\%-12\% in the most dependent cities
+- 10\% growth in H-1B population increases English invention by 0\%-1\%
+  + No evidence of crowding-out, possibly some crowding-in but small
   
 ## Reliability of results
 - Conduct similar analysis for Canadian cities; no effect in Canada
-- Why might we be concerned about comparing a city like San Francisco to cities that are less dependent on H1-B immigrants? Hint: think of the type of firms in San Francisco and their political influence
+- Why might we be concerned about comparing a city like San Francisco to cities that are less dependent on H-1B immigrants? Hint: think of the type of firms in San Francisco and their political influence
     + Kerr and Lincoln check for this in various ways e.g. dropping those cities from the analysis
 
-## Kirk and Doran (2016)
+## Doran, Gelber, Isen (2016)
 
 - Our first paper that uses randomization!
-- 
-  
+- Recall that when the H-1B cap is reached, the remaining visas are allocated by lottery
+- Thus, Doran, Gelber, Isen (DGI) can study the effect of getting an additional H-1B visa on a firm
+    + They do this for Fiscal Years 2006 and 2007
+
+## Results
+- No increase in employment at firms that won the lottery i.e. H-1Bs crowd out employment of other workers
+- No increase in patents either
+- This contradicts firms' claims that they need more H-1B workers to innovate
+
+## Reconciling DGI with Kerr and Lincoln
+- DGI study *marginal effects* i.e. the effect of allocating one additional H-1B visa to a firm, holding constant H-1Bs given to other firms
+- Kerr and Lincoln study the effect of *aggregate changes* in the number of H-1B workers
+- These are not necessarily contradictory
+    + Crowded-out workers may go to work in other firms, increasing overall innovation
+    + The marginal H-1B worker may not be an innovator
+- Nonetheless, DGI results are surprising compared to the rest of the literature, but also convincing
+
+## Moser, Voena, Waldinger (2014)
+
+- Analyze effect of 26 German-Jewish chemists that fled Nazi Germany for the U.S. 
+- Germany was leader in chemistry at the time
+- Compare research fields where German chemists were active and received émigrés to those  German chemists were active and received no émigrés
 
 
+## Results
+- Fields that received German chemists saw an increase in patents by 71\%
+- Where did the increase come from?
+
+## Increase in US inventors in fields that received émigrés
+```{r, fig.align='center'}
+knitr::include_graphics("moser_chem_did.png")
+```
+
+## What led to increase in patenting?
+- Arrival of émigrés attracted new inventors to fields
+- Network effects: co-inventors of émigrés and co-inventors of the co-inventors also increased patenting 
+
+## Discussion
+- In what way is this study more or less informative than the H-1B studies about effects of high-skilled immigration?
+    + Think about the difference in the populations being studied
+- See also [Borjas and Doran (2004)](http://www.nber.org/papers/w17800.pdf), on the influx of Soviet mathematicians and its effect on US mathematicians
