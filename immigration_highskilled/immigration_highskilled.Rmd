@@ -1,10 +1,10 @@
 ---
 title: "High-skilled Immigration"
-author: "Tham, Wei Yang"
+author: "Wei Yang Tham"
 date: "Sept 8, 2017"
 output: 
   beamer_presentation:
-    incremental: true
+    incremental: false
     theme: "metropolis"
     colortheme: "crane"
 ---
@@ -16,11 +16,22 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 ## Today
 
 - We will focus on two papers about the effects of the H-1B visa
+- Time permitting, we'll discuss other forms of high-skilled immigration 
 
 ## H-1B Visa 
 
 - Temporary immigration for skilled foreigners in "specialty occupations"
 - Workers are usually tied to a firm; the sponsoring firm is responsible for filing the application for the worker
+
+## Mark Zuckerberg, Facebook CEO
+
+> Why do we offer so few H-1B visas for talented specialists that the supply runs out within days of becoming available each year, even though we know each of these jobs will create two or three more American jobs in return? 
+
+## H-1B Debate
+
+- Proponents like Zuckerberg argue that the H-1B allows firms to hire workers with unique skills that they otherwise would not be able to, and therefore help the firm to grow and innovate
+
+- Opponents argue that workers on H-1B are not really unique and displace American workers
 
 ## H-1B cap
 
@@ -30,23 +41,14 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 - There is usually excess demand for H-1B visas so a lottery is used to allocate visas on the day the limit is reached
 
 ## H-1B cap
-
-```{r}
+```{r, fig.align='center'}
 knitr::include_graphics("h1b_cap.png")
 ```
 
-
-## Mark Zuckerberg, Facebook CEO
-
-> Why do we offer so few H-1B visas for talented specialists that the supply runs out within days of becoming available each year, even though we know each of these jobs will create two or three more American jobs in return? 
-
-## H-1B Debate
-- Proponents like Zuckerberg argue that the H-1B allows firms to hire workers with unique skills that they otherwise would not be able to, and therefore help the firm to grow and innovate
-- Opponents argue that workers on H-1B are not really unique and displaces American workers
-
 ## Immigrants in Science & Engineering
 - Immigrant scientists and engineers (SE) increased by 144 000 from 1995 to 2006, representing 30\% of the total increase in the SE labor force
-- Immigrants are important part of technology and innovation in US - does this mean more immigrants will increase innovation?
+- Immigrants are sizeable part of technology and innovation in US
+    + Question: does this mean more immigrants will increase innovation?
 
 ## Kerr and Lincoln (2010)
 - Do immigrants cause more innovation?
@@ -74,7 +76,9 @@ knitr::include_graphics("h1b_dependency.png")
   
 ## Reliability of results
 - Conduct similar analysis for Canadian cities; no effect in Canada
-- Why might we be concerned about comparing a city like San Francisco to cities that are less dependent on H-1B immigrants? Hint: think of the type of firms in San Francisco and their political influence
+    + Similar idea to "Mariel Boatlift that didn't happen"
+- Why might we be concerned about comparing a city like San Francisco to cities that are less dependent on H-1B immigrants?
+    + Hint: think of the type of firms in San Francisco and their political influence
     + Kerr and Lincoln check for this in various ways e.g. dropping those cities from the analysis
 
 ## Doran, Gelber, Isen (2016)
@@ -82,7 +86,7 @@ knitr::include_graphics("h1b_dependency.png")
 - Our first paper that uses randomization!
 - Recall that when the H-1B cap is reached, the remaining visas are allocated by lottery
 - Thus, Doran, Gelber, Isen (DGI) can study the effect of getting an additional H-1B visa on a firm
-    + They do this for Fiscal Years 2006 and 2007
+    + They do this for firms that applied in Fiscal Years 2006 and 2007
 
 ## Results
 - No increase in employment at firms that won the lottery i.e. H-1Bs crowd out employment of other workers
@@ -95,11 +99,12 @@ knitr::include_graphics("h1b_dependency.png")
 - These are not necessarily contradictory
     + Crowded-out workers may go to work in other firms, increasing overall innovation
     + The marginal H-1B worker may not be an innovator
-- Nonetheless, DGI results are surprising compared to the rest of the literature, but also convincing
+    + Agglomeration effects: there may be benefits to having a critical mass of skilled workers beyond the marginal gain from an extra worker
+- DGI results are surprising compared to the rest of the literature, but also convincing because of method
 
 ## Moser, Voena, Waldinger (2014)
 
-- Analyze effect of 26 German-Jewish chemists that fled Nazi Germany for the U.S. 
+- Analyze effect of 26 German-Jewish chemists that fled Nazi Germany on U.S. innovation
 - Germany was leader in chemistry at the time
 - Compare research fields where German chemists were active and received émigrés to those  German chemists were active and received no émigrés
 
@@ -121,3 +126,25 @@ knitr::include_graphics("moser_chem_did.png")
 - In what way is this study more or less informative than the H-1B studies about effects of high-skilled immigration?
     + Think about the difference in the populations being studied
 - See also [Borjas and Doran (2004)](http://www.nber.org/papers/w17800.pdf), on the influx of Soviet mathematicians and its effect on US mathematicians
+
+## Borjas and Doran (2004)
+- Similar idea: use influx of Soviet mathematicians after collapse of the USSR
+- Soviet math and American math developed independently, so subfields of math experienced an influx of new mathematicians and ideas, while others did not
+- American mathematicians in Soviet subfields published fewer papers, got fewer citations, and became more likely to move to a lower-ranked institutions
+
+## Question
+- How is the market for mathematical knowledge different from the other markets for innovation we have studied? 
+    + Hint: what would it take to publish a patent v.s. publishing a paper? How do firms and universities hire differently?
+
+## Patents?
+- Are patents a good measure of innovation?
+- Not all inventions are equally impactful
+    + Sometimes people use citations
+- Tacit/informal knowledge
+
+## asdf
+```{r}
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
