@@ -13,6 +13,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
 
+## asdf
+```{r}
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
 ## Amazon HQ2
 
 - Amazon announced last week that it is looking for a new location to build a second headquarters (HQ2) 
@@ -63,9 +70,19 @@ Another way of framing the question: what are the benefits of population density
 
 - "Million Dollar Plants" is a regular feature in a real estate magazine that describes how a large plant decided where to locate
 - The feature lists the winning county and runner-up counties
-- GHM use the incumbent plants in the runner-up counties as a control group for incumbent plants in the winning counties
+- GHM uses the incumbent plants in the runner-up counties as a control group for incumbent plants in the winning counties
 
-## 
+## "Winning" plants became more productive
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics("moretti_milliondollar_coefs.png")
+```
+
+## Why did winning plants become more productive?
+- Measure similarity between industries
+- Suggestive evidence that the spillover effects were largest between industries using similar technologies, or industries that workers are more likely to shift between
+- Seems less likely to be about being closer to customers or suppliers
+
 
 
 ## 
