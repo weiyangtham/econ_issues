@@ -1,0 +1,71 @@
+---
+title: "spillovers"
+author: "Wei Yang Tham"
+date: "September 13, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Amazon HQ2
+
+- Amazon announced last week that it is looking for a new location to build a second headquarters (HQ2) 
+- Cities all over the U.S. (and Toronto) were immediately declaring their interest in this project 
+- Why?
+
+## Benefits of getting Amazon HQ2
+
+- Direct benefits: Amazon is promising 50 000 jobs and a $5bn investment
+- What indirect benefits can you think of?
+    + increase in productive workers may make other other workers more productive
+- How about costs?
+    + tax benefits to attract Amazon
+    + disruptions to local life
+
+## Agglomeration economies: Why do cities exist? 
+
+Another way of framing the question: what are the benefits of population density? A few hypotheses:
+
+1. Reduced transport costs + economies of scale (Krugman); how about service industries?
+
+<!-- access to bigger markets means more specialization, potentially higher returns, more diversity for consumers. e.g. think of restaurants -->
+
+2. Firms and workers can look for each other more easily; this is also known as "labor market pooling" or "thick" labor markets. 
+     + Can you think of another market where "thickness" is important?
+
+3. Increase the flow of ideas; more opportunities to learn and for ideas to be combined i.e. human capital externalities
+    + Has the internet meant the "death of distance"?
+
+<!-- counter-example: Silicon Valley -->
+
+## Policy questions
+
+- If we think that there are benefits to agglomeration, does that mean that cities should try to attract more people (especially high-skilled people)?
+- If yes, how?
+- Is that beneficial from a macro perspective, or are we just shifting people around with no net gain?
+
+## Greenstone, Hornbeck, Moretti (GHM)
+
+- This might shed a little light on the "Amazon Question": what is the effect of successfully attracting a large new firm/plant?
+- GHM focus on what the effect of opening a new plant is on the productivity of incumbent plants i.e. plants that were already at the winning location
+- What is the problem with just comparing incumbent plants at the winning location with plants at any another location?
+    + Firms are trying to maximize profits, not picking locations at random
+
+<!-- potential unobservables: local transportation infrastructure, current and future costs of factors of production, quality of the workforce, presence of intermediate input suppliers, and any other local cost shifter. -->
+ 
+## "Million Dollar Plants" strategy
+
+- "Million Dollar Plants" is a regular feature in a real estate magazine that describes how a large plant decided where to locate
+- The feature lists the winning county and runner-up counties
+- GHM use the incumbent plants in the runner-up counties as a control group for incumbent plants in the winning counties
+
+## 
+
+
+## 
