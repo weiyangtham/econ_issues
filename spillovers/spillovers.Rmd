@@ -79,9 +79,31 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 ```
 
 ## Why did winning plants become more productive?
-- Measure similarity between industries
-- Suggestive evidence that the spillover effects were largest between industries using similar technologies, or industries that workers are more likely to shift between
-- Seems less likely to be about being closer to customers or suppliers
+- Spillover effects were largest between industries using similar technologies, or industries that workers are more likely to shift between
+- This is indirect evidence that spillovers occur through the sharing of ideas, possibly through workers moving between firms
+
+## Back to Amazon
+
+- asdf
+
+## Trying to see the unseen
+
+- The "Million Dollar Plants" paper suggests that attracting a new plant and new workers can improve the productivity of other plants
+
+- It would be nice if we could actually observe spillovers directly
+    + e.g. actually observe people interacting and quantify how much of that interaction leads to sharing of knowledge
+    
+## Paul Krugman (1991)
+
+> Knowledge flows are invisible; they leave no paper trail by which they may be measured and tracked...
+
+## But there is hope!
+- There are, in fact, ways that knowledge flows can leave paper trails
+- 
+
+
+
+
 
 
 
