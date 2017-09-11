@@ -102,16 +102,41 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 - Patents
 - Academic papers and citations
 
-## Catalini (2017)
+## Measurement is not the only problem
+- Data on how people interact is hard to get
+- Even if we get it, what would be the difficulty in estimating the *causal* effect of physical proximity on innovative activity?
+
+## "Microgeography and the Direction of Inventive Activity" - Catalini (2017)
 
 - Setting: Paris Jussieu, leading research campus in France
 - Fun quote from Wikipedia: 
-
 > "The campus is generally decried as an architectural failure...Sound-proofing is very poor, with classes regularly having to briefly stop when someones flushes the toilet next door." 
 
-- Starting from 1997, labs on the campus had to be relocated as part of an asbestos removal process
+- From 1997 to 2014, labs on the campus had to be relocated as part of an asbestos removal process
 - Because of urgency and complexity of the operation, labs did not have much say in the relocation process (i.e. labs more likely to be randomly colocated)
 
+## Catalini (2017)
+
+- Catalini makes use of this quasi-experiment to estimate the effect of colocation on collaboration between labs
+- Colocation increases the rate of collaboration (coauthoring papers) by 3.5 times
+- Besides the quantity of collaboration, how else could physical proximity affect the type of research produced?
+    + Combining different fields of knowledge
+    + More opportunities to iterate on ideas, but also less costly to pursue low-quality projects
+
+## Additional findings
+- Labs produced more similar research after colocation (excluding joint collaborations)
+- New collaborations were more likely to be of high- or low-quality (i.e. upper or lower ends of distribution)
+
+## Conclusion
+- Physical proximity made labs more aware of each others' work and made it easier to pursue joint projects
+
+## Has the internet made distance irrelevant?
+- Has communication technology been a substitute or complement to physical proximity?
+- On one hand, the internet has made it easier to form new relationships with people who are far away
+- On the other, it has also made sustaining *existing* relationships easier (e.g. think of using Skype/Facetime to communicate with your family)
+
+<!-- separation does not negatively affect collaboration between previously colocated labs -->
+<!--
 ## Background on patent citations
 
 - A patent contains citations (sometimes called "references")
@@ -128,3 +153,5 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 
 - Superstar extinction
 - boudreau, ganguli
+
+-->
