@@ -99,12 +99,32 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 
 ## But there is hope!
 - There are, in fact, ways that knowledge flows can leave paper trails
-- 
+- Patents
+- Academic papers and citations
+
+## Catalini (2017)
+
+- Setting: Paris Jussieu, leading research campus in France
+- Fun quote from Wikipedia: 
+
+> "The campus is generally decried as an architectural failure...Sound-proofing is very poor, with classes regularly having to briefly stop when someones flushes the toilet next door." 
+
+- Starting from 1997, labs on the campus had to be relocated as part of an asbestos removal process
+- Because of urgency and complexity of the operation, labs did not have much say in the relocation process (i.e. labs more likely to be randomly colocated)
+
+## Background on patent citations
+
+- A patent contains citations (sometimes called "references")
+- If patent Y cites patent X, that means that patent Y built on a piece of knowledge from X
+- The patent applicant is legally obliged to cite knowledge that she has built on
+- The patent examiner, who is supposed to be an expert in the patent's technological area, identifies citations the applicant may have missed out
+
+## Jaffe, Trajtenberg, and Henderson
+
+- "Geographic Localization of Knowledge Spillovers as Evidenced by Patent Citations"
+- Citations are two to six times more likely to come from the same city as the citing patent
+- Still doesn't tell us exactly why, but we're getting closer!
 
 
-
-
-
-
-
-## 
+- Superstar extinction
+- boudreau, ganguli
