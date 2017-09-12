@@ -131,9 +131,36 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 - Physical proximity made labs more aware of each others' work and made it easier to pursue joint projects
 
 ## Has the internet made distance irrelevant?
-- Has communication technology been a substitute or complement to physical proximity?
-- On one hand, the internet has made it easier to form new relationships with people who are far away
-- On the other, it has also made sustaining *existing* relationships easier (e.g. think of using Skype/Facetime to communicate with your family)
+- Another way to put it: Has communication technology been a substitute or complement to physical proximity? What do you think?
+
+## Bitnet
+- An early version of the internet in the 1980s
+- Used by academics for computer-based communications
+- Researchers could not only communicate over Bitnet, but could also share data
+- Bitnet did not have features like the World Wide Web and browsers
+
+## Agrawal and Goldfarb (2008)
+- Study the effect of Bitnet on collaboration between (electrical engineering) researchers at universities that adopted Bitnet
+
+## Bitnet increased collaboration
+```{r, fig.align='center'}
+knitr::include_graphics("bitnet_increased_collab.png")
+```
+
+## Who benefitted?
+- Increase in collaboration was greatest for pairs of universities where one was top-tier and the other was mid-tier, *and* were colocated
+    + e.g. MIT–Northeastern University in Boston/Cambridge University of Pennsylvania–Drexel University in Philadelphia
+- Mid-tier universities seemed to "benefit" the most in terms of producing more publications
+
+## Implications
+- In these circumstances, communication technology turned out to have the strongest impact as a complement to physical proximity
+- Lower costs of collaboration led to greater specialization - researchers at top-tier universities and mid-tier universities likely to have different strengths and resources available to them
+
+
+
+
+## Other considerations
+
 
 <!-- separation does not negatively affect collaboration between previously colocated labs -->
 <!--
