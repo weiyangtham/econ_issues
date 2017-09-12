@@ -1,5 +1,5 @@
 ---
-title: "Agglomeration economies and knowledge spillovers"
+title: "Agglomeration Economies and Knowledge spillovers"
 author: "Wei Yang Tham"
 date: "September 13, 2017"
 output: 
@@ -102,7 +102,7 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 ## But there is hope!
 - There are, in fact, ways that knowledge flows can leave paper trails
 - Patents
-- Academic papers and citations
+- Academic papers 
 
 ## Measurement is not the only problem
 - Data on how people interact is hard to get
@@ -157,11 +157,64 @@ knitr::include_graphics("bitnet_increased_collab.png")
 
 ## Implications
 - In these circumstances, communication technology turned out to have the strongest impact as a complement to face-to-face interactions
+    + Doesn't mean it can't be a substitute! Just not the main effect
 - Lower costs of collaboration led to greater specialization - researchers at top-tier universities and mid-tier universities likely to have different strengths and resources available to them
 
-## The bird's eye view
+## Place-based policies
 
-- Much of what we've seen suggests that 
+- Much of what we've seen suggests that "place-based policies" could have an important role to play in economic development
+- Many government programs are "person-based" e.g. welfare, while place-based policies target a geographic area with things like subsidies, investments, or special rules and regulations
+
+## Examples of place-based policies
+- "Big push" policies: large investments in a region e.g. Tennessee Valley Authority
+    + Little "big push": getting firms to move headquarters or plants to a city
+- Empowerment zones: a combination of tax incentives for firms and investment funds for local authorities for the neediest urban and rural areas in the U.S.
+
+## Tennessee Valley Authority
+- TVA was created by Congress in 1933 to modernize the Tennessee Valley economy
+- Total federal investment of \$20bn dollars between 1934 and 2000
+- Bulk of investment occurred over 1940 to 1958
+- Funds went into public infrastructure including roads, dams, and a 650-mile navigation canal
+
+## Was the TVA effective?
+
+- Kline and Moretti (2013) compared outcomes in the Tennessee Valley to other regions where similar authorities were considered, but eventually failed to be formed
+- The TVA was effective in generating manufacturing jobs and shifted the region from a low-productivity sector (agriculture) to a high-productivity sector (manufacturing) 
+- Average wages in the region did not increase as workers moved into the region to match the increase in demand
+- However, Kline and Moretti also find that there was no net gain to the economy at a national level
+
+## Discussion
+- What other problems might there be with "big push" policies?
+
+## Question
+- 
+
+<!-- 
+- mayors might bid too much
+- government has to act like a venture capitalist. many tech clusters were not the result of deliberate government policy
+-->
+
+## Empowerment zones
+
+- In 1993, Department of Housing and Urban Development (HUD) awarded Empowerment Zones (EZs) to local communities via a competitive application process
+- Firms were given tax incentives to hire workers who  lived and worked in the community (wage subsidy)
+- EZs were also given block grants to invest in infrastructure, training programs 
+- These incentives were administered from 1994 to 2000
+- Impoverished neighborhoods in Atlanta, Baltimore, Chicago, Detroit, New York, Philadelphia, Los Angeles, Cleveland were awarded EZ status
+
+## Did EZs work?
+- Busso et al (2013) compare communities that won to communities that lost
+- They find that employment and wgaes increased in EZs
+- Population and housing rents in the EZs remained stable, so gains in employment and wages were not cancelled out by increases in the cost of living
+
+## Why did EZs work?
+- Other residents in the same city may not want to move into the poorest neighborhoods, at least in the short term
+- Over the longer-term, more people may be willing to move into those neighborhoods and increase rents
+
+
+
+
+
 
 <!-- separation does not negatively affect collaboration between previously colocated labs -->
 <!--
