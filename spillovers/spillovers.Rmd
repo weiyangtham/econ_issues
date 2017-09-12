@@ -1,5 +1,5 @@
 ---
-title: "spillovers"
+title: "Agglomeration economies and knowledge spillovers"
 author: "Wei Yang Tham"
 date: "September 13, 2017"
 output: 
@@ -24,8 +24,12 @@ ggplot(mtcars, aes(mpg, wt)) + geom_point()
 
 - Amazon announced last week that it is looking for a new location to build a second headquarters (HQ2) 
 - Cities all over the U.S. (and Toronto) were immediately declaring their interest in this project 
-- Why?
 
+## Group discussion
+- Form groups of 3-4
+- Imagine Columbus is bidding for Amazon's new headquarters. Discuss what the benefits for  Columbus would be if its bid was successful? What are the potential costs, and what can be done to mitigate them? Feel free to be make your discussion as specific to Columbus as you'd like.
+
+<!--
 ## Benefits of getting Amazon HQ2
 
 - Direct benefits: Amazon is promising 50 000 jobs and a $5bn investment
@@ -34,19 +38,21 @@ ggplot(mtcars, aes(mpg, wt)) + geom_point()
 - How about costs?
     + tax benefits to attract Amazon
     + disruptions to local life
+-->
 
 ## Agglomeration economies: Why do cities exist? 
 
 Another way of framing the question: what are the benefits of population density? A few hypotheses:
 
-1. Reduced transport costs + economies of scale (Krugman); how about service industries?
+1. Reduced transport costs + economies of scale (Krugman); bigger markets allow firms to specialize
+    + Example: "Chinese" restaurant v.s. Szechuan restaurant
 
 <!-- access to bigger markets means more specialization, potentially higher returns, more diversity for consumers. e.g. think of restaurants -->
 
 2. Firms and workers can look for each other more easily; this is also known as "labor market pooling" or "thick" labor markets. 
      + Can you think of another market where "thickness" is important?
 
-3. Increase the flow of ideas; more opportunities to learn and for ideas to be combined i.e. human capital externalities
+3. Increase the flow of ideas; more opportunities to learn and for ideas to be combined 
     + Has the internet meant the "death of distance"?
 
 <!-- counter-example: Silicon Valley -->
@@ -82,10 +88,6 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 - Spillover effects were largest between industries using similar technologies, or industries that workers are more likely to shift between
 - This is indirect evidence that spillovers occur through the sharing of ideas, possibly through workers moving between firms
 
-## Back to Amazon
-
-- asdf
-
 ## Trying to see the unseen
 
 - The "Million Dollar Plants" paper suggests that attracting a new plant and new workers can improve the productivity of other plants
@@ -110,6 +112,7 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 
 - Setting: Paris Jussieu, leading research campus in France
 - Fun quote from Wikipedia: 
+
 > "The campus is generally decried as an architectural failure...Sound-proofing is very poor, with classes regularly having to briefly stop when someones flushes the toilet next door." 
 
 - From 1997 to 2014, labs on the campus had to be relocated as part of an asbestos removal process
@@ -153,14 +156,12 @@ knitr::include_graphics("bitnet_increased_collab.png")
 - Mid-tier universities seemed to "benefit" the most in terms of producing more publications
 
 ## Implications
-- In these circumstances, communication technology turned out to have the strongest impact as a complement to physical proximity
+- In these circumstances, communication technology turned out to have the strongest impact as a complement to face-to-face interactions
 - Lower costs of collaboration led to greater specialization - researchers at top-tier universities and mid-tier universities likely to have different strengths and resources available to them
 
+## The bird's eye view
 
-
-
-## Other considerations
-
+- Much of what we've seen suggests that 
 
 <!-- separation does not negatively affect collaboration between previously colocated labs -->
 <!--
