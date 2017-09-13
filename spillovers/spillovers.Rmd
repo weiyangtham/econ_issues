@@ -23,7 +23,9 @@ ggplot(mtcars, aes(mpg, wt)) + geom_point()
 ## Amazon HQ2
 
 - Amazon announced last week that it is looking for a new location to build a second headquarters (HQ2) 
-- Cities all over the U.S. (and Toronto) were immediately declaring their interest in this project 
+- HQ2 will come with 50 000 jobs and \$5bn in investment
+- Cities all over the U.S. (and Toronto) were immediately declaring their interest in this project. Why?
+- Also, why does Amazon care where HQ2 is?
 
 ## Group discussion
 - Form groups of 3-4
@@ -49,7 +51,7 @@ Another way of framing the question: what are the benefits of population density
 
 <!-- access to bigger markets means more specialization, potentially higher returns, more diversity for consumers. e.g. think of restaurants -->
 
-2. Firms and workers can look for each other more easily; this is also known as "labor market pooling" or "thick" labor markets. 
+2. Firms and workers can look for each other more easily; this is also known as "labor market pooling" or "thick" labor markets i.e. many buyers and sellers
      + Can you think of another market where "thickness" is important?
 
 3. Increase the flow of ideas; more opportunities to learn and for ideas to be combined 
@@ -59,9 +61,11 @@ Another way of framing the question: what are the benefits of population density
 
 ## Policy questions
 
-- If we think that there are benefits to agglomeration, does that mean that cities should try to attract more people (especially high-skilled people)?
-- If yes, how?
-- Is that beneficial from a macro perspective, or are we just shifting people around with no net gain?
+- If we think that there are benefits to agglomeration, how can a city reap those benefits?
+- E.g. should cities try to attract more people? If yes, which people and how?
+- Agglomeration economies represent a *local* market failure. Would such policies be beneficial from a macro perspective, or are we just shifting people around with no net gain?
+
+<!-- if i make competitors more productive, i don't capture all the benefits of that -->
 
 ## Greenstone, Hornbeck, Moretti (GHM)
 
@@ -93,7 +97,7 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 - The "Million Dollar Plants" paper suggests that attracting a new plant and new workers can improve the productivity of other plants
 
 - It would be nice if we could actually observe spillovers directly
-    + e.g. actually observe people interacting and quantify how much of that interaction leads to sharing of knowledge
+    + e.g. actually observe people interacting and quantify how much of that interaction leads to sharing and production of knowledge 
     
 ## Paul Krugman (1991)
 
@@ -116,14 +120,14 @@ knitr::include_graphics("moretti_milliondollar_coefs.png")
 > "The campus is generally decried as an architectural failure...Sound-proofing is very poor, with classes regularly having to briefly stop when someones flushes the toilet next door." 
 
 - From 1997 to 2014, labs on the campus had to be relocated as part of an asbestos removal process
-- Because of urgency and complexity of the operation, labs did not have much say in the relocation process (i.e. labs more likely to be randomly colocated)
+- Because of urgency and complexity of the operation, labs did not have much say in the relocation process (i.e. labs more likely to be quasi-randomly colocated)
 
 ## Catalini (2017)
 
 - Catalini makes use of this quasi-experiment to estimate the effect of colocation on collaboration between labs
 - Colocation increases the rate of collaboration (coauthoring papers) by 3.5 times
 - Besides the quantity of collaboration, how else could physical proximity affect the type of research produced?
-    + Combining different fields of knowledge
+    + Exposure to new fields of knowledge, leading to new combinations of ideas
     + More opportunities to iterate on ideas, but also less costly to pursue low-quality projects
 
 ## Additional findings
@@ -181,13 +185,12 @@ knitr::include_graphics("bitnet_increased_collab.png")
 - Kline and Moretti (2013) compared outcomes in the Tennessee Valley to other regions where similar authorities were considered, but eventually failed to be formed
 - The TVA was effective in generating manufacturing jobs and shifted the region from a low-productivity sector (agriculture) to a high-productivity sector (manufacturing) 
 - Average wages in the region did not increase as workers moved into the region to match the increase in demand
-- However, Kline and Moretti also find that there was no net gain to the economy at a national level
+- However, Kline and Moretti also find that there was no net gain to the economy at a national level, due to losses in areas that lost workers (*local* market failure that does not imply *federal* intervention)
 
 ## Discussion
-- What other problems might there be with "big push" policies?
-
-## Question
-- 
+- Kline and Moretti are careful to note that the TVA investments occurred when manufacturing was the engine of growth for the economy
+- Their finding (of no net gain at the national level) may not be applicable to cities trying to build high-tech clusters.   
+- Even if that is true, what other problems might there be with "big push" policies?
 
 <!-- 
 - mayors might bid too much
