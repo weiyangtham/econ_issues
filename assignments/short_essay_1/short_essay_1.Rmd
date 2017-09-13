@@ -1,0 +1,17 @@
+---
+title: "Short Essay 1"
+date: "September 9, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Minimum Wage
+Imagine that researchers find that one year after Seattle completed its minimum wage increase to \$15/hour, employment and hours worked did not decrease, and wages increased. This implies that all cities should raise their minimum wage to the same level as Seattle's, *after adjusting for inflation*. Agree or disagree with this statement. 
+
+## Immigration and agglomeration
+There can be substantial economic benefits to having people and firms clustered together, also known as agglomeration economies. The existence of agglomeration economies implies that the United States should *open its borders completely* (but still barring criminals, terrorists, and those with serious communicable diseases). Agree or disagree with this statement.
