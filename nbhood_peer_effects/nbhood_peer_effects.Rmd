@@ -1,0 +1,46 @@
+---
+title: "Neighborhood and Peer Effects"
+author: "Wei Yang Tham"
+date: "15 September, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## asdf
+```{r}
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+## Neighborhood and peer effects
+
+- Our earlier lecture focused on the interaction of knowledge workers
+- Today: how does where you grow up, and who you grow up with, affect your long-term outcomes?
+
+## Is the U.S. a "land of opportunity"?
+
+> The U.S. is better described as a collection of societies, some
+of which are “lands of opportunity” with high rates of mobility across generations, and others in which few children escape poverty (Chetty, Hendren, Kline, Saez).
+
+## Income mobility varies geographically
+
+- The probability that a child reaches the top quintile of the national income distribution starting from a family in the bottom quintile is 4.4\% in Charlotte but 12.9\% in San Jose
+
+## Income mobility varies geographically
+```{r}
+knitr::include_graphics("geography_upward_mobility.png")
+```
+
+## Question
+- It seems reasonable to think that the neighborhood you grow up in could affect your adult outcomes
+- Why can't we just compare people who grow up
+
+## Moving to Opportunity
