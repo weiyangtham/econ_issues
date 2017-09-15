@@ -10,11 +10,11 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf', fig.align = 'center')
 ```
 
 ## asdf
-```{r}
+```{r, fig.align='default'}
 library(tidyverse)
 
 ggplot(mtcars, aes(mpg, wt)) + geom_point()
@@ -156,16 +156,69 @@ costs to "natives"
 - Most consistent with monotonic model - academic performance improved with quality of peers
 
 ## Explaining the monotonic model
-- The monotonic model could be operate two ways. One is the direct effect of peers e.g. high-achieving peers can help learning in the classroom. What is an indirect way the monotonic model could work? Hint: who else is in the classroom?
+- The monotonic model could be operate two ways. One is the direct effect of peers e.g. high-achieving peers can help learning in the classroom. What is an indirect way the monotonic model could work? 
+    + Hint: who else is in the classroom?
 
 ## Discussion
-- What concerns do you have about this study?
-
+- What concerns do you have about this study? 
+    + Think about the inputs into the "education production function"
+    
 <!--
 big event
 school resources might be affected
 big change, how relevant is it to other circumstances. one schools in houston got up to 25% evacueees
---
+-->
+    
+## Neighborhoods and innovation
+- We've touched on the importance of innovators in previous lectures. Immigration is often suggested as one way to increase the supply of innovators in the U.S. 
+- Another way could be to increase the supply of innovators from people born in the U.S.
+
+## Children of high-income parents are more likely to become inventors
+```{r}
+knitr::include_graphics("patentrate_parentsincome.png")
+```
+
+## Discussion
+- Children of top 1\% parents are 10 times more likely to patent than children of parents with below-median income. What are some possible reasons for this pattern?
+- What are the policy implications for these reasons?
+
+<!--
+(innate) ability
+education
+role models
+neighborhoods
+job opportunities
+discrimination
+
+policy implications: if not all ability, then there is scope for policy to increase supply of inventors
+-->
+
+## Is it "ability"?
+- Use 3rd grade math test scores as a proxy for ability
+- Compare probability of becoming an inventor for children with the same early childhood test scores but different parental incomes
+
+## High-scoring, "poor" children less likely to be inventors
+```{r}
+knitr::include_graphics("math_inventor.png")
+```
+
+## How about barriers due to race?
+```{r}
+knitr::include_graphics("mathscores_race.png")
+```
+
+## "Rational Sorting" models
+- Can think of the racial barriers to becoming an inventor as additional cost or tax of becoming an inventor
+- Suppose the gains to becoming an inventor are higher for high-ability individuals
+- What does that imply about the ability level of inventors of different races? 
+    + Hint: think about whether inventors of different races will have different ability levels
+    + Even if the costs of becoming an inventor are higher, returns are still high enough for high-ability individuals so they still choose to be inventors
+    
+## Test of the rational sorting model
+
+
+
+
 
 
 <!--
