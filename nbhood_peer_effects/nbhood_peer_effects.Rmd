@@ -62,9 +62,6 @@ knitr::include_graphics("geography_upward_mobility.png")
     2. Subsidized housing voucher with no additional requirements (section 8 voucher)
 - Control group: no voucher, but retained access to public housing
 
-## Gautreaux program
-- asdf
-
 ## Early results of the MTO 
 - Early results from Moving to Opportunity were "disappointing"
 - Study of Boston MTO families 2 years after enrollment found improvements in safety, health, and behavior problems for boys, but no effect on employment, earnings, or welfare use (Katz, Kling, and Liebman, 2001)
@@ -112,11 +109,35 @@ knitr::include_graphics("linear_gain_chettyhendren.png")
 4. Social capital e.g. number of religious individuals, participation in civic organizations
 5. Family structure e.g. fraction of single parents in the area
 
-## Effect on "natives"
-- 
+## Cost-benefit analysis of MTO
+- Suppose you are a policymaker interested in doing a cost-benefit analysis of the Moving to Opportunity program. What is a potential cost or benefit that is not studied in the Chetty et al paper? 
+    + Hint: think of a group of people that hasn't been discussed yet
 
+<!-- 
+list of costs and benefits
+future income
+health benefits
+benefits to future generations
+disruption of moving into a new neighborhood
+costs to "natives"
+-->
+   
+## Recall Clemens et al
+- This paper tried to estimate the gain in wages for a foreigner working in the U.S.
 
+## Wage premium from working the U.S.
+```{r, fig.align='center'}
+knitr::include_graphics("placepremium.png")
+```
 
+## Discussion
+- MTO is essentially an immigration experiment, albeit within the U.S.
+- Knowing what you know from the MTO experiment, why might the place premium (assuming it's 100\% accurate!) understate the gains to immigration for immigrants?
+
+<!-- think of the children! -->
+
+## asd
+asdf
 
 <!--
 ## Costs of moving
