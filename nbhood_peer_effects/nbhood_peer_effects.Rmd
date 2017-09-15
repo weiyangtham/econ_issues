@@ -109,6 +109,20 @@ knitr::include_graphics("linear_gain_chettyhendren.png")
 4. Social capital e.g. number of religious individuals, participation in civic organizations
 5. Family structure e.g. fraction of single parents in the area
 
+## Recall Clemens et al
+- This paper tried to estimate the gain in wages for a foreigner working in the U.S.
+
+## Wage premium from working in the U.S.
+```{r, fig.align='center'}
+knitr::include_graphics("placepremium.png")
+```
+
+## Discussion
+- MTO is essentially an immigration experiment, albeit within the U.S.
+- Knowing what you know from the MTO experiment, why might only looking at the place premium causes us to understate the gains to immigration for immigrants?
+
+<!-- think of the children! -->
+
 ## Cost-benefit analysis of MTO
 - Suppose you are a policymaker interested in doing a cost-benefit analysis of the Moving to Opportunity program. What is a potential cost or benefit that is not studied in the Chetty et al paper? 
     + Hint: think of a group of people that hasn't been discussed yet
@@ -121,23 +135,38 @@ benefits to future generations
 disruption of moving into a new neighborhood
 costs to "natives"
 -->
-   
-## Recall Clemens et al
-- This paper tried to estimate the gain in wages for a foreigner working in the U.S.
 
-## Wage premium from working the U.S.
-```{r, fig.align='center'}
-knitr::include_graphics("placepremium.png")
-```
+## Katrina's Children
+- In 2005, Hurrican Katrina forced many schools to close for an extended period of time, such that 188 000 public school students had to be enrolled in new schools
+- Since the students had to be enrolled quickly, parents did not have time to be selective about schools, and schools did not have time to be selective about students
+
+## Research question
+- Imberman, Kugler, and Sacerdote use this natural experiment to study *peer effects* in schools
+
+## Question
+- What hypotheses can you come up with of how the ability of your peers could affect your own academic performance?
+
+## Hypotheses
+1. Monotonic model - performance improves with quality of peers
+2. Invidious comparison model - performance is harmed by having peers that are more able
+3. Ability grouping - performances improves when peers are equally able to you
+
+## Results
+- On average, influx of students did not hurt grades, but there were negative effects on attendance and behavior
+- Most consistent with monotonic model - academic performance improved with quality of peers
+
+## Explaining the monotonic model
+- The monotonic model could be operate two ways. One is the direct effect of peers e.g. high-achieving peers can help learning in the classroom. What is an indirect way the monotonic model could work? Hint: who else is in the classroom?
 
 ## Discussion
-- MTO is essentially an immigration experiment, albeit within the U.S.
-- Knowing what you know from the MTO experiment, why might the place premium (assuming it's 100\% accurate!) understate the gains to immigration for immigrants?
+- What concerns do you have about this study?
 
-<!-- think of the children! -->
+<!--
+big event
+school resources might be affected
+big change, how relevant is it to other circumstances. one schools in houston got up to 25% evacueees
+--
 
-## asd
-asdf
 
 <!--
 ## Costs of moving
