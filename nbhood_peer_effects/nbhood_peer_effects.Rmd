@@ -22,13 +22,13 @@ ggplot(mtcars, aes(mpg, wt)) + geom_point()
 
 ## Neighborhood and peer effects
 
-- Our earlier lecture focused on the interaction of knowledge workers
+- Our earlier lecture focused on the role of geography in how knowledge workers interact
 - Today: how does where you grow up, and who you grow up with, affect your long-term outcomes?
 
 ## Is the U.S. a "land of opportunity"?
 
 > The U.S. is better described as a collection of societies, some
-of which are “lands of opportunity” with high rates of mobility across generations, and others in which few children escape poverty (Chetty, Hendren, Kline, Saez).
+of which are “lands of opportunity” with high rates of mobility across generations, and others in which few children escape poverty (Chetty, Hendren, Kline, and Saez, 2014).
 
 ## Income mobility varies geographically
 
@@ -39,8 +39,87 @@ of which are “lands of opportunity” with high rates of mobility across gener
 knitr::include_graphics("geography_upward_mobility.png")
 ```
 
-## Question
-- It seems reasonable to think that the neighborhood you grow up in could affect your adult outcomes
-- Why can't we just compare people who grow up
+## Discussion
+- Why does where you grow up matter?
 
-## Moving to Opportunity
+1. Peer effects - your behaviors may be influenced by your peers e.g. studying, smoking
+2. Role models
+3. Better schools
+4. Perception of future opportunities may influence current behavior
+5. Environment could affect health outcomes
+
+## Discussion
+- What costs could there be from moving to a better neighborhood?
+
+## Discussion
+- If we want to know the effect of growing up in San Jose compared to Charlotte, why can't we just compare the outcomes of people who grow in San Jose and Charlotte?
+
+## Moving to Opportunity (MTO) recap
+- What was the Moving to Opportunity experiment?
+- 4604 low-income families in 5 U.S. cities: Baltimore, Boston, Chicago, Los Angeles, and New York
+- 2 types of treatment groups (between 1994 to 1998):
+    1. Subsidized housing voucher with requirement to move to a census tract with a poverty rate below 10\% (experimental voucher)
+    2. Subsidized housing voucher with no additional requirements (section 8 voucher)
+- Control group: no voucher, but retained access to public housing
+
+## Gautreaux program
+- asdf
+
+## Early results of the MTO 
+- Early results from Moving to Opportunity were "disappointing"
+- Study of Boston MTO families 2 years after enrollment found improvements in safety, health, and behavior problems for boys, but no effect on employment, earnings, or welfare use (Katz, Kling, and Liebman, 2001)
+
+## Maybe we just didn't wait long enough
+- Ludwig et al (2013) look at outcomes 10-15 years after MTO
+- Similar results: improvements in subjective well-being and mental health, but not in economic outcomes
+
+## Maybe we just didn't wait long enough? Part 2
+- Chetty et al focus on children who were younger than 13 at enrollment
+- Children in treatment groups grew up in census tracts with lower poverty rates (19\% v.s. 29\% v.s. 41\%)
+
+## Earnings increased
+```{r}
+knitr::include_graphics("mto_average_earnings.png")
+```
+
+## Other outcomes of interest
+- Likelihood of being a single parent was lower: why is this an outcome we might be interested in?
+
+## Experimental v.s. Section 8 voucher
+- In principle, Section 8 vouchers can move to the same places as experimental vouchers
+- Encouraging or restricting families to move to better neighborhoods could be beneficial
+
+## The younger you move to a better neighborhood, the better
+```{r, fig.align='center'}
+knitr::include_graphics("linear_gain_chettyhendren.png")
+```
+
+## Conclusions
+- Childhood exposure to low-poverty neighborhoods led to better outcomes in adulthood
+- Effects on children's outcomes were not due to family income, since that did not improve
+- Instead, they are likely to be driven by direct effects of neighborhood environments on the children or to be mediated by improved parental health and stress
+
+## Further questions
+- What makes a "good" neighborhood?
+- How about the effects on "natives" i.e. people who were already in the neighborhood?
+- In previous lectures, we've talked about the importance of knowledge workers
+
+## What makes a good neighborhood?
+- Chetty et al identify five factors *correlated* with income mobility [http://www.equality-of-opportunity.org/](http://www.equality-of-opportunity.org/)
+1. Segregation
+2. Income inequality 
+3. School systems
+4. Social capital e.g. number of religious individuals, participation in civic organizations
+5. Family structure e.g. fraction of single parents in the area
+
+## Effect on "natives"
+- 
+
+
+
+
+<!--
+## Costs of moving
+- Slightly negative effects for those aged 13-19 at RA
+- Perhaps there are disruption costs
+-->
