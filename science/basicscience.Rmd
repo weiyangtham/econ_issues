@@ -1,0 +1,55 @@
+---
+title: "Science Policy"
+author: "Wei Yang Tham"
+date: "September 27, 2017"
+output:
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+<!--
+Learning objectives: 
+
+Role of basic science in economic growth
+economic rationale for public funding of science
+how economics can be used to understand institutions and incentives in science - talk about doubling
+
+-->
+
+## Today
+
+- Why do we think science and basic research are important?
+- What is the economic justification for government funding of science?
+- How do current scientific institutions incentive (or disincentivize) scientific discovery?
+
+## Context
+- For much of today's lecture, we will look at science policy through the lens of biomedical research
+- The National Institutes of Health (NIH), the main source of government spending on biomedical research, is also the largest federal agency by R&D spending
+
+## The Endless Frontier
+- some history of US science?
+
+## NIH Background
+- NIH budget is over \$30 billion
+
+## NIH funding has stagnated
+```{r}
+library(tidyverse)
+
+nihfunding = read_tsv('nih_fundingfacts.tsv', col_types = cols(Statistic = 'd')) 
+nihfunding %<>% select(-Source) %>% 
+  rename(ic = IC, fiscalyear = `Fiscal Year`, topic = Topic, mechanism = Mechanism, activity = Activity, 
+       type = Type, statistic = Statistic)
+
+```
+
+## 
+
+
+
