@@ -86,11 +86,19 @@ basic %>%
 ## NIH Background
 - The NIH annual budget is over \$30 billion
 - A collection of 27 Institutes and Centers, each focused on different diseases or areas of science (e.g. National Cancer Institute, National Heart, Lung and Blood Institute, National Institute of Aging)
+- Besides research grants, the NIH also provides funds for training and research facilities
 
-## How does the NIH decide who gets funding?
+## How does the NIH decide who gets grants?
 - Scientists submit applications for grants
 - Applications are reviewed and scored by panels of other scientists that work in a similar area of research
 - Note that scientists do not themselves decide which applications are approved (there is a fairly complicated process that does this *after* applications have been scored)
+
+## The Shopping Mall model of science
+- Recall from the podcast that the scientist describes how a substantial amount of her goes to overhead
+- Shopping mall model: Universities build facilities and "rent" them to faculty
+- This "rent" is known as an "indirect cost"
+- Universities usually provide some startup funds; after that faculty have to get their own funding
+- Some faculty are on "soft money" positions i.e. they have to raise their own salaries
 
 ## NIH funding has fallen in real terms
 ```{r}
@@ -138,14 +146,21 @@ nihfunding %>%
   labs(x = "Fiscal Year", y = "Percentage points")
 ```
 
-## The Shopping Mall model of science
-- Recall in the podcast that the scientist describes how substantial amount of money goes to overhead
-- Shopping mall model: Universities build facilities and "rent" them to faculty
-- This "rent" is known as an "indirect cost"
-- Universities usually provide some startup funds; after that faculty have to get their own funding
-- Some faculty are on "soft money" positions i.e. they have to raise their own salaries
-
 ## Question
-- Recall how 
+- One of the justifications for government funding of basic research is that it is better able to bear the riskiness of basic research
+- How might the shopping mall model work against that goal, especially in the current (biomedical) funding environment? Hint: consider the scientist's point of view and how limited funding might affect the type of projects she pursues
+
+## Concerns about current funding environment
+
+> "The system now <span style="color:black"> **favors those who can guarantee results** </span> rather than those with potentially path-breaking ideas that, by definition, cannot promise success." - Alberts et al (2014)
+
+## Is more funding the solution?
+- Imagine that as a policymaker you had \$30bn to add to the NIH budget. You could do this either by allocating it all to next year's budget, or spread it out over the next 10 years. 
+- Quick survey: Which option do you think is better?
+
+## What If Congress Doubled R&D Spending?
+- From 1998 to 2003, 
+
+
 
 
