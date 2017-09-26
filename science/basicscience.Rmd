@@ -13,6 +13,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
 
+## Objectives
+
+- Why do we think that science and basic research are important?
+- What is the economic justification for government funding of science?
+- How do current scientific institutions incentivize (or disincentivize) scientific discovery?
+
 <!--
 Learning objectives: 
 
@@ -24,35 +30,70 @@ podcast themes: much of it goes to university overhead; 10% chance of getting gr
 
 -->
 
-## Today
+## Quick recap of readings
 
-- Why do we think science and basic research are important?
-- What is the economic justification for government funding of science?
-- How do current scientific institutions incentive (or disincentivize) scientific discovery?
+1. Review of Mokyr's "Gifts of Athena"
+    + What was the main reason suggested by Mokyr for why the Industrial Revolution was sustained beyond 1820?
+    
+2. Podcast on *The Wastebook*
+    + Story of a scientist whose research (shrimp fight club) was used as an example of wasteful spending
+    + Why is it so difficult to measure the returns on investment in basic research?
+    
+<!--
+uncertain
+hard to trace multiple uses
+cumulativeness of knowledge: how far back do we go?
+time horizon - uses we don't know of yet
+-->
 
 ## Basic research is largely funded by the government
 ```{r, fig.align='center'}
-knitr::include_graphics("funding_totals.png")
-```
-
-## Discussion
-- 
-
-## Context
-- For much of today's lecture, we will look at science policy through the lens of biomedical research
-- The National Institutes of Health (NIH), the main source of government spending on biomedical research, is also the largest federal agency by R&D spending
-
-## The Endless Frontier
-- some history of US science?
-
-## NIH Background
-- NIH budget is over \$30 billion
-
-## NIH funding has stagnated
-```{r}
 library(tidyverse)
 library(magrittr)
 theme_set(theme_minimal(base_size = 22))
+
+
+basic = read_tsv("basic_bysource.tsv")
+years = sort(rep(1953:2015, 4))
+
+basic %>% 
+  mutate(Year = years) %>% 
+  ggplot(aes(Year, Funding/1000, colour = `Funding Source`)) + 
+  geom_line(size = 2) + 
+  labs(y = "Billions", x = "Fiscal Year")
+
+```
+
+## Group Discussion
+- From groups of 3-4
+- In your groups, come up with a few reasons for why you think government should and should not invest in basic research
+    + In your discussion, think about the economic arguments typically used to justify government subsidization or provision of certain goods
+    
+## Some arguments for government funding of basic research
+- Knowledge is a public good; hard to exclude others (non-excludable) and it is not depleted when shared (non-rivalrous)
+- Therefore market will under-provide basic research
+- Risky
+- Benefits may take a long time to be realized (if at all)
+
+## Some arguments against government funding of basic research
+- "Government" is bad at picking winners and losers
+- Government funding crowds out private investment, so there is no net benefit
+
+## Biomedical research in the US
+- For much of today's lecture, we will look at science policy through the lens of biomedical research
+- The National Institutes of Health (NIH), the main source of government spending on biomedical research, is also the largest federal agency by R&D spending
+
+## NIH Background
+- The NIH annual budget is over \$30 billion
+- A collection of 27 Institutes and Centers, each focused on different diseases or areas of science (e.g. National Cancer Institute, National Heart, Lung and Blood Institute, National Institute of Aging)
+
+## How does the NIH decide who gets funding?
+- Scientists submit applications for grants
+- Applications are reviewed and scored by panels of other scientists that work in a similar area of research
+- Note that scientists do not themselves decide which applications are approved (there is a fairly complicated process that does this *after* applications have been scored)
+
+## NIH funding has fallen in real terms
+```{r}
 
 nihfunding = read_tsv("nih_fundingfacts.tsv", col_types = cols(Statistic = 'd')) 
 nihfunding %<>% select(-Source) %>% 
@@ -84,7 +125,7 @@ nihfunding %>%
 
 ```
 
-## Success rates (chances of getting a grant) have fallen drastically
+## Chances of getting a grant have fallen drastically
 ```{r}
 nihfunding %>% 
   filter(ic == "All NIH", mechanism == 'Research Grants', activity == 'R01', 
@@ -97,6 +138,14 @@ nihfunding %>%
   labs(x = "Fiscal Year", y = "Percentage points")
 ```
 
-## 
+## The Shopping Mall model of science
+- Recall in the podcast that the scientist describes how substantial amount of money goes to overhead
+- Shopping mall model: Universities build facilities and "rent" them to faculty
+- This "rent" is known as an "indirect cost"
+- Universities usually provide some startup funds; after that faculty have to get their own funding
+- Some faculty are on "soft money" positions i.e. they have to raise their own salaries
+
+## Question
+- Recall how 
 
 
