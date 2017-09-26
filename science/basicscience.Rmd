@@ -20,6 +20,8 @@ Role of basic science in economic growth
 economic rationale for public funding of science
 how economics can be used to understand institutions and incentives in science - talk about doubling
 
+podcast themes: much of it goes to university overhead; 10% chance of getting grant; what is the rate of return on science?
+
 -->
 
 ## Today
@@ -27,6 +29,14 @@ how economics can be used to understand institutions and incentives in science -
 - Why do we think science and basic research are important?
 - What is the economic justification for government funding of science?
 - How do current scientific institutions incentive (or disincentivize) scientific discovery?
+
+## Basic research is largely funded by the government
+```{r, fig.align='center'}
+knitr::include_graphics("funding_totals.png")
+```
+
+## Discussion
+- 
 
 ## Context
 - For much of today's lecture, we will look at science policy through the lens of biomedical research
@@ -41,15 +51,52 @@ how economics can be used to understand institutions and incentives in science -
 ## NIH funding has stagnated
 ```{r}
 library(tidyverse)
+library(magrittr)
+theme_set(theme_minimal(base_size = 22))
 
-nihfunding = read_tsv('nih_fundingfacts.tsv', col_types = cols(Statistic = 'd')) 
+nihfunding = read_tsv("nih_fundingfacts.tsv", col_types = cols(Statistic = 'd')) 
 nihfunding %<>% select(-Source) %>% 
   rename(ic = IC, fiscalyear = `Fiscal Year`, topic = Topic, mechanism = Mechanism, activity = Activity, 
        type = Type, statistic = Statistic)
 
+nihfunding %<>% spread(topic, statistic) %>% 
+  rename(totalfunding = `Awards - Funding (Total Cost)`, meanfunding = `Awards - Average Total Cost`, 
+         n_awards = `Awards - Number`, success_rate = `Success Rate`, 
+         n_applications = `Applications - Number`)
+
+brdpi = read_tsv('brdpi.tsv')
+# Base year 1998
+brdpi %<>% mutate(brdpi98 = max(if_else(fiscalyear == 1998, brdpi, NA_real_), na.rm = T), 
+                  brdpi = brdpi/brdpi98)
+
+nihfunding %>% 
+  left_join(brdpi, by = 'fiscalyear') %>% 
+  filter(ic == "All NIH", mechanism == 'Research Grants', activity == 'R01', 
+         type == 'All Types (in aggregate)')  %>% 
+  ggplot(aes(fiscalyear, totalfunding/brdpi/1e9)) + 
+  geom_line(size = 1.2) + geom_point(size = 3) +  
+  geom_vline(xintercept = 2003, linetype = 2) +
+  geom_label(data = data_frame(fiscalyear = 2005.3, y = 6.5, text = "Doubling Ends"), 
+            aes(x = fiscalyear, y = y, label = text), size = 4.5, fill = 'darkred', color = 'white') +
+  labs(title = "Total funding for R01 grants", 
+       subtitle = "Deflated by Biomedical R&D Price Index (Base Year 1998)", 
+       y = "$ Billion", x = "Fiscal Year") 
+
+```
+
+## Success rates (chances of getting a grant) have fallen drastically
+```{r}
+nihfunding %>% 
+  filter(ic == "All NIH", mechanism == 'Research Grants', activity == 'R01', 
+         type == 'All Types (in aggregate)')  %>% 
+  ggplot(aes(fiscalyear, success_rate*100)) + 
+  geom_line(size = 1.2) + geom_point(size = 3) + 
+  geom_vline(xintercept = 2003, linetype = 2) + 
+  geom_label(data = data_frame(fiscalyear = 2005.3, success_rate = 0.3, text = "Doubling Ends"), 
+            aes(label = text), size = 4.5, fill = 'darkred', color = 'white') + 
+  labs(x = "Fiscal Year", y = "Percentage points")
 ```
 
 ## 
-
 
 
