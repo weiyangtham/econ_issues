@@ -4,7 +4,7 @@ author: "Wei Yang Tham"
 date: "September 27, 2017"
 output:
   beamer_presentation:
-    incremental: false
+    incremental: true
     theme: "metropolis"
     colortheme: "crane"
 ---
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 ## Objectives
 
 - Why do we think that science and basic research are important?
-- What is the economic justification for government funding of science?
+- What is the economic justification for government funding of science? Does the empirical evidence support this?
 - How do current scientific institutions incentivize (or disincentivize) scientific discovery?
 
 <!--
@@ -35,8 +35,8 @@ podcast themes: much of it goes to university overhead; 10% chance of getting gr
 1. Review of Mokyr's "Gifts of Athena"
     + What was the main reason suggested by Mokyr for why the Industrial Revolution was sustained beyond 1820?
     
-2. Podcast on *The Wastebook*
-    + Story of a scientist whose research (shrimp fight club) was used as an example of wasteful spending
+2. *The Wastebook* podcast
+    + Story of a scientist whose research ("shrimp fight club") was used as an example of wasteful spending
     + Why is it so difficult to measure the returns on investment in basic research?
     
 <!--
@@ -81,7 +81,7 @@ basic %>%
 
 ## Biomedical research in the US
 - For much of today's lecture, we will look at science policy through the lens of biomedical research
-- The National Institutes of Health (NIH), the main source of government spending on biomedical research, is also the largest federal agency by R&D spending
+- The National Institutes of Health (NIH) is the largest federal agency by funding of basic research
 
 ## NIH Background
 - The NIH annual budget is over \$30 billion
@@ -94,7 +94,7 @@ basic %>%
 - Note that scientists do not themselves decide which applications are approved (there is a fairly complicated process that does this *after* applications have been scored)
 
 ## The Shopping Mall model of science
-- Recall from the podcast that the scientist describes how a substantial amount of her goes to overhead
+- Recall from the podcast that the scientist describes how a substantial amount of her grant money goes to overhead
 - Shopping mall model: Universities build facilities and "rent" them to faculty
 - This "rent" is known as an "indirect cost"
 - Universities usually provide some startup funds; after that faculty have to get their own funding
@@ -150,16 +150,142 @@ nihfunding %>%
 - One of the justifications for government funding of basic research is that it is better able to bear the riskiness of basic research
 - How might the shopping mall model work against that goal, especially in the current (biomedical) funding environment? Hint: consider the scientist's point of view and how limited funding might affect the type of projects she pursues
 
-## Concerns about current funding environment
-
-> "The system now <span style="color:black"> **favors those who can guarantee results** </span> rather than those with potentially path-breaking ideas that, by definition, cannot promise success." - Alberts et al (2014)
-
 ## Is more funding the solution?
 - Imagine that as a policymaker you had \$30bn to add to the NIH budget. You could do this either by allocating it all to next year's budget, or spread it out over the next 10 years. 
 - Quick survey: Which option do you think is better?
 
-## What If Congress Doubled R&D Spending?
-- From 1998 to 2003, 
+## What If Congress Doubled R&D Spending? (Freeman and Van Reenen 2009)
+- From 1998 to 2003, the NIH budget was increased every year until it had doubled (nominally) in 2003
+- In 2004, this rapid increase was brought to a sudden and unexpected halt
+
+## Nominal funding has stagnated since 2003
+```{r}
+nihfunding %>% 
+  filter(ic == "All NIH", mechanism == 'Research Grants', activity == 'R01', 
+         type == 'All Types (in aggregate)')  %>% 
+  ggplot(aes(fiscalyear, totalfunding/1e9)) + 
+  geom_line(size = 1.2) + geom_point(size = 3) +  
+  geom_vline(xintercept = 2003, linetype = 2) +
+  geom_label(data = data_frame(fiscalyear = 2005.3, y = 6.5, text = "Doubling Ends"), 
+            aes(x = fiscalyear, y = y, label = text), size = 4.5, fill = 'darkred', color = 'white') +
+  labs(title = "Total funding for R01 grants", 
+       subtitle = "Nominal", 
+       y = "$ Billion", x = "Fiscal Year") 
+```
+
+## Discussion
+- Why might a sudden increase in funding not lead to an increase in scientific output in the short-term?
+- It might help you to think of a research lab as a firm. What is its production function? What are its inputs? How would the markets for its inputs respond to an increase in demand?
+
+<!--
+market for PIs inelastic
+market for grad students more elastic
+lab expansion takes time; for a major shock like this may need new buildings
+-->
+
+## Research lab production function
+- Output: knowledge, often measured by papers, citations, text analysis
+- Labor inputs: principal investigator (the boss), postdocs, gradute students, staff scientists
+- Capital inputs: equipment (e.g. MRI machine, test tubes), animals
+
+## Consequences of the doubling 
+- Essentially led to a biomedical science "bubble"
+- Universities invested heavily in new buildings and increased hiring, leading to excess capacity and layoffs as funding stagnated
+- Rise in hiring of postdocs and graduate students, but with poor prospects for employment as researchers due to dropoff in funding after 2003
+
+## Concerns in the post-doubling era
+
+> "<span style="color:black">The system now **favors those who can guarantee results** </span>rather than those with potentially path-breaking ideas that, by definition, cannot promise success." - Alberts et al (2014)
+
+## If "how much" is not the answer, what about "how"?
+- Awarded for 3-5 years
+- When grant expires, have to apply for a renewal
+- Typical NIH grant is evaluated based on the *project*
+- What if grants were awarded to the *person*?
+
+## Question
+- Why might awarding grants to the person rather than the project be more effective in generating breakthrough science?
+
+## HHMI awards
+- Funds "people, not projects"
+- Prestigious; intended for scientists with high potential
+- HHMI investigators appointed for 5 years initially, usually renewed at least once
+- Receive high-quality feedback at first review
+- First review more focused on whether ideas have potential to be high impact rather than accomplishments
+
+## Azoulay, Graff-Zivin, Manso (2010)
+- Compare HHMI winners to other high-achieving scientists
+- Find that HHMI winners are more likely to explore new lines of research and generate high-impact research
+
+## Discussion
+- Why might we not want the NIH to adopt the HHMI model for all of its grants?
+
+<!--
+want some incremental science as well as radical science
+time-intensive for reviewers
+HHMI population is most talented 
+-->
+
+## What is the impact of NIH funding?
+- We've seen that the biomedical research system could be improved
+- But how well is it doing right now?
+
+## Two studies
+- We'll look at two studies that approach the problem differently
+- One looks at the impact of getting NIH funding on the individual researchers
+- The other looks at the impact of getting NIH funding on a scientific area
+
+## Jacob and Lefgren (2007)
+- "The Impact of Research Grant Funding on Scientific Productivity"
+- Regression discontinuity strategy: compare the publication output of researchers who were just above the threshold for getting a grant to those just below the threshold
+- Find that getting NIH funding results in only a small or zero increase in number of publications 
+
+## Discussion
+- Does this necessarily imply that the impact of NIH funding on research is zero? 
+    + Hint: Imagine you're an entrepreneur trying to get some startup capital and you got turned down by a potential investor. What's a natural next step?
+    
+<!--
+marginal grant
+substitute with other funds
+-->
+    
+## Other considerations
+- Are publications a good outcome measure?
+- Recall the study on the H-1B visa lottery
+    + Not so informative about aggregate changes in funding
+    
+    
+## Azoulay, Graff-Zivin, Li, and Sampat (2015)
+- "Public R&D Investments and Private-Sector Patenting: Evidence from NIH Funding Rules"
+- Look at the impact of NIH funding on research areas rather than individuals
+- Instrumental variables approach
+- Look at effect of NIH funding on *total* patent output in a research area to account for crowd-out
+    + If there is complete crowding-out, then total patent output should be unchanged
+
+## Results
+- Estimate that a \$10 million increase in funding leads to 2.3 new patents
+- \$1 in NIH funding leads to \$1.40 in drug sales, not including other benefits like development of devices or public health improvements
+
+## Summary
+- Knowledge is a public good
+- Economic theory suggests that the production of knowledge, especially through basic research, should be subsidized by the government
+- The doubling of the NIH budget from 1998-2003 showed that increasing science funding, if not done carefully, can lead to undesirable consequences
+- Jacob and Lefgren (2007) suggests that on the margins, researchers are able to find other ways to fund their research if they do not get NIH funding
+- Azoulay et al (2015) find that research areas which receive more NIH funding lead to more follow-on innovation in the form of patents
+
+## Readings
+
+**Wednesday**
+
+[\*TED Talk by David Autor](https://www.ted.com/talks/david_autor_why_are_there_still_so_many_jobs)
+
+**Friday**
+
+[\**The Basic Income experiment*, Planet Money podcast](http://www.npr.org/sections/money/2017/09/22/552850245/episode-796-the-basic-income-experiment)
+
+[\**Why Some People Love Tax Day*, Planet Money podcast](http://www.npr.org/sections/money/2013/04/12/177063399/episode-451-why-some-people-love-tax-day)
+
+[\*Summary of evidence on cash transfers in developing countries, GiveDirectly website](https://www.givedirectly.org/research-on-cash-transfers)
 
 
 
