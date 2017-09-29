@@ -19,11 +19,83 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 - Today we will discuss different incentive systems that have emerged to overcome this problem
 
 ## Incentive systems
-- Priority of discovery
+- Priority (or "Priority of discovery")
 - Prizes/Contests
 - Patents
 - Copyrights
 
 ## Priority 
 - Being the first to communicate an advance in knowledge
-- 
+- The reward or payoff is the *recognition* of being first
+
+## Forms of Recognition
+- Eponymy: having your name attached to a discovery (e.g. Halley's Comet, Planck's constant)
+- Prizes (e.g. Nobel Prize)
+- Nomination to societies (e.g. National Academy of Sciences)
+- Publication
+
+## Benefits of priority
+
+> "Priority creates a privately-owned asset...from the very act of relinquishing exclusive possession of the knowledge" (Dasgupta and David 1994) 
+
+## Benefits of priority
+- Knowledge is public and accessible for others to use
+- Scientist reputation increases the more new knowledge is used, thus capturing some of the externalities of new knowledge
+- Making knowledge public allows other scientists to evaluate their work
+- Scientists are incentivized to share their results in a timely fashion
+
+## Why priority isn't perfect
+- Incentives to be secretive remain, during research process or even after publication if scientist plans to build on published research
+- "...imparts great significance to differences in timing that are inconsequential from
+a societal standpoint" (Dasgupta and David 1994)
+     + more than the socially optimal number of teams may choose to enter the same race, even though it only matters that one team makes the discovery
+- The Matthew Effect (rich get richer and poor get poorer) - people pay more attention to scientists who already have a reputation, give them more credit than coauthors, give them more funding
+
+## Prizes/contests
+- Rewards for solving a specific problem 
+- Examples: X-Prize for reusable spacecraft, Longitude prize for developing a way to determine longitude accurately
+
+## Spaceshipone (winner of Ansari X-Prize)
+
+```{r}
+knitr::include_graphics("spaceshipone.jpg")
+```
+
+## Question
+- We've discussed the NIH system of disbursing grants, where grants are awarded based on what scientists consider to be important work. What is a potential advantage of prizes over this system?
+     + Hint: consider the point of view of the senator from the podcast about the "shrimp fight club"
+
+- What is a potential disadvantage?
+
+## Do prizes work? - Historical evidence
+- Historical evidence is mixed
+- Some evidence that, in practice, prizes had many problems such as lobbying of judges,  difficulty deciding on the best submissions, and poor administration
+- Example: For solving the problem of an effective safety lamp, uneducated George Stephenson was awarded about 100 pounds but well-connected Sir Humphry Davy was given 2000 pounds and public recognition of the achievement
+
+## Do prizes work? - Historical evidence
+- Brunt et al (2011) study awards given annually by the Royal Agricultural Society of England (RASE) between 1839 and 1939
+- Awards were either money and/or prestige
+- They find that awards attracted more inventors for that category and increased patenting
+
+## The size of contests
+- A contest organizer may be concerned about the number of participants in the contest. Having more participants could increase the probability of reaching a better solution.
+- Why could having fewer participants be beneficial from the organizer's point of view? 
+    + Think of how a smaller contest affects a participant's chances of winning and their cost-benefit analysis
+
+## TopCoder contests
+- Solves software problems for companies by outsourcing the problem to independent programmers through competitions
+- Contestants compete within a virtual "room" of no more than 20 coders, even though there could be more than 20 contestants in total
+- Contestants can win money, recognition, and career opportunities 
+
+## Boudreau et al (2011)
+- Boudreau et al study TopCoder contests and find evidence consistent with both hypotheses
+- When there are more competitors, effort decreases
+- When there are more competitors, (at least) one competitor is likely to achieve a high-performing outcome
+- Uncertainty/complexity of the problem matters: for more complex problems, having more competitors is more likely to yield a net benefit
+
+## asdf
+
+
+     
+
+
