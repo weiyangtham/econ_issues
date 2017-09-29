@@ -93,7 +93,33 @@ knitr::include_graphics("spaceshipone.jpg")
 - When there are more competitors, (at least) one competitor is likely to achieve a high-performing outcome
 - Uncertainty/complexity of the problem matters: for more complex problems, having more competitors is more likely to yield a net benefit
 
-## asdf
+## Copyrights and Patents
+- Theoretical justification: give creators incentive to innovate by allowing them temporary monopoly power
+- Tradeoff: consumer welfare loss from monopoly pricing
+- Another concern: may prevent follow-on innovation, either by restricting access to knowledge or through fear of future litigation
+
+## The OncoMouse
+- Mice are widely used in cancer research
+- Scientists studying mouse genetics had to rely on spontaneous mutations for their studies
+- In the early 1980s, three new methods were developed for engineering research mice: the Onco, Knock-out, and Cre-lox mice
+- The Onco and Cre-lox mice had stricter IP restrictions than the Knock-out mice, while access to the Cre-lox mice was more restricted than to the Onco mice
+
+## Openness agreements
+- In 1998 and 1999, an agreement was reached with DuPont (which held rights to the Onco and Cre-lox mice) allowing much easier access to the mice
+- Murray et al (2016) study the effect of this increased openness on follow-on innovation
+- Are articles disclosing new research mice cited more often?
+
+## Openness led to greater usage of mice
+```{r, fig.align='center'}
+knitr::include_graphics("mice_did.png")
+```
+
+## Results
+- Reduced restrictions on use of mice led to new researchers using the mice and new research lines being explored
+- Creation of new mice did not decrease i.e. researchers were not deterred by lack of IP protection
+
+
+
 
 
      
