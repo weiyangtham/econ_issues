@@ -1,0 +1,29 @@
+---
+title: "Incentivizing Innovation"
+author: "Tham, Wei Yang"
+date: "September 29, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Intro
+- As discussed before, knowledge has the properties of a public good (not depleted when consumed and non-excludable)
+- This suggests that markets will under-provide
+- Today we will discuss different incentive systems that have emerged to overcome this problem
+
+## Incentive systems
+- Priority of discovery
+- Prizes/Contests
+- Patents
+- Copyrights
+
+## Priority 
+- Being the first to communicate an advance in knowledge
+- 
