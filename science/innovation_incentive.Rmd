@@ -20,9 +20,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 
 ## Incentive systems
 - Priority (or "Priority of discovery")
-- Prizes/Contests
-- Patents
-- Copyrights
+- Prizes (or Contests)
+- Patents/Copyrights
 
 ## Priority 
 - Being the first to communicate an advance in knowledge
@@ -118,6 +117,13 @@ knitr::include_graphics("mice_did.png")
 - Reduced restrictions on use of mice led to new researchers using the mice and new research lines being explored
 - Creation of new mice did not decrease i.e. researchers were not deterred by lack of IP protection
 
+## Question
+- How well do you think the story of the Oncomouse applies to other forms of creative output e.g. books, opera?
+
+## Takeaways
+- We discussed different ways of incentivizing discovery and invention: - Priority, prizes, and patents/copyrights
+- Much depends on specifics of policy and your objectives e.g. complexity of problem determines how many competitors to have in your contest
+- Effectiveness of policy can vary depending on context e.g. follow-on innovation is crucial in science
 
 
 
