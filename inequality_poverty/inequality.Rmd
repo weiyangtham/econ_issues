@@ -1,0 +1,129 @@
+---
+title: "Inequality"
+author: "Wei Yang Tham"
+date: "October 2, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+
+```
+
+# Short Essay 1
+
+## Areas for improvement
+
+- Using evidence to support argument 
+- Choice of sources
+- Editing
+
+## Improve this argument
+- What would you add to the following argument to **improve** it? Not looking for a counter-argument
+- "10\% of the labor force in city X work in minimum wage jobs, therefore raising the minimum wage would increase their income."
+
+## Things that are missing
+
+"50\% of the labor force in city X work in minimum wage jobs, therefore raising the minimum wage would increase the incomes of many workers."
+
+1. Empirical evidence: 
+    + "Tham (2017) finds that a recent minimum wage increase in city Y led to an increase in earnings."
+    
+2. Assessing strength of evidence:
+    + "This study is particularly relevant to city X because X and Y have similar demographics and slow-growing economies."
+
+## Putting it together
+"Although most studies of the minimum wage show a zero or small employment effect (Schmitt 2013), the unusual composition of city X's labor force and its slow-growing economy mean that many of those studies might not be applicable. However, recent evidence suggests that even cities like X can benefit from an increase in the minimum wage. Tham (2017) finds that a recent minimum wage increase in city Y led to an increase in earnings. This study is particularly relevant to city X because they have similar demographics and slow-growing economies. Since 50\% of the labor force in city X work in minimum wage jobs, raising the minimum wage would increase the incomes of many workers."
+
+## Improve this argument
+- What if modified the argument: "Although most studies...raising the minimum wage would increase the incomes of many workers **and improve their health outcomes.**"
+- What is missing from this argument?
+- Can't assume that health will improve! 
+
+## A few types of evidence
+
+- Direct empirical evidence (minimum wage caused better health)
+- Indirect empirical evidence (higher incomes causes better health; higher incomes lead to better diet)
+- Theoretically possible (higher incomes *could* lead families to use more healthcare services)
+
+## Economic models
+- Don't just list models, distinguish between them!
+    + E.g. "Dube, Lester, and Reich (2010) find that increases in the minimum wage lead to a reduction in turnover, which suggests the dynamic monopsony model is a better characterization of the low-skilled labor market than the competitive model."
+    
+- Models are not evidence; there are no **laws** in economics e.g. "the law of demand says that raising the minimum wage will result in job losses"
+    + Prove it! Use empirical evidence to say why your model is better than the other ones
+
+## Sources
+- Blogposts and newspaper articles are great ways to find interesting arguments and research papers 
+- But they are often speculative (this is a feature, not a bug!) and they are not research papers - avoid relying on them directly as evidence
+- Not all research papers are created equal; read the abstract or intro and at least figure out if they are theoretical or empirical, then whether the results are causal or correlational
+    + Tip: Save time by finding articles/blogs that explain the research paper
+- Don't just cite someone's opinion e.g. "The minimum wage is the most effective tool for reducing poverty. In fact, according to Tham (2018), the best way to fight poverty is to increase the minimum wage." 
+
+## Direct quotes and plagiarism
+- **Paraphrase!**
+    + Makes your writing clearer and smoother
+- If you lift text directly from an essay, use direct quotes
+    + Lifting text without quotes is plagiarism!
+
+# Inequality
+
+## 
+
+## David Autor video
+
+1. O-ring principle (human genius and creativity) determines type of work
+2. Never-get-enough principle (human insatiability/greed) determines how many jobs there actually are
+
+## Types of inequality
+- Income 
+- Wealth 
+- Others: consumption, health, wage
+
+## Income v.s. Wealth
+
+- Income is a flow
+- Income is composed of labor income (e.g. wages, salaries) and capital income (e.g. rent, dividends, interest)
+- Wealth is a stock
+- Comes from wealth appropriated or accumulated in the past
+- Wealth is the sum of assets minus financial liabilities (debt)
+
+
+## Usual explanations
+- Skill-biased technological change
+- Decline of unions
+- Trade
+- Immigration
+
+## Attack of the Robots
+
+
+<!---
+Autor
+
+with ATM bank tellers have doubled
+fraction of US adults in workforce is higher than in 1890 
+
+
+O-ring principle (human genius and creativity) determines type of work
+never-get-enough principle (human insatiability/greed) determines how many jobs there actually are
+
+tellers per branch fell by third but number of branches increased 40% because cheaper to open new branches
+
+bank tellers job scope changed - more like salespeople, introducing them to products
+
+each job has multiple tasks
+
+improvement in one link of the chain increases value of other links
+as tools improve, increases importance of human expertise, judgment, creativity
+
+new industries arise because ppl still want stuff
+
+there are jobs but not good jobs
+
+solution to tractors? compulsory high school education. (Q: is this applicable today?)
+-->
