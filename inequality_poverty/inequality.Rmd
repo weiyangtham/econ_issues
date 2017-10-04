@@ -16,6 +16,13 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 
 # Short Essay 1
 
+## plot
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+
 ## Areas for improvement
 
 - Using evidence to support argument 
@@ -92,12 +99,76 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 - Comes from wealth appropriated or accumulated in the past
 - Wealth is the sum of assets minus financial liabilities (debt)
 
+## Pair Discussion
+- In pairs, discuss the following:
 
-## Usual explanations
-- Skill-biased technological change
+Should we care about income inequality? Come up with some reasons why or why not
+
+<!--
+if bottom improving slower than top, still improving
+political power
+fairness
+poverty (we might even care abou relative poverty)
+-->
+
+## Trends in inequality
+```{r, fig.align='center'}
+knitr::include_graphics("zucman_top1share_us.png")
+```
+
+## Trends in inequality
+```{r, fig.align='center'}
+knitr::include_graphics("saezpiketty_useurope_incomeineq.png")
+```
+
+## Changes in 90/10 ratio 
+```{r}
+knitr::include_graphics("90_10_international.png")
+```
+
+## Takeaways
+- Inequality has been rising since around the 80s
+- Popular press focuses on the top 1\% but inequality in "the other 99\%" has also increased
+    + We will focus on the latter
+- Rising faster in the US than in other countries
+- Why?
+
+## Suggested explanations
+- Skill-biased technological change/increase in the skill premium
 - Decline of unions
-- Trade
-- Immigration
+- Trade (with China)
+
+## College-High school earnings gap has doubled
+```{r}
+knitr::include_graphics("college_premium_us.png")
+```
+
+## "Education Race" model
+- Race between skill supply and skill demand
+- The "skill premium" increases if demand outpaces supply
+    + Education $\neq$ skill, but education easier to measure
+
+## Questions
+- In the video, David Autor discusses a major event in the early 1900s increased skill supply. What was it?
+    + High school movement
+- Why might skill demand be increasing over the 1980s and 1990s?
+
+## Changes in skill supply over time
+- In 1940, only 6\% of Americans had a 4-year college degree
+- From end of WW2 to early 1980s, college enrollment grew rapidly 
+- After 1982, share of college graduates continued to grow but at a slower rate
+
+## Changes in skill supply over time
+```{r, fig.align='center'}
+knitr::include_graphics("collegesharehours.png")
+```
+
+## Is the model consistent with the data?
+```{r}
+knitr::include_graphics("autormodel.png")
+```
+
+
 
 ## Attack of the Robots
 
