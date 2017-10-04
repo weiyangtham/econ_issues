@@ -148,10 +148,9 @@ knitr::include_graphics("college_premium_us.png")
 - The "skill premium" increases if demand outpaces supply
     + Education $\neq$ skill, but education easier to measure
 
-## Questions
+## Question
 - In the video, David Autor discusses a major event in the early 1900s increased skill supply. What was it?
     + High school movement
-- Why might skill demand be increasing over the 1980s and 1990s?
 
 ## Changes in skill supply over time
 - In 1940, only 6\% of Americans had a 4-year college degree
@@ -164,13 +163,57 @@ knitr::include_graphics("collegesharehours.png")
 ```
 
 ## Is the model consistent with the data?
-```{r}
+```{r, fig.align='center'}
 knitr::include_graphics("autormodel.png")
 ```
 
+## How useful is the model?
+- Other studies also find that a simple demand-supply model has substantial explantory power for the change in the college-high school earnings gap (e.g. Katz and Murphy 1992)
+- Does it matter for inequality? 
+- Goldin and Katz (2010) estimate that the increase in the education wage premium explains 60-70\% of the rise in US wage inequality from 1980 to 2005
 
+## How technology affects skill demand
+- Innovations and computerization led to increasing routinization of tasks
+- Raises the value of workers who can perform abstract tasks that are difficult to routinize (at the moment!), but lowers the value of workers in routine-intensive jobs (e.g. assembly line)
+- Low-skill jobs like cleaning are also difficult to routinize, leading to a "polarized" labor market
 
-## Attack of the Robots
+## Polarization
+- Increase in college premium not just about higher earnings for college workers 
+- Partly due to falling real earnings for non-college-educated workers, particularly males
+
+## Wage polarization
+```{r, out.width='325px'}
+knitr::include_graphics("realwage_byeduc.png")
+```
+
+## Discussion
+- Despite his concerns over polarization, David Autor is fairly optimistic that the U.S. will be able to weather this challenge. 
+
+1. Why is he optimistic?
+<!--
+hasn't happened in the past
+"just" need to increase skills
+-->
+2. Do you share his optimism? Why or why not?
+
+## Will AI replace lawyers?
+
+- [https://www.nytimes.com/2017/03/19/technology/lawyers-artificial-intelligence.html](https://www.nytimes.com/2017/03/19/technology/lawyers-artificial-intelligence.html)
+- Ross is a program being used to do certain aspects of legal work
+
+## How good is Ross?
+- A lawyer took 10 hours to find a similar case to the one he was working on, while Ross did it almost instantly. 
+- Ross can't do everything yet; still need humans to write memos
+- But "the trouble is that technology makes more and more work routine."
+
+## Evidence for doom and gloom
+- Based on the tasks performed in jobs, Frey and Osborne (2013) predict that 47\% of total U.S. employment is at risk of automation in the next 20 years
+- Acemoglu and Restrepo (2017) estimate that one more robot per thousand workers reduces the
+employment to population ratio by about 0.18-0.34 percentage points and wages by 0.25-0.5
+percent
+
+## Question
+- How would you expect labor productivity to change if robots really were taking over?
 
 
 <!---
