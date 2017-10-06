@@ -1,0 +1,118 @@
+---
+title: "Poverty"
+author: "Wei Yang Tham"
+date: "October 6, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Overview
+- Much of the concern over inequality and the robot apocalypse is poverty-related
+- The Universal Basic Income (UBI) is gaining a lot of attention, especially among Silicon Valley-types
+- We will discuss this and other poverty reduction programs that have been tried and proposed
+
+## Features of UBI
+1. Unconditional (don't have to fulfill certain requirements, like sending child to school)
+2. Not means-tested (income does not have to below a threshold to qualify)
+3. Long term
+4. Covers basic living expenses
+5. Distributed to everyone within a set region
+
+## Main concerns about UBI
+- Cause people to work less
+    + Hurts economy
+    + People derive meaning from work
+- Too expensive
+
+## Negative Income Tax (NIT) experiments 
+- Carried out in the 70s to reduce disincentive to work
+- In other programs, benefits are completely gone when income rises above a threshold, creating a disincentive to work
+- Hope was to lessen this disincentive with the negative income tax
+- Federal government authorized randomized control trials to study NIT at multiple locations over 3-5 years
+
+## What is a negative income tax?
+
+1. Maximum cash transfer benefit
+2. Benefit reduced for each dollar of earned income (or an implicit tax)
+
+## NIT experiments v.s. UBI
+1. Unconditional (don't have to fulfill certain requirements, like sending child to school)
+2. Not means-tested (income does not have to below a threshold to qualify)
+3. ~~Long term~~
+4. Covers basic living expenses
+5. ~~Distributed to everyone within a set region~~
+
+## NIT in an economic model
+```{r}
+knitr::include_graphics("nit_indiffcurves.png")
+```
+
+## Effect of NIT on labor supply
+
+- Generally find small on labor supply
+- One of the experiments found a 4\% reduction in employment, but turned out to be the result of misreporting
+    + NIT recipients underreported earnings to get higher benefits
+ 
+## Limitations of NIT experiments
+- Data collection issues
+- Short-term 
+- Cannot assess macro effects
+
+## Alaska Permanent Fund
+- Money from oil royalties invested in a sovereign wealth fund
+- Fund pays yearly dividends to Alaska residents
+- Amount paid out depends on fund's performance
+
+## Alaska Permanent Fund
+- Number of recipients: 660 000 individuals
+- Amount: \$1000 to \$2000 in recent years
+- Duration: 1982 to present
+
+## Alaska Permanent Fund v.s. UBI
+1. Unconditional (don't have to fulfill certain requirements, like sending child to school)
+2. Not means-tested (income does not have to below a threshold to qualify)
+3. Long term
+4. ~~Covers basic living expenses~~
+5. Distributed to everyone within a set region
+
+## Question
+- Assume for the moment that when an average Alaska resident receives a dividend *but no one else does*, they reduce their labor supply ("partial equilibrium" effect)
+- In the real-life scenario where all Alaska residents receive a dividend, the same resident might actually no longer reduce their labor supply, or reduce it by a smaller amount. Why?
+
+<!-- macro effects; 
+lower labor supply leads to higher equilibrium wage 
+more demand, more labor demand? esp if ppl spend money at the same time
+-->
+
+## Employment effects of Alaska Permanent Fund
+- Using synthetic control method, Jones and Marinescu (2017) study effect of Alaska Permanent Fund
+- Employment-to-population ratio of Alaska doesn't change relative to control states
+- Share of Alaskans who work in part-time jobs increased by 2 percentage points
+- People remained employed, but worked fewer hours
+
+## Lottery winners
+-  
+
+## Lottery winners v.s. UBI
+1. Unconditional 
+2. Not means-tested 
+3. Long term (depends on how winnings are distributed)
+4. Covers basic living expenses (for big lottery)
+5. ~~Distributed to everyone within a set region~~
+
+## What will be the effects of UBI?
+- In 1970s, 
+
+<!--
+## Earned Income Tax Credit
+```{r}
+knitr::include_graphics("eitc_schedule.png")
+```
+
