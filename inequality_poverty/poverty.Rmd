@@ -13,12 +13,21 @@ output:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
 
+## plot
+```{r}
+
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+
+```
+
 ## Overview
 - Much of the concern over inequality and the robot apocalypse is poverty-related
 - The Universal Basic Income (UBI) is gaining a lot of attention, especially among Silicon Valley-types
 - We will discuss this and other poverty reduction programs that have been tried and proposed
 
 ## Features of UBI
+
 1. Unconditional (don't have to fulfill certain requirements, like sending child to school)
 2. Not means-tested (income does not have to below a threshold to qualify)
 3. Long term
@@ -29,9 +38,11 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 - Cause people to work less
     + Hurts economy
     + People derive meaning from work
+- Macroeconomic effects like inflation
 - Too expensive
 
 ## Negative Income Tax (NIT) experiments 
+
 - Carried out in the 70s to reduce disincentive to work
 - In other programs, benefits are completely gone when income rises above a threshold, creating a disincentive to work
 - Hope was to lessen this disincentive with the negative income tax
@@ -98,7 +109,10 @@ more demand, more labor demand? esp if ppl spend money at the same time
 - People remained employed, but worked fewer hours
 
 ## Lottery winners
--  
+
+## Lottery winners - Sweden
+- Cesarini et al (2015) compare winners to non-winners in the same lottery
+- Some are lump sum payments, some are installments
 
 ## Lottery winners v.s. UBI
 1. Unconditional 
@@ -107,12 +121,34 @@ more demand, more labor demand? esp if ppl spend money at the same time
 4. Covers basic living expenses (for big lottery)
 5. ~~Distributed to everyone within a set region~~
 
-## What will be the effects of UBI?
-- In 1970s, 
+## Results
+```{r, fig.align='center'}
+knitr::include_graphics("cesarini_lottery.png")
+```
 
-<!--
+## Findings
+- Winning \$140 000 (\$1M kronor) decreased the probability of working by 2 percentage points, but within 10 years the effect was gone (i.e. people returned to work)
+- Hours worked per week decreased by 1 to 1.5 hours per week
+- Whether the payment was lump sum or in installments didn't matter
+
+## Does UBI cause inflation?
+- 
+
 ## Earned Income Tax Credit
-```{r}
+- Can think of as a variation on the Negative Income Tax
+
+## EITC schedule
+```{r, fig.align='center'}
 knitr::include_graphics("eitc_schedule.png")
 ```
 
+<!--
+have to resist donuts - Jillian Carr snap
+gaming the system
+don't get if you're not working
+ppl on EITC also getting other supports
+spending EITC on leisure (taking son to disneyland)
+http://www.telegraph.co.uk/culture/books/authorinterviews/8681481/Esther-Duflo-Can-this-woman-change-the-world.html
+
+discussion: based on the podcasts and the evidence on cash transfers in developing countries, do you think cash transfers are an effective policy for the US? Are you concerned about cases like the woman in the podcast who took her son to disneyland?
+-->
