@@ -1,0 +1,108 @@
+---
+title: "Writing and Choosing a Research Topic"
+author: "Wei Yang Tham"
+date: "September 1, 2017"
+output: 
+  beamer_presentation:
+    incremental: true
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, dev = 'pdf')
+```
+
+## Why write?
+
+1. **Writing is thinking!**
+2. Communicate your ideas
+
+## How to approach the assignments
+- Think of writing as first and foremost a way to organize and refine your thoughts
+- Good, clear writing will emerge as a consequence of that
+
+## What we think good writing looks like
+```{r, fig.align='default'}
+knitr::include_graphics("usainbolt.jpg")
+```
+
+## What it actually is
+```{r, fig.align='center'}
+knitr::include_graphics("qwop.jpg")
+```
+
+## Embrace the process
+- Good writing is recursive, not linear
+- Linear process: research > outline > draft > edit > submit
+- Recursive: anything goes
+    + might write an outline then decide you need more research
+    + might completely reorganize your paper and change your argument 
+    
+## Embrace the process
+- It can feel like "one step forward, two steps back"...
+- But that's how you know you're learning!
+
+## Some tips
+1. Start early
+2. Just write; you can't edit what isn't written down. 
+    + Good "writing" is really good editing
+    + Writer's block is not real
+3. Use writing to work through your thoughts. Don't feel that you need a fully-formed argument before starting on a paper
+
+## Guidelines for good writing
+1. Be clear and concise 
+    - Eliminate unnecessary words, sentences, or paragraphs
+2. Get to the point 
+    - Once you've provided enough context, layout your thesis as quickly as possible
+3. Flow 
+    - A sentence/paragraph should follow logically from the previous one
+4. Be concrete 
+    - Show, don't tell
+    - Use examples, figures, and facts
+    - A good figure can say a lot!
+
+## How to pick a topic
+Ideal topic for this class
+
+1. Something you're interested in
+2. Something you're unsure about i.e. don't choose an issue where you would never be willing to change your mind
+3. There is a substantial amount of research on this topic that you can draw upon
+
+## Some practical steps for picking a topic
+- Make a list of issues you're interested in
+- Do a little bit of background reading and see if there are questions about that issue you find interesting
+- When you have one or two topics in mind, I recommend that you run them by me. I have office hours...make use of them!
+
+## Example: Tenure in academia
+- What is tenure?   
+- Why do universities give professors tenure? 
+- Two Primary Research Questions: 
+    + Does tenure increase educational quality?  
+    + Does tenure increase research quality?
+- Theory: How could tenure affect incentives for teaching/research?
+- Empirics: In what ways is the best empirical evidence consistent (or not) with these predictions?
+
+## Finding resources
+- Look at our reading list and the resources listed there
+- Journal of Economic Perspectives is a great place to start
+- Make use of non-technical summaries (e.g. NBER Digest, Microeconomics Insights blog)
+
+## Citations
+
+- A common mistake is to use quotes way too frequently
+- Just relay the important info and cite it appropriately
+- Examples:
+    + Tergimann (2015) finds that self-employed earn on average 15% less than their wage-employed counterparts. 
+    + Self-employed men earn 15% less on average than their wage-employed counterparts (Tergimann, 2015).
+- Use the authors' last name to identify them and do not give their academic affiliation.
+    + What not to do: According to Wei Yang Tham (2016), a graduate student at Ohio State University...
+    + Do this instead: Tham (2016) finds...
+
+## Writing resources (text is hyperlinked)
+
+- [Duke Econ undergrad writing guide (one of my favorites!)](http://lupus.econ.duke.edu/ecoteach/undergrad/manual.pdf)
+- [Strunk and White, The Elements of Style; link goes to pdf, also available as book](http://faculty.washington.edu/heagerty/Courses/b572/public/StrunkWhite.pdf)
+- [OSU Writing Center](https://cstw.osu.edu/writing-center)
+
+

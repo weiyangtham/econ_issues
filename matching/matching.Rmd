@@ -2,12 +2,23 @@
 title: "Matching"
 author: "Wei Yang Tham"
 date: "October 11, 2017"
-output: html_document
+output:
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
+
+## asdf
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, cyl)) + geom_point()
+```
+
 
 ## Markets without prices
 
@@ -28,7 +39,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 ## The Kidney Market 
 - In most countries, it is illegal to sell human organs; supply of organs comes from donations
 - Kidneys are a special case because you have two kidneys and can donate one without having to be dead
-- Dialysis is costly, tiring for patients, and not a long-term solution; a transplant is the best bet
+- Dialysis is costly, taxing on patients, and not a long-term solution; a transplant is the best bet
 - Nonetheless, kidneys are not typically exempted from laws prohibiting the sale of human organs...
 
 ## ...except in Iran!
@@ -36,6 +47,55 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 - Iran has no kidney transplant waiting list
 - Contrast with U.S. which has over 100 000 patients on the wait list
     + Wait time is 3-5 years, with estimated mortality rate of 5\% before receiving a kidney
+    
+## Group Discussion
+In groups of 3-4, discuss: 
 
-## Kidney exchanges
-- 
+- Would you support legalizing kidney sales? Why or why not?
+  
+## Kidney exchange
+- Even if you can find a donor willing to donate to you, donors and recipients have to be compatible
+- If you are an incompatible donor-recipient pair, you could still get your transplant by finding a another donor-recipient pair willing to trade 
+- This is like a barter transaction (5 homemade jams for a leg of ham)
+    + Relies on "double coincidence of wants" - you have to want jam and I have to want ham
+    + If you pay me with money, I can just buy something else later if I don't want ham
+
+## Paired Kidney Exchange
+```{r, fig.align='center'}
+knitr::include_graphics("paired_kidney_exchange.jpg")
+```
+
+## 3-way Kidney Exchange
+```{r, fig.align='center'}
+knitr::include_graphics("three_way_kidney_exchange.jpg")
+```
+
+## Trading cycles
+- The logic of the pairwise kidney exchange can be extended to trading cycles involving three or more donor-recipient pairs
+- Donors without a recipient can kick off a cycle (technically a chain since they don't need to receive a kidney), thus giving their donation even greater value
+- Donors without recipients also reduce harm if someone in the chain backs out
+
+## Congestion
+- In the early days of kidney exchange, surgery to perform the swaps was done simulataneously, making long trading cycles a logistical challenge
+- Why do you think surgeries were done simultaneously?
+
+## Safe and simple
+- You might imagine designing a kidney exchange algorithm that prioritized patients with only one donor, since they would have a harder time trying to find someone to make an exchange with. 
+- Why might this backfire and make the exchange less thick?
+
+## Making kidney exchange work as a market
+- Market thickness 
+    + Assembling databases of patient-donor pairs
+- Congestion 
+    + At first, scheduling simultaneous surgeries to protect against people backing out; now, organizing chains
+- Safe and simple 
+    + Making it easy for hospitals and patients to enroll and reveal important information
+    
+## Boston Public Schools (BPS) system
+- Another prominent example of the usefulness of market design
+    
+
+    
+
+
+
