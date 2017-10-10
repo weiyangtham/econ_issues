@@ -1,0 +1,41 @@
+---
+title: "Matching"
+author: "Wei Yang Tham"
+date: "October 11, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Markets without prices
+
+- Prices are usually involved when we think of markets
+    + In equilibrium, the market clears
+- What happens if there are no prices? E.g. the market for kidneys
+
+## Matching and market design
+- Figuring out how to make price-less markets more efficient has been one of economics's biggest successes in recent history
+- An underlying question here is: what are the characteristics of a properly functioning market?
+    + Primary goal is to have a thick market: bring together many participants (on both sides of the market) so that they have opportunities to find the best transactions
+
+## What could cause a market to fail?
+- Unraveling: an advantage to making an early offer snowballs as competitors keep trying to be slightly earlier than each other
+- Congestion: too many options that are difficult to evaluate
+- Safe and simple (strategy-proof): participants can list their true preferences instead of trying to game the system
+
+## The Kidney Market 
+- In most countries, it is illegal to sell human organs; supply of organs comes from donations
+- Kidneys are a special case because you have two kidneys and can donate one without having to be dead
+- Dialysis is costly, tiring for patients, and not a long-term solution; a transplant is the best bet
+- Nonetheless, kidneys are not typically exempted from laws prohibiting the sale of human organs...
+
+## ...except in Iran!
+- Iran allows payments, usually several thousand dollars
+- Iran has no kidney transplant waiting list
+- Contrast with U.S. which has over 100 000 patients on the wait list
+    + Wait time is 3-5 years, with estimated mortality rate of 5\% before receiving a kidney
+
+## Kidney exchanges
+- 
