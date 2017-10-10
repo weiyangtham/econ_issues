@@ -4,14 +4,17 @@
 
 # datasets
 *.txt
+*.tsv
 !README.txt # don’t exclude README file
 *.csv
 *.dta
+*.xlsx
 
 # aux files
 *.synctex.gz
 *.run.xml
 *.bib.blg
+*.tmp-pdfcrop
 
 # documents
 *.html
@@ -19,6 +22,7 @@
 
 # images
 *.png
+*.jpg
 
 # Output files from R CMD build
 /*.tar.gz
