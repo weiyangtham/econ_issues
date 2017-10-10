@@ -1,4 +1,35 @@
 .Rproj.user
 .Rhistory
 .RData
-.Ruserdata
+
+# datasets
+*.txt
+!README.txt # don’t exclude README file
+*.csv
+*.dta
+
+# aux files
+*.synctex.gz
+*.run.xml
+*.bib.blg
+
+# documents
+*.html
+*.pdf
+
+# images
+*.png
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+.Rproj.user
