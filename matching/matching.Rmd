@@ -93,9 +93,68 @@ knitr::include_graphics("three_way_kidney_exchange.jpg")
     
 ## Boston Public Schools (BPS) system
 - Another prominent example of the usefulness of market design
-    
+- Problem with the old system was that it required parents to be strategic
+- Parents who were less savvy ended up with schools nowhere near the top of their list; parents who were savvy expended lots of effort trying to game the system (e.g. talking to other parents at the playground to figure out demand for kindergartens)
 
-    
+## Priority
+- Old Boston algorithm was based on a combination of how you ranked the school and priority
+- Priority means that if you and another person both ranked a school as your first choice but you have priority, you get admitted over that person
+- Priority was based on having siblings in a school, living within the walk zone of a school, and a lottery
 
+## Old Boston algorithm
+
+1. Families list at least 3 schools in order of preference
+2. School *immediately* admits all first choice students in order of priority up to capacity, then rejects the rest
+3. Algorithm assigns as many remaining students as possible to their second choice 
+4. Algorithm assigns as many remaining students as possible to their third choice 
+5. ...
+
+- Students who don't get any of their choices are assigned to the nearest school with vacant seats
+
+## Problems with old algorithm
+- Consider a child who lives within the walk zone of a popular kindergarten, and this kindergarten is their parent's second choice
+- Their first choice kindergarten is a more distant kindergarten that's just as popular
+- Two possible actions: 
+    1. List the distant kindergarten as their first choice (i.e. list their true preferences)
+    2. List the walk zone kindergarten as their first choice
+    
+## If parents list true preferences
+
+1. Distant kindergarten: unlikely to get since they don't have priority
+2. Walk zone kindergarten: Since it is also popular, it has probably filled its places with students who put it as their first choice
+3. Kindergarten X: Unlikely to get third choice either, since it will have to have vacancies after accepting students who listed it as their first or second choice
+4. Same as 3.
+5. ...
+
+## If parents list true preferences
+
+- Either get lucky and get the (first choice) distant kindergarten
+- If not, don't get any of their choices and end up with an unpopular school 
+
+## Parents act strategically
+- Instead of listing their true preferences, parents would instead list the kindergarten where they had walk zone priority i.e. their listed top choice is not their actual top choice
+- This is a difficult thing to spot since we can't observe true preferences
+- 80\% of children were being assigned to schools that their parents had listed first, so the system looked like it was successful
+
+## Deferred acceptance in Boston
+
+1. Each student "proposes" to their first choice. Each school tentatively assigns its seats to its proposers one at a time in their priority order. Any remaining proposers are rejected.
+
+2. Rejected students propose to their next choice. Each school considers the students it had tentatively "accepted" together with the new proposals and assigns its seats in order of priority. Any remaining proposers are rejected. 
+
+3. Repeat until no student proposal is rejected and each student is tentatively assigned a school
+
+- If a student doesn't get their first choice, they can still get into their second choice 
+
+## Advantage of deferred acceptance
+- Resulting matches are stable: there is no student and school that would would rather be together than with their matched partner (think of priorities as the school's preferences)
+- If a student doesn't get into a school they wanted to go to, it must be because they were lower priority
+- If a school doesn't get a student they wanted, it must be because the student didn't apply since the school would have accepted them
+
+## Readings
+
+<!--
+- *Immediate* acceptance algorithm (contrast with the deferred acceptance algorithm described in the blogpost)
+-->
 
 
