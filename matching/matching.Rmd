@@ -153,6 +153,10 @@ knitr::include_graphics("three_way_kidney_exchange.jpg")
 
 ## Readings
 
+[\*Sarah Kliff, The truth about the gender wage gap](https://www.vox.com/2017/9/8/16268362/gender-wage-gap-explained)
+
+[\*Freakonomics podcast, What are Gender Barriers Made of?](http://freakonomics.com/podcast/gender-barriers/)
+
 <!--
 - *Immediate* acceptance algorithm (contrast with the deferred acceptance algorithm described in the blogpost)
 -->
