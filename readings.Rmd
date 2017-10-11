@@ -47,10 +47,62 @@ This is a tentative list of readings that I will update as the course progresses
 
 George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html](http://www.econlib.org/library/Enc/Immigration.html)
 
-<!--
-## Week 4 ()
+## Week 4 (Economics of Cities)
 
-## Week 12 (Matching)
+[\*David Audretsch, IZA World of Labor, Knowledge Spillovers and Future Jobs](https://wol.iza.org/uploads/articles/218/pdfs/knowledge-spillovers-and-future-jobs.pdf)
 
-Econtalk, Alvin Roth on Matching Markets (listen up to 34:19 on kidney exchange) [http://www.econtalk.org/archives/2015/07/alvin_roth_on_m.html](http://www.econtalk.org/archives/2015/07/alvin_roth_on_m.html)
--->
+[Enrico Moretti, The New Geography of Jobs (book)](https://www.amazon.com/New-Geography-Jobs-Enrico-Moretti/dp/0544028058)
+
+[Glaeser and Gottlieb, The Wealth of Cities: Agglomeration Economies and Spatial Equilibrium in the United States (some parts are very technical which you can skip, but the non-technical parts are clearly written)](http://www.nber.org/papers/w14806.pdf)
+
+[\*Chetty, Hendren, and Katz, Moving to Opportunity executive summary](http://www.equality-of-opportunity.org/assets/documents/mto_exec_summary.pdf)
+
+## Week 5
+
+\*Rochet and Tirole, Two-sided Markets: An Overview (uploaded on Carmen; read up to but not including section 3)
+
+\*WSJ, Americans Losing Faith in College Degrees, Poll Finds (uploaded on Carmen)
+
+## Week 6 (Economics of Science and Innovation)
+
+[\**Undiscovered* podcast, episode is called *The Wastebook*](http://www.undiscoveredpodcast.org/the-wastebook.html)
+
+[\*Hal Varian, Review of Mokyr's "Gifts of Athena"; also uploaded on Carmen](https://www.jstor.org/stable/3217252)
+
+[Paula Stephan, The Economics of Science](https://www.jstor.org/stable/2729500)
+
+[Paula Stephan, How Economics Shapes Science (book)](https://www.amazon.com/Economics-Shapes-Science-Paula-Stephan/dp/0674088166)
+
+## Week 7 (Technology and Inequality)
+
+[\*TED Talk by David Autor](https://www.ted.com/talks/david_autor_why_are_there_still_so_many_jobs)
+
+[David Autor, Skills, education, and the rise of earnings inequality among the "other 99 percent"](http://science.sciencemag.org/content/344/6186/843)
+
+[Gabriel Zucman, slides from one semester course on inequality](http://gabriel-zucman.eu/econ133/)
+
+[\**The Basic Income Experiment*, Planet Money podcast](http://www.npr.org/sections/money/2017/09/22/552850245/episode-796-the-basic-income-experiment)
+
+[\**Why Some People Love Tax Day*, Planet Money podcast](http://www.npr.org/sections/money/2013/04/12/177063399/episode-451-why-some-people-love-tax-day)
+
+[\*Summary of evidence on cash transfers in developing countries, GiveDirectly website](https://www.givedirectly.org/research-on-cash-transfers)
+
+[Ioana Marinescu, No Strings Attached](http://www.marinescu.eu/Marinescu_UBI_review_2017.pdf)
+
+[New York Times quiz](https://www.nytimes.com/interactive/2016/06/03/upshot/up-college-unemployment-quiz.html)
+
+[Welfare State, 50 things that made the modern economy podcast by Tim Harford](http://www.bbc.co.uk/programmes/w3csv3gv)
+
+## Week 8 (Matching)
+
+[\*Make me a match, Freakonomics podcast](http://freakonomics.com/podcast/make-me-a-match-a-new-freakonomics-radio-episode/)
+
+[\*Noble Matching, Marginal Revolution blogpost; read first 4 paragraphs explaining the Gale-Shapley algorithm, up to the sentence "Thus, the algorithm produces a stable match."](http://marginalrevolution.com/marginalrevolution/2012/10/noble-matching.html)
+
+[Econtalk, Alvin Roth on Matching Markets](http://www.econtalk.org/archives/2015/07/alvin_roth_on_m.html)
+
+## Week 9 (Gender)
+
+[\*Sarah Kliff, The truth about the gender wage gap](https://www.vox.com/2017/9/8/16268362/gender-wage-gap-explained)
+
+[\*Freakonomics podcast, The True Story of the Gender Wage Gap](http://freakonomics.com/podcast/the-true-story-of-the-gender-pay-gap-a-new-freakonomics-radio-podcast/)
