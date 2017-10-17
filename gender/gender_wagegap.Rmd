@@ -1,0 +1,74 @@
+---
+title: "Gender Wage Gap"
+author: "Wei Yang Tham"
+date: "October 18, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Gender wage gap has narrowed over time
+
+```{r}
+knitr::include_graphics("gender_wagegap_historic.jpg")
+```
+
+## Roadmap
+
+- What do economists mean by discrimination?
+- Why has the wage gap narrowed?
+- What's driving the gender wage gap?
+
+## Defining discrimination
+
+$$ Y_i = X_i\beta + \alpha \textbf{1}(i = Female) + \epsilon_i $$ 
+- $Y_i$ is wages; $X_i$ is a vector of ALL productivity characteristics
+- $\textbf{1}(i = Female)$ indicates gender
+- We have discrimination if $\alpha$ is negative; i.e. a female worker is paid less than an *otherwise identical* male worker
+
+## Types of discrimination
+- Taste-based discrimination
+- Statistical discrimination
+
+## Taste-based discrimination (Becker 1957)
+- Employer dislikes members of a certain group for non-productivity related reasons
+- They are willing to pay more for less productive workers
+- In theory, the existence of discriminatory employers does not necessarily mean that a gender wage gap will prevail
+    + Why?
+    
+## Statistical discrimination (Aigner and Cain 1977)
+- Employers perceive there to be differences in productivity across groups (e.g. men are better programmers)
+- Gender may serve as a *signal* for productivity if employers cannot perfectly observe productivity
+- Difficult to test because we have to know how employers form expectations
+
+## Empirical evidence
+- Gender cannot be randomly assigned
+- Two studies that try to get around this
+    + Goldin and Rouse (2001) study of orchestras
+    + Bertrand and Mullainathan (2003) audit study
+    
+## Blind Auditions
+- In 1970s and 1980s, orchestras started using "blind" auditions to combat the gender disparity 
+- In a blind audition, performance is done behind a screen to hide the performer's identity
+- Goldin and Rouse look at whether a blind audition increases a woman's chance of being hired by an orchestra
+
+## Method
+- Suppose the study found that women in a blind audition tended to fare better than women in a non-blind audition. Why might this not be proof of discrimination?
+    + The type of people who are chosen for blind auditions may be different
+- Suppose women who are in both blind and non-blind auditions tend to do better in blind auditions. Why might this not be proof of discrimination?
+    + People might perform better in blind auditions in general
+- Use men as a control group (this is a difference-in-differences estimation strategy)
+
+## Results
+- 
+
+<!-- 
+role model effect (India)
+acting wife
+-->
