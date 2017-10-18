@@ -13,16 +13,16 @@ output:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
 ```
 
-## Gender wage gap has narrowed over time
+## asdf
 
 ```{r}
-knitr::include_graphics("gender_wagegap_historic.jpg")
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
 ```
 
 ## Roadmap
 
 - What do economists mean by discrimination?
-- Why has the wage gap narrowed?
 - What's driving the gender wage gap?
 
 ## Defining discrimination
@@ -66,7 +66,89 @@ $$ Y_i = X_i\beta + \alpha \textbf{1}(i = Female) + \epsilon_i $$
 - Use men as a control group (this is a difference-in-differences estimation strategy)
 
 ## Results
-- 
+- Women are 50\% more likely to advance from preliminary rounds when there is a blind audition
+- Results seem to indicate some form of discrimination
+    + Cannot distinguish between statistical discrimination and taste-based discrimination
+- Alternative explanation: women perform better in blind auditions when there is no expectation of discrimination (stereotype threat)
+
+## Audit study (Bertrand and Mullainathan 2003)
+- "Are Emily and Greg More Employable than Lakisha and Jamal?"
+- Field experiment: Send out resumes with "white-sounding" and "black-sounding" names
+- White-sounding names are more likely to receive callbacks
+
+## What's in a name?
+- Data Colada, [post 51](http://datacolada.org/51) and [post 36](http://datacolada.org/36)
+- Idea of the experiment: use the name to convey information about race
+- Question: could names be conveying information other than race?
+- May be why Deming et al (2016) fail to replicate Bertrand and Mullainathan's results
+
+## What's in a name?
+
+```{r, fig.align='center'}
+knitr::include_graphics("greg-jamal.png")
+```
+
+## Names reflect socioeconomic status (SES)
+
+```{r, fig.align='center'}
+knitr::include_graphics("compare_names_ses.png")
+```
+
+## Black names with different SES
+```{r, fig.align='center', out.width = "300px"}
+knitr::include_graphics("compare_names_race.png")
+```
+
+## Takeaway
+- Using names is tricky, may contain information other than race
+- Still suggests there's discrimination on some dimension, just maybe not all about race
+- Comparison of names across different studies also tentative as studies may differ across multiple dimensions
+    + Would be most helpful to take into account these factors *within a single study*
+
+## A Grand Gender Convergence (Goldin 2014)
+
+```{r, fig.align='center'}
+knitr::include_graphics("gender_wagegap_historic.jpg")
+```
+
+## Gender wage gap has been narrowing
+- From "59 cents on the dollar" in the 1970s to "77 cents on the dollar" today
+
+## Gender gaps by occupation
+```{r, fig.align='center'}
+knitr::include_graphics("gap_by_occupation.png")
+```
+
+## Gender gaps by occupation
+- Size of the gap varies widely by occupation
+- Smaller in Science and Tech relative to Business
+- What is Goldin's explanation for the different gaps across occupations?
+
+## Pharmacists v.s. Lawyers
+- Pharmacists have more flexible hours than lawyers 
+- Pharmacists can substitute for each other more easily
+    + Due to a combination of computerization, reduction in self-employment/growth in large chains
+- Lawyers have increasing rewards to working more (non-linear returns to hours worked), while pharmacists have linear returns to hours worked
+
+## Nonlinear returns for lawyers
+```{r}
+knitr::include_graphics("nonlinear_law.png")
+```
+
+## Group Discussion
+- In groups of 3-4, discuss whether you think it is possible to close the gender wage gap in occupations like law. How?
+
+## Takeaways
+- Economists's definition of discrimination
+- How is this different from Goldin's explanation for the wage gap?
+
+
+
+<!-- 
+make law more team-based e.g. personal bankers usually work in teams, also anesthesiologists
+paternity-friendly practices
+-->
+
 
 <!-- 
 role model effect (India)
