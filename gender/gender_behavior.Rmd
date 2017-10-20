@@ -1,0 +1,176 @@
+---
+title: "Gender and Behavior"
+author: "Wei Yang Tham"
+date: "October 19, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Roadmap
+
+- Self-stereotyping
+- Role-model effect
+
+## Self-stereotyping and the contribution of ideas
+
+- Many decisions are made by groups
+    + Corporate boards, team projects
+- The quality of the group decision depends upon what information is elicited from group members 
+- Contribution stage is important: group decision can only be as good as its best inputs
+
+## Previous evidence
+- Survey evidence from business sector, including Heath, Flynn, and Davis Holt in Harvard Business Review (2014)
+    + Men reported seeing a female colleague get rattled or remain silent even when she was the expert at the table
+    + Women reported that they feel less effective in meetings; say that their voices are ignored or drowned out.
+    
+- Most of this previous work involves natural, unstructured settings 
+    + Speaking up and being listened to are closely intertwined; we want to isolate the willingness to contribute an idea
+    
+## Discussion
+- Why do we care if women are less likely to contribute ideas?
+
+<!--
+systematic biases in what viewpoints are heard
+-->
+    
+## Experimental design
+
+1. Individual ability test
+2. Make Decisions about Willingness to Contribute Ideas to the Group
+3. Confidence Elicitation
+4. Decide whether to agree with group answers
+
+## Part 1: Measure individual ability
+- Evaluate ability in six categories 
+    + Arts and Literature 
+    + Entertainment and Pop Culture 
+    + Environmental Science 
+    + History 
+    + Geography 
+    + Sports and Games 
+
+- 30 multiple-choice questions, five in each category
+- Forced Response: Participants had to answer every question
+    + Why is this important?
+
+## Part 2: Answering in groups
+
+- Randomized into groups of two 
+    + Partner is in lab but identify is unknown
+    + Remain at indivudal computer terminals
+- 30 **new** questions in same six categories
+- For each question asked: 
+    + What’s the answer? 
+    + How willing are you to have your answer count as group answer?
+
+- Groups earn points based upon the group answers 
+
+## Part 2: Answering in groups
+
+- Willingness to answer for group measured on 1-4 scale representing "place in line"
+    + 1 is first in line, 4 is last in line
+    + Member who stands closest to front of line will answer for the group
+    + If both members stand in the same place, computer randomly chooses one to answer
+
+- Notice that that although there are two members in each group, their willingness is measure on a 1-4 scale. Why?
+
+## Part 3: Confidence
+- Asked to estimate probability of: 
+    + own answer being correct 
+    + partner’s answer being correct
+- Allows us to test for role of confidence in predicting willingness to contribute
+    + Both confidence in self and confidence in a randomly drawn partner
+
+## Part 4: Decide whether to agree with group answers
+- All participants receive packet of group answers
+- For each question, shows which member answered and which answer was chosen (based on "place in line")
+- Participants face same 30 questions again with new opportunity to earn points
+    + Can submit the same answers as group answers or new answers
+- Different paper
+
+## Treatments
+
+2x2 design that varies on following dimensions:
+    
+1. How public is the contribution?
+    + Private treatment: participants never learn partners identity
+2. Do you receive feedback about relative ability?
+    + No Feedback: receive no feedback on performance from AbilityTests
+    + Feedback: after Part 1 Ability test, told the categories for which they had the highest Part 1 score in group
+    
+## Procedure
+```{r}
+knitr::include_graphics("katie_procedure.png")
+```
+
+## Perceptions of categories
+- At end, participants asked to rate each category according to which gender, on average, knows more about the category
+- Options: Men know more (+1), women know more (-1), or no gender difference (0)
+
+## "Gender" of Categories
+```{r}
+knitr::include_graphics("katie_categories.png")
+```
+
+## Female willingness to contribute (relative to men)
+
+```{r}
+knitr::include_graphics("control_confidence.png")
+```
+
+## Missed opportunities by category
+
+```{r}
+knitr::include_graphics("missed_opportunities.png")
+```
+
+## Summary of results
+
+1. Willingness to contribute depends on the gender stereotype of the category
+2. These patterns are partly explained by beliefs
+3. The gender gaps in willingness to contribute have negative consequences for group performance
+4. Providing feedback to talented individuals about their strengths does not significantly increase the probability that they contribute to the group
+
+## Acting Wife
+
+https://scholar.harvard.edu/files/pallais/files/acting_wife.pdf
+
+## Role Models in India (Beaman et al)
+
+- Since 1993, India has adopted gender quotas for elected positions on village councils
+- Fraction of elected local leaders who are female has risen from under 5\% in 1992 to over 40\% by 2000
+- In West Bengal, one-third of village councils are randomly selected to be reserved for a woman chief councilor
+- Beaman et al studied the effect of having women leaders on parents' aspirations for their children and on the childrens' own aspiration
+
+## Aspiration questions
+- If the parent would like the child to graduate from secondary school (grade 12)
+- If the parent wishes the child to marry at an age above 18
+- If the preferred occupation is different than housewife or what the in-laws
+prefer
+
+## Aspiration gap became smaller
+```{r}
+knitr::include_graphics("aspirationgap.png")
+```
+
+
+
+## Discussion
+- 
+
+
+## asdf
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+
+
