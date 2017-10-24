@@ -1,0 +1,52 @@
+---
+title: "Econ 2367: Short Essay 2"
+date: "Due Nov 3, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+There are two prompts for you to choose from below, based on topics we have covered in class. You can choose either prompt but you cannot choose the stance you take. [Indicate which prompt you have chosen in this Google form (https://goo.gl/forms/DL6DZfwi59j0Q9P22).](https://goo.gl/forms/DL6DZfwi59j0Q9P22)  **Don't forget to enter your name!**  
+
+**IMPORTANT:** For students who want to get an early start, if you send me your responses by 7 p.m. on Wednesday, Oct 22, I will send you your assigned stances by 9 p.m. For everyone else, please complete the form by **1 p.m. on Friday, Oct 24**. There were many late responses for the first short essay, so please note that if you choose your prompt late, I will deduct a point from your essay for each late day (i.e. 1 point after 1 p.m. on Friday, 2 points on Sat, 3 points on Sun and so on). 
+
+After you have chosen your prompt, I will randomly assign the stance you are to take on the issue. You are to make the strongest argument possible for the stance you have been assigned, *regardless of your personal opinion*. Your essay should be between 1-2 pages in length. See the syllabus for details about formatting.
+
+Please refer to the writing rubric on Carmen to understand the expectations for what makes a good essay. While you should certainly draw on the class material, I encourage you to look for material beyond what we discussed in our lectures. The list of sources and the unassigned readings on our reading list are good places to start. 
+
+I am happy to answer questions about the essay prompt or material from the course that you need to understand in order to write your essay. I will not act as your editor or reviewer. 
+
+You are encouraged to discuss your essay with your classmates, but your submitted work must be your own. 
+
+Finally, you may find it helpful to review our lecture on writing. Start early and edit often. Good luck!
+
+
+## Cash Transfers
+
+The work of Raj Chetty and his collaborators [(http://www.equality-of-opportunity.org/)](http://www.equality-of-opportunity.org/) suggests that the neighborhood a child grows up in can matter greatly for their adult outcomes. Studies on unconditional cash transfers in both developed and developing countries find low to moderate effects on labor supply and positive impacts on other outcomes like health and education. Suppose you are a policymaker and you have been given a budget to provide one of the following to low-income families across the United States.  
+
+1. Housing vouchers with the same conditions as the "experimental vouchers" used in the Moving to Opportunity experiments
+
+2. Unconditional cash transfers of equivalent value to the housing vouchers described in 1\*. 
+
+If you choose this topic, you will be assigned one of the two policy options and your task is to defend your "choice" of policy. 
+
+#### \*Housing voucher conditions (see page 6-7 of [Chetty, Hendren, and Katz (2015)](http://www.equality-of-opportunity.org/assets/documents/mto_paper.pdf))
+
+- The vouchers can only be used in census tracts with poverty rates below 10\%
+
+- Families are required to contribute 30\% of their annual household income toward rent and utilities. Housing vouchers cover the *difference* between their rent and the family’s contribution, up
+to a maximum amount known as the Fair Market Rent, defined as the 40th percentile of rental
+costs in a metro area. For example, the Fair Market Rent for a two-bedroom in Franklin County, OH, in 2017 is \$886. You can find the Fair Market Rent for other areas [at this link](https://www.huduser.gov/portal/datasets/fmr/fmrs/FY2018_code/select_Geography.odn)
+
+## Gender wage gap
+
+In class, we discussed studies showing that women take actions that can be counter-productive to themselves or their teams. We also discussed research showing that gender quotas in politics can have a positive impact through "role model" effects and the election of more "competent" leaders. 
+
+Agree or disagree. *These studies imply that we should impose gender quotas in occupations with a gender wage gap.*
+
+
+
+
