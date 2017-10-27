@@ -1,0 +1,51 @@
+---
+title: "Health Economics"
+author: "Tham, Wei Yang"
+date: "October 26, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+##  Which country has the best health care system?
+
+- [https://www.nytimes.com/interactive/2017/09/18/upshot/best-health-care-system-country-bracket.html](https://www.nytimes.com/interactive/2017/09/18/upshot/best-health-care-system-country-bracket.html)
+
+## U.S. Healthcare 
+
+- U.S. Healthcare is receiving a lot of attention from politicians and researchers
+- Why do we care?
+
+## U.S. spends a lot on healthcare
+
+```{r}
+knitr::include_graphics("health_pctgdp.png")
+```
+
+## U.S. has worse health outcomes
+```{r}
+knitr::include_graphics("complications_death.png")
+```
+
+## Less coverage
+```{r}
+knitr::include_graphics("coverage_bycountry.png")
+```
+
+
+## asdf
+
+```{r}
+library(ggplot2)
+
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+
+
