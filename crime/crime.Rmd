@@ -1,0 +1,33 @@
+---
+title: "Crime and addiction"
+author: "Tham, Wei Yang"
+date: "Nov 1, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Gary Becker
+
+```{r}
+knitr::include_graphics("becker_face.jpg")
+```
+
+
+## Gary Becker
+
+- 1992 Nobel prize in economics
+- One of the pioneers in applying economics to topics more typically studied in sociology e.g. discrimination, crime, family/marriage, addiction
+- Application of rational choice theory to different kinds of social issues
+
+## Rationality
+
+- What do economists mean by rationality?
+- People choose the action/item that gives them the maximum net benefit
+- This doesn't preclude people from doing things that others might think are bad for them; actions just need to consistent with the person's underlying preferences and constraints
