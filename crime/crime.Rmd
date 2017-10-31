@@ -31,3 +31,53 @@ knitr::include_graphics("becker_face.jpg")
 - What do economists mean by rationality?
 - People choose the action/item that gives them the maximum net benefit
 - This doesn't preclude people from doing things that others might think are bad for them; actions just need to consistent with the person's underlying preferences and constraints
+
+## How can addiction be rational? (Becker and Murphy 1988)
+
+- Addictive good: a good where utility is a function of previous consumption
+- The amount of alcohol you've consumed in the past affects how you enjoy it in the future
+    + Different individuals find different things addictive
+- People choose to be addicted to a substance knowing that addiction will change their enjoyment of that good in the future i.e. they are accounting for future benefits and costs
+
+## Question
+- Does the Becker-Murphy theory of rational addiction seem plausible to you? What do you think is missing from it?
+
+## Predictions
+- How should we expect rational addicts to respond to prices?
+- Addicts should respond to current and their *expectations* of future prices since they are forward-looking
+- A lot of empirical work has focused on testing the relationship between future prices and current consumption
+
+## Empirical challenge
+- Suppose you have a dataset of cigarette prices and cigarette consumptions in each year
+    + You find that there is a negative relationship between cigarette consumption and prices one year in advance
+- What is the problem with using cigarette prices one year ahead to test the rational addiction theory?
+    + Requires very sophisticated forecasts
+    + Stockpiling (depends on the good)
+    
+## Gruber and Koszegi 2000
+
+- Use tax changes that are actually announced
+- Use data on cigarette consumption rather than sales 
+    + Vital Statistics Natality data which records, for every birth in America, whether the mother smokes and how much
+
+## Findings
+- Announced but not yet effective tax increases lead to both increased sales and decreased consumption of cigarettes
+    + Consistent with forward-looking behavior
+
+## Tax implications
+- If cigarette consumption is rational, is there any justification for a tax on cigarettes?
+    + Externalities
+    
+## Tax implications
+- Hyperbolic discounting: a model where we place extra value on the present
+    + If we value \$100 in 30 days to \$110 in 31 days, then we value \$100 today more than \$110 tomorrow
+- If people are impatient, then optimal tax is greater than zero, even when there are no externalities
+    + Intuition: "self-control" tax
+- This can still be consistent with people being forward-looking
+
+<!-- 
+realized prices not equal to expectations, also requires high sophistication
+stockpiling
+-->
+
+##  
