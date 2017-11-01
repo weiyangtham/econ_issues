@@ -2,6 +2,7 @@
 title: "Crime and addiction"
 author: "Tham, Wei Yang"
 date: "Nov 1, 2017"
+urlcolor: blue
 output: 
   beamer_presentation:
     incremental: false
@@ -10,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = c('pdf'))
 ```
 
 ## Gary Becker
@@ -18,7 +19,6 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf
 ```{r}
 knitr::include_graphics("becker_face.jpg")
 ```
-
 
 ## Gary Becker
 
@@ -54,6 +54,11 @@ knitr::include_graphics("becker_face.jpg")
     + Requires very sophisticated forecasts
     + Stockpiling (depends on the good)
     
+<!-- 
+realized prices not equal to expectations, also requires high sophistication
+stockpiling
+-->
+    
 ## Gruber and Koszegi 2000
 
 - Use tax changes that are actually announced
@@ -70,14 +75,91 @@ knitr::include_graphics("becker_face.jpg")
     
 ## Tax implications
 - Hyperbolic discounting: a model where we place extra value on the present
-    + If we value \$100 in 30 days to \$110 in 31 days, then we value \$100 today more than \$110 tomorrow
+    + If we value \$100 in 30 days and \$110 in 31 days equally, then we value \$100 today more than \$110 tomorrow
+- Two selves: right now I would rather stay in and eat pizza, but I'll wake up early and work out tomorrow 
 - If people are impatient, then optimal tax is greater than zero, even when there are no externalities
     + Intuition: "self-control" tax
 - This can still be consistent with people being forward-looking
 
-<!-- 
-realized prices not equal to expectations, also requires high sophistication
-stockpiling
+## Prohibition
+- Definition: banning the sale of a product
+- [The Economic Case Against Drug Prohibition](https://www.aeaweb.org/articles?id=10.1257/jep.9.4.175)
+
+## Prohibition: Supply and demand
+- Legal punishment can be thought of as a "tax" on supply and demand
+- Is the shift in demand likely to be large or small relative to the shift in supply?
+    + Punishments tend to target suppliers
+    + Suppliers more likely to face violence
+
+## Violence
+- Violence likely to increase if the marginal benefit to violence increases
+- Why might the marginal benefit to violence increase?
+    + Contract enforcement
+- How do criminals govern themselves?
+    + [The Invisible Hook by Peter Leeson](https://www.amazon.com/Invisible-Hook-Hidden-Economics-Pirates/dp/0691150095)
+    
+## Potency and quality
+- Higher potency: easier to smuggle a flask than a keg
+- But easier to overdose
+- Quality: Reputation may still matter to some extent, but harder for consumers to complain about poor quality
+- Increased accidental poisonings and overdoses
+
+## Brief history of opioid epidemic
+- In 1990s, pain was seen as a serious medical issue 
+- Pharmaceutical companies developed and marketed drugs to doctors to treat pain
+    + Based on misleading (or at best, overoptimistic) claims
+- Pressure on doctors to treat pain quickly
+    + Usually back pain especially is a difficult thing to treat
+- Opioid users started moving to more potent opioids like heroin and fentanyl
+    + Wanted a stronger high or lost access to painkillers
+    
+## Opioid consumption: U.S. v World
+
+```{r}
+knitr::include_graphics("us_global_opioid.pdf")
+```
+
+## Opioid deaths
+
+```{r, fig.align='center'}
+knitr::include_graphics("opioid_aids.png")
+```
+    
+## Rethinking legalization/prohibition
+- We've seen that prohibition, while well-intentioned, can lead to undesirable outcomes
+- But the opioid crisis started with legal drugs
+- Do you think hard drugs like heroin should be prohibited? You may also want to consider the different ways that prohibition can be executed as policy e.g. types of punishment, amount of policing
+
+<!--
+Planet money podcast
+do drugs get cheaper?
+maybe law enforcement is not that good
+don't have to comply with all regulations
+prohibition: make people more productive?
+lift prohibition: can tax?
+miron says not that much revenue
 -->
 
-##  
+## Crime
+- Deciding to commit a crime (or not) can be described as an investment decision
+    + Trying to balance risk of getting caught and reward
+- Idea came to Becker when he was trying to decide whether to park illegally
+
+## [Quote from The Chicago Maroon](https://www.chicagomaroon.com/2012/05/25/the-economics-of-crime-with-gary-becker/)
+
+> I was teaching at Columbia University and was driving to an oral exam with Ph.D. students. The question [I asked myself] was, “Should I park closer in a spot that was illegal, or should I park in a lot which was somewhat further away?” So I had to make a calculation: What was the likelihood that I’d be caught if I parked it down the street versus the time, the money, that would be lost by parking further away? I decided to park on the street, and since it was an oral exam, the first question I asked the student when my turn came to examine him on price theory was how he would handle a problem of this type.... I asked a lot of questions, and they didn’t do very well on it [laughs]. After I came out of the exam, I figured this is a really good problem to work on, so I started thinking more systematically about it.
+
+## Problems with rationality
+- Expected cost of committing a crime is $Prob(Caught) \times Punishment$
+- In the [reading](http://marginalrevolution.com/marginalrevolution/2015/09/what-was-gary-beckers-biggest-mistake.html), Tabarrok says that he is in favor of "quick, clear, and consistent" punishment (i.e. increasing $Prob(Caught)$) to deter crime
+- How would you explain Tabarrok's argument using hyperbolic discounting?
+
+## Fines v.s. Jail
+- Suppose that a fine of $\$x$ is equivalent to $J$ years in jail
+- Why does economic theory suggest that a fine of $\$2x$ is a stronger punishment than $2J$ years in jail?
+    + Consider the timing of a fine v.s. the timing of being in jail
+- Becker also argued that an advantage of fines over jail is that you have to pay for guards etc. to jail someone, but fines could be thought of as a form of compensation
+
+## Policing
+- 
+
