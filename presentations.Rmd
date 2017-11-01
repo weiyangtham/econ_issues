@@ -1,0 +1,77 @@
+---
+title: "Presentations"
+author: "Tham, Wei Yang"
+date: ""
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = 'pdf')
+```
+
+## Purpose of presenting 
+You will be giving a presentation in the form of an academic presentation. Academic presentations serve two broad purposes:
+
+1. Introduce your audience to your project
+    + Introduce the topic, what is interesting, and why you're researching it. 
+    + The main body of the presentation should be about what you’ve discovered and how you reached those conclusions
+    
+2. Peer Review/Feedback
+    + Presentations are an opportunity to get feedback about what you’re doing. Your audience should have a good enough idea of the work they've done to give you helpful critiques and suggestions.
+    
+## Structure
+
+1. Introduction: tell them what you're going to say
+    + Your introduction should include a brief overview of the structure of the presentation and your conclusions. Your audience can focus better on the details of what you're saying if they know what’s coming and how it fits in with the whole
+2. Main body: say what you want to say
+    + This should contain the most details. You're taking your audience through your conclusions and the logic behind them
+3. Summarize: tell them what you’ve said
+    + Once you’re done, recap. This draws attention to your important points and they should now have a sense of how your project fits together
+    
+## Slides
+
+**YOU ARE REQUIRED TO HAVE SLIDES**
+
+- These are not lecture notes i.e. not meant to be used as a reference later
+- Leave plenty of white space and don't include too much information
+    + too much info can be distracting for audience
+- Do not animate your slides 
+    + Distracting and hard to flip back and forth during questions
+    
+## Slides
+- Your slides should contain your primary points, but not all of the information you wish to convey
+- Avoid reading from your slides
+- Make sure that any graphics are clear and easy to interpret
+- Generally a graph is better than describing the information in it
+- Maintain a consistent design (including fonts)
+- Cite your sources (author-date), especially statistics and sources
+
+## Slides
+- Your presentation should contain the most important parts from your paper, but does not have to have the same order
+- I encourage you to rearrange the order of arguments into whatever makes the most sense for a presentation
+
+## Presenting
+- Practice - practicing in front of a mirror or friends is like a "first draft"; the more you practice the more chances you have to edit
+- Focus on speaking clearly and projecting; don't rush to get through slides
+- Maintain eye contact and try not to look at slides too much
+
+## Logistics
+- Upload your slides before class starts (I will update with a link); this will minimize transition time
+- You should prepare for 8 minutes for presentation and 2 minutes for questions
+- You can have notes as a reference, but you should not be relying on them for most of your talk, and you DEFINITELY should not be reading from a script
+
+## Q&A
+- Audience, pay attention to the presentation in order to ask good questions
+    + Think of how you can ask questions that would make the presenter's paper better, rather than trying to tear it down
+- Presenters, questions are not attacks
+    + Opportunity to share your interest
+    + Opportunity to strengthen your paper
+    
+## Feedback on slides
+- I am happy to give feedback on slides
+- Come to office hours or arrange a time with me
+
