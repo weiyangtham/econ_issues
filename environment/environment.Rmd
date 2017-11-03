@@ -1,0 +1,218 @@
+---
+title: "Environment"
+author: "Tham, Wei Yang"
+date: "November 3, 2017"
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = c('pdf'))
+```
+
+## Roadmap
+
+- Externalities
+- Tragedy of the commons
+- Estimating the costs of pollution 
+    + Effects of air pollution on health
+    + Climate change (Stern review)
+- Solutions
+    + Tax
+    + Cap and trade
+
+## Reading Discussion
+- In the Planet Money podcast, you heard two views on the relationship between economic growth and the environment
+
+1. We should stop trying to achieve economic growth because of the harm to the environment and because the world is already prosperous enough
+
+2. We should not stop economic growth, economic growth can be environmentally sustainable
+
+- Which view do you agree with more? Why?
+
+## Economist's perspective on enviroment/natural resources
+- Pollution is not pleasant
+- What is the optimal amount of pollution? Is it zero?
+- To determine optimal amount of pollution, have to estimate marginal costs of pollution and marginal benefits of actions that produce pollution
+
+## Market failure
+- Externalities
+- Tragedy of the commons
+
+## Externalities
+```{r}
+knitr::include_graphics("externalities.png")
+```
+
+## Externalities
+- External costs to producing a good that the producer does not take into account
+- Leads to over-production of the good
+
+## Solution: tax
+- Pigouvian tax (named after Arthur Pigou) - tax that forces market external cost to be internalized
+- What are some practical challenges of implementing a Pigouvian tax?
+    + Hard to determine magnitude of tax
+    + Political feasibility?
+
+## Private v.s. common property
+- Private property: What you own e.g. the place you live
+- Common property: owned with others e.g. neighborhood park
+
+## Private property
+```{r, fig.align='center'}
+knitr::include_graphics("cleanroom.jpg")
+```
+
+## Common property
+```{r}
+knitr::include_graphics("dirtysink.jpg")
+```
+
+## Tragedy of the commons
+- No clear property rights
+- If nobody owns the forest then the loggers will not fully internalize the cost of consuming resources
+    + Each logger gets the profits from whatever timber he takes
+    + While all loggers bear the burden of the reduced stock of trees
+    + Other examples: overfishing
+- The private benefit from the commons is not enough to compensate any given individual for the cost of maintaining the common resource
+    + Even though the social benefit is worth the cost of maintenance
+
+## Ronald Coase
+```{r}
+knitr::include_graphics("coase_portrait.jpg")
+```
+
+## Coase Theorem
+If
+
+1. Transaction costs are zero (or "low enough")
+2. Full information
+
+- Regardless of how property rights are assigned, bargaining will lead to an efficient outcome
+
+## Coase Theorem
+- Transcation costs are rarely (or never) 0
+- The theorem doesn't say anything about who should get property rights and therefore profits 
+    + Redistribution problem
+
+## Coase Theorem in action: Cap-and-trade
+- "Cap": government limits the level of pollution allowed i.e. a pollution quota
+- "Trade": government issues rights to pollute; firms can trade these rights
+- Reduce the cap over time
+
+## 1990 Clean Air Act
+- Purpose: acid rain reduction from sulphur dioxide emissions
+- Each permit grants its holder 1 ton of sulphur dioxide emissions
+- Generally regarded as successful in meeting quotas
+    + Helped by decrease in price of natural gas (which is a cleaner fuel) after 2008
+    
+## Sulphur dioxide emissions in the U.S.
+```{r, fig.align='center'}
+knitr::include_graphics("so2_emissions.png")
+```
+
+## European Emissions Trading Scheme (ETS)
+- Cap-and-trade for carbon emissions
+- [Mixed success](https://www.washingtonpost.com/news/wonk/wp/2013/04/20/europes-cap-and-trade-program-is-in-trouble-can-it-be-fixed/)
+- Seems to have succeeded in reducing emissions BUT
+- Gave too many permits, leading to extremely low carbon prices
+
+## ETS carbon prices
+```{r, fig.align='center'}
+knitr::include_graphics("ets_carbonprice.png")
+```
+
+## Effects of air pollution
+Difficulties of estimating effect of air pollution
+- Places with higher pollution are different in other ways e.g. higher density, different economic conditions 
+- People who live in places with higher pollution are different
+- Difficult to measure lifetime exposure to pollution
+- Establishing a counterfactual: How much earlier are people dying due to increased air pollution? Would they have died a few days later anyway?
+
+## [Chay and Greenstone (2003)](https://core.ac.uk/download/pdf/6822135.pdf)
+- Natural experiment: 1981-1982 recession; different geographic areas affected by recession to different degrees
+- Study infant mortality: measuring lifetime exposure to pollution may be less of a problem
+
+## Change in pollution levels
+```{r}
+knitr::include_graphics("chaygreenstone_tsps.png")
+```
+
+## Change in infant mortality
+```{r}
+knitr::include_graphics("chaygreenstone_infantmort.png")
+```
+
+## Change in per capita income
+```{r}
+knitr::include_graphics("chaygreenstone_income.png")
+```
+
+## Is it a valid (natural) experiment?
+- Pollution levels in different counties were affected differently
+- Infant mortality seemed to be affected substantially
+- Main concern: infant mortality was affected by other factors, like income
+    + Income did not change as abruptly as pollution or infant mortality
+    
+## Takeaways
+- Significant effects of pollution on infant outcomes, especially deaths occuring within 24 hours and birth weight
+    + Suggests fetal exposure during pregnancy is an important channel for these effects
+- Estimate that 2500 fewer infants would have died in absence of reductions in air pollution
+
+## Climate change: The Stern Review
+
+- Stern Review is a 700 page economic analysis of climate change
+- Conclusion: "...the benefits of strong, early action on climate change outweighs the costs."
+- Simulations of a model of economic growth and climate dynamics
+
+## Critcisms
+- [Review of the Stern Review by Martin Weitzman](http://pubs.aeaweb.org/doi/pdfplus/10.1257/jel.45.3.703) 
+- Conclusion of the Stern review depends too heavily on the discount rate
+- Claim is that the Stern discount rate is too low i.e. it assumes that we place a high value on future outcomes and outcomes of future generations
+- But could still be "right for the wrong reasons" 
+    + Current approaches not good at accounting for extreme events
+    + We need better empirical understanding of catastrophic outcomes e.g. how possible is it to have early detection of a catastrophe?
+
+## Takeaways
+- Conceptual issues in environmental economics: externalities, tragedy of the commons
+- Two common solutions: Pigouvian tax and cap-and-trade
+- Empirical issues: how to measure costs and benefits of environmental damage or environmental policies
+- Approaches: 
+    + Quasi-experimental 
+    + Simulations of economic models
+    + Both have value
+
+    
+    
+
+<!--
+planet money podcast
+
+oil spills - GDP doesn't take into account all relevant costs - like pollution
+
+robert mendelson, nordhaus
+death, illnesses, loss of visibility (scenery)
+compensating differentials - people who take risky jobs v.s. less risky jobs
+GED - gross external damage; "bad" industries like coal-fired power plants
+how to internalize external costs 
+
+herman daly - can never count all negative externalities
+just stop growth
+is that fair?
+
+mendelson
+- more services from less material
+
+-->
+
+## asdf
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+
