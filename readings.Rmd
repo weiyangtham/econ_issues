@@ -16,6 +16,7 @@ This is a tentative list of readings that I will update as the course progresses
 - [Journal of Economics Perspectives](https://www.aeaweb.org/journals/jep/about-jep) provides overviews of research topics and targeted at non-specialists
 - The [National Bureau of Economic Research (NBER)](www.nber.org) is a great resource for the latest working papers in economics. The [NBER Digest](http://www.nber.org/digest/) provides non-technical summaries of papers. 
 - [Microeconomic Insights](http://microeconomicinsights.org/) provides summaries of the latest economics research
+- [IZA](iza.org) is similar to the NBER and provides working papers.
 
 \* = assigned reading for class
 
@@ -69,6 +70,8 @@ George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html
 
 [\*Hal Varian, Review of Mokyr's "Gifts of Athena"; also uploaded on Carmen](https://www.jstor.org/stable/3217252)
 
+[Jon Marcus, The Decline of the Midwest's Public Universities Threatens to Wreck Its Most Vibrant Economies (article in The Atlantic)](https://www.theatlantic.com/business/archive/2017/10/midwestern-public-research-universities-funding/542889/)
+
 [Paula Stephan, The Economics of Science](https://www.jstor.org/stable/2729500)
 
 [Paula Stephan, How Economics Shapes Science (book)](https://www.amazon.com/Economics-Shapes-Science-Paula-Stephan/dp/0674088166)
@@ -108,3 +111,50 @@ George Borjas, Immigration, [http://www.econlib.org/library/Enc/Immigration.html
 [\*Freakonomics podcast, What are Gender Barriers Made of?](http://freakonomics.com/podcast/gender-barriers/)
 
 [Freakonomics podcast, The True Story of the Gender Wage Gap](http://freakonomics.com/podcast/the-true-story-of-the-gender-pay-gap-a-new-freakonomics-radio-podcast/)
+
+[EVIDENCE ON SELF-STEREOTYPING AND THE
+CONTRIBUTION OF IDEAS, Katherine Baldiga Coffman](https://drive.google.com/file/d/0B2fD6UtLe0bcNHlCWnJlT1lpV28/view)
+
+[Acting Wife; Bursztyn, Fujiwara, Pallais](http://www.nber.org/papers/w23043.pdf)
+
+
+
+## Week 10 (Health)
+
+[*The RAND Health Insurance Experiment: A Retrospective at 40 Years (video)](https://www.rand.org/multimedia/video/2017/01/13/health-insurance-experiment-retrospective-40-years.html)
+
+[*Oregon Health Insurance Experiment website; look at the **Background** and **Results** pages](http://www.nber.org/oregon/2.background.html)
+
+[*Oregon HIE paper; read introduction](http://www.nber.org/papers/w17190.pdf)
+
+Questions:
+What were the RAND and Oregon experiments trying to test? What did they find? Did those findings surprise you?
+
+## Week 11 (Crime/Addiction, Environment)
+
+- Wednesday
+    + [\*What was Gary Becker's biggest mistake?](http://marginalrevolution.com/marginalrevolution/2015/09/what-was-gary-beckers-biggest-mistake.html)
+    + [\*The Economics of Addiction](http://www.slate.com/articles/arts/the_undercover_economist/2007/08/the_economics_of_addiction.html)
+    + [\*An Economist Gets Stoned, Planet Money podcast](http://www.npr.org/sections/money/2010/01/podcast_an_economist_gets_ston.html)
+  
+
+- Friday
+    + [\*Will Economic Growth Destroy the Planet, Planet Money podcast](http://www.npr.org/sections/money/2011/10/25/141701559/the-tuesday-podcast-will-economic-growth-destroy-the-planet)
+    
+Questions:
+
+- What do you think of the idea that crime and addiction are rational? If addiction is rational, should we do away with limits on addictive substances? 
+
+- Should we eliminate all pollution? Why or why not? 
+- What value do enviromental goods have? E.g. what are some benefits of trees?
+
+## Week 12 (Behavioral economics; replication in the sciences)
+
+- [\*Raj Chetty, Behavioral Economics and Public Policy: A Pragmatic Perspective; read the introduction](http://www.nber.org/papers/w20928)
+- [\*When the Revolution Came for Amy Cuddy](https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html)
+- [Nudge, Nudge, Nobel. Planet Money podcast on Richard Thaler](http://www.npr.org/sections/money/2017/11/01/561421807/episode-803-nudge-nudge-nobel)
+
+Questions
+
+- How can behavioral economics inform public policy?
+- Has the article on Amy Cuddy changed how you evaluate expert opinion?
