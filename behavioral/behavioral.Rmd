@@ -1,0 +1,54 @@
+---
+title: "Behavioral Economics"
+author: "Tham, Wei Yang"
+date: "November 6, 2017"
+urlcolor: blue
+output: 
+  beamer_presentation:
+    incremental: false
+    theme: "metropolis"
+    colortheme: "crane"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dev = c('pdf'))
+```
+
+## Behavioral economics
+
+- Using insights from other fields (especially psychology) to understand how people make economic decisions
+- Understanding how people deviate systematically from rational behavior
+    + Are people "predictably irrational"? And how?
+- How does irrational behavior matter in the market? Does it cancel out on average? Are people more rational when the stakes are higher?
+
+## [Kahneman and Tversky](https://www.vanityfair.com/news/2016/11/decision-science-daniel-kahneman-amos-tversky)
+
+```{r, fig.align='center'}
+knitr::include_graphics("kahneman-tversky.jpg")
+```
+
+## [Richard Thaler](https://www.amazon.com/Misbehaving-Behavioral-Economics-Richard-Thaler/dp/039335279X)
+
+```{r, fig.align='center'}
+knitr::include_graphics("thaler.jpg")
+```
+
+## [Behavioral economics and public policy](http://www.nber.org/papers/w20928)
+- Advocates a "pragmatic" way of thinking about behavioral economics
+- Rather than asking if the behavioral model or the rational model is right, focus on developing policy-oriented solutions (e.g. how do we get people to save more?)
+- Reflects a shift in how economics is done today - less emphasis on finding a unifying model of human behavior, more emphasis on context-dependent solutions
+
+## Examples
+
+1. How much to save
+2. How much to work
+3. Where to live
+
+## asdf
+```{r}
+library(ggplot2)
+ggplot(mtcars)
+```
+
+
+
