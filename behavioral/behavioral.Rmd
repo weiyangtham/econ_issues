@@ -44,6 +44,73 @@ knitr::include_graphics("thaler.jpg")
 2. How much to work
 3. Where to live
 
+## "Save More Tomorrow" program
+- How can we get people to save more?
+
+1. Ask employees to sign up for a plan to increase contribution rates *at a later date*
+    + Helps to counter present bias (hyperbolic discounting)
+2. Contribution rate increases after a raise
+    + Minimize loss aversion
+3. Contribution rates increase automatically for each raise until they reach a preset maximum
+    + Take advantage of inertia/status quo bias
+    
+## Question
+- Suppose you find that people do increase their retirement contributions after enrolling in a program like "Save More Tomorrow". Does that necessarily mean that people are saving more?
+- Could be saving less in non-retirement accounts
+
+## [Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts](http://www.nber.org/papers/w18565)
+- Chetty et al (2014) look at the effect on the overall savings rate
+- 
+
+## [Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts](http://www.nber.org/papers/w18565)
+- Compare two policies that try to change behavior through "active" or "passive" decisions
+- Passive: increases in automatic contributions from employers
+- Active: subsidies for an individual's contributions to their pension
+- Conclusion: policies that raise retirement contributions if individuals don't need to take action much more effective than those that require individuals to make an active decision 
+
+## Why?
+- 1999 subsidy reduction for pension contributions for people in top income bracket
+- How did individuals respond?
+
+## Most people are passive savers
+```{r, fig.align='center', out.width='300px', out.height="250px"}
+knitr::include_graphics("chetty_pension.png")
+```
+
+## Why don't people move to where their children would do better?
+- "Rational" reasons
+    + Stay close to family and friends
+    + Place low weight on children's outcomes
+- Behavioral reasons
+    + Present bias: put too much weight on costs of moving now v.s. future benefits of growing up in a better neighborhood
+    + Lack of information: don't realize benefits of being in a better neighborhood
+    + Projection bias: don't accurately predict how future tastes will change e.g. over-estimate how much they will miss new friends, and don't sufficiently take into account making new friends
+    + Limited bandwidth: living in poverty uses up mental resources for complex decisions or long-term thinking
+
+## Rationale for government intervention
+- Neoclassical model: should not intervene unless there are externalities
+    + What are some externalities from having children grow up in better neighborhoods?
+- Behavioral model:
+    + Even if there are not externalities, can be optimal to incentivize moving to better neighborhoods
+
+## Difficulties
+
+1. If actual choices are not the same as optimal choices, (even more) difficult to measure welfare
+
+2. Family's decision not to move is consistent with both the neoclassical and behavioral models. That is, we are uncertain about which model is the right one. What does that imply for the type of policies we should adopt? 
+
+## Implications of model uncertainty
+- Should try nudges
+    + Relatively costless
+    + Optimizers just won't change their behavior
+- Subsidies (e.g. housing vouchers) are justifiable if we believe the behavioral model could be correct
+- Doesn't mean nudging is always good! 
+    + [Handel (2013)](https://eml.berkeley.edu/~bhandel/wp/Handel_ASIN_2013.pdf)
+    + [Explanation of Handel paper](https://theincidentaleconomist.com/wordpress/adverse-selection-at-every-turn/)
+
+## Replication crisis
+- asdf
+
 ## asdf
 ```{r}
 library(ggplot2)
