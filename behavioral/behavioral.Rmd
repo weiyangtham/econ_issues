@@ -33,6 +33,28 @@ knitr::include_graphics("kahneman-tversky.jpg")
 knitr::include_graphics("thaler.jpg")
 ```
 
+## Nudging and Libertarian Paternalism
+- Small, relatively costless interventions
+- Take into account cognitive biases
+- Should not restrict choices
+
+## Nudging examples
+```{r, fig.align='center'}
+knitr::include_graphics("nudge_stairs.jpg")
+```
+
+
+## Nudging examples
+```{r, fig.align='center' }
+knitr::include_graphics("nudge_dustbin.jpg")
+```
+
+## Nudging examples
+```{r, fig.align='center'}
+knitr::include_graphics("nudge_urinal.jpg")
+```
+
+
 ## [Behavioral economics and public policy](http://www.nber.org/papers/w20928)
 - Advocates a "pragmatic" way of thinking about behavioral economics
 - Rather than asking if the behavioral model or the rational model is right, focus on developing policy-oriented solutions (e.g. how do we get people to save more?)
@@ -41,18 +63,26 @@ knitr::include_graphics("thaler.jpg")
 ## Examples
 
 1. How much to save
-2. How much to work
-3. Where to live
+2. Where to live
 
 ## "Save More Tomorrow" program
-- How can we get people to save more?
+- Designed to get employees contribute more to retirement plans
+- What is the rationale for each of the following features of the program?
 
+1. Ask employees to sign up for a plan to increase contribution rates *at a later date*
+2. Contribution rate increases after a raise
+3. Contribution rates increase automatically for each raise until they reach a preset maximum
+4. Can opt out of the plan at any time
+
+## Rational for each feature
 1. Ask employees to sign up for a plan to increase contribution rates *at a later date*
     + Helps to counter present bias (hyperbolic discounting)
 2. Contribution rate increases after a raise
     + Minimize loss aversion
 3. Contribution rates increase automatically for each raise until they reach a preset maximum
     + Take advantage of inertia/status quo bias
+4. Can opt out of the plan at any time
+    + Mainly ethical, and people probably feel more comfortable joining a program they can opt out of
     
 ## Question
 - Suppose you find that people do increase their retirement contributions after enrolling in a program like "Save More Tomorrow". Does that necessarily mean that people are saving more?
@@ -60,7 +90,6 @@ knitr::include_graphics("thaler.jpg")
 
 ## [Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts](http://www.nber.org/papers/w18565)
 - Chetty et al (2014) look at the effect on the overall savings rate
-- 
 
 ## [Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts](http://www.nber.org/papers/w18565)
 - Compare two policies that try to change behavior through "active" or "passive" decisions
@@ -91,25 +120,73 @@ knitr::include_graphics("chetty_pension.png")
 - Neoclassical model: should not intervene unless there are externalities
     + What are some externalities from having children grow up in better neighborhoods?
 - Behavioral model:
-    + Even if there are not externalities, can be optimal to incentivize moving to better neighborhoods
+    + Even if there are no externalities, can be optimal to incentivize moving to better neighborhoods
+    + Government intervention can correct "internalities" 
+    
+<!-- 
+Less crime
+externalities from education
+-->
 
 ## Difficulties
 
 1. If actual choices are not the same as optimal choices, (even more) difficult to measure welfare
 
-2. Family's decision not to move is consistent with both the neoclassical and behavioral models. That is, we are uncertain about which model is the right one. What does that imply for the type of policies we should adopt? 
+2. Family's decision not to move is consistent with both the neoclassical(rational) and behavioral models. That is, we are uncertain about which model is the right one. 
+    + What does that imply for the type of policies we should adopt? Is government intervention justified? 
 
 ## Implications of model uncertainty
 - Should try nudges
     + Relatively costless
     + Optimizers just won't change their behavior
 - Subsidies (e.g. housing vouchers) are justifiable if we believe the behavioral model could be correct
-- Doesn't mean nudging is always good! 
+
+## Final remarks
+- Nudging isn't always good! 
     + [Handel (2013)](https://eml.berkeley.edu/~bhandel/wp/Handel_ASIN_2013.pdf)
     + [Explanation of Handel paper](https://theincidentaleconomist.com/wordpress/adverse-selection-at-every-turn/)
+    
+## Group Discussion
+- You read about the replication crisis in psychology framed around Amy Cuddy and the power pose. How has this affected your perception of how scientific research is done? For example, has it made you more or less skeptical? The article is about the field of psychology, but how does your answer apply to the economics research we've looked at in this class?
 
-## Replication crisis
-- asdf
+## Replication crisis in psychology
+- [Brian Nosek and the Reproducibility Project](https://osf.io/ezcuj/wiki/home/)
+- Replicated 100 psychology studies, were only able to replicate about one-third of the results
+- Part of a broader movement in psychology questioning the reliability of earlier results
+
+## [Why is replication important?](http://datacolada.org/53/)
+- We want to use scientific results to make some prediction about the future
+    + Sodium + water react to form sodium hydroxide and hydrogen gas
+    + More immigration will lead to a reduction in employment for natives
+
+## Why don't studies replicate?
+- Publication bias
+- P-hacking - FiveThirtyEight [p-hacking tool](https://fivethirtyeight.com/features/science-isnt-broken/#part1)
+- Not the same as scientific fraud!
+
+## How does behavioral economics compare?
+- [Camerer et al](https://economics.stanford.edu/sites/default/files/eerp_sci_camerer_published_mainplussom_2016-1.pdf) replicated 18 studies published in two major economics journals from 2011 to 2014
+- Replicated about two-thirds of the results (one-third for psychology)
+    + These replication studies are not perfectly comparable, but still worth thinking about
+- Possible explanation for differences (somewhat speculative!)
+    + No deception in experimental econ
+    + Better norms for transparency
+    + More pressure to study interventions that would hold in "real world"
+
+## How about empirical economics?
+- [Star Wars: The Empirics Strike Back](http://ftp.iza.org/dp7268.pdf)
+- Evidence that researchers are manipulating results to make results publishable
+
+## Hump and valley around 5\% significance level
+```{r, fig.align='center'}
+knitr::include_graphics("empirics_hump.png")
+```
+
+## Solutions
+- Transparent sharing of data and methods
+- Pre-analysis plans (tying your hands) - specify what you're going to do before embarking on a project
+
+## 
 
 ## asdf
 ```{r}
